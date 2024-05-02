@@ -1,14 +1,20 @@
 import { defineConfig } from "vite";
-import { resolve } from "path";
+import dts from "vite-plugin-dts";
+import { libInjectCss } from "vite-plugin-lib-inject-css";
 import react from "@vitejs/plugin-react";
+import { resolve } from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), libInjectCss(), dts({ include: ["lib"] })],
   build: {
+    copyPublicDir: false,
     lib: {
-      entry: resolve(__dirname, "lib/main.ts"),
+      entry: resolve(__dirname, "lib/index.ts"),
       formats: ["es"],
+    },
+    rollupOptions: {
+      external: ["react", "react/jsx-runtime"],
     },
   },
 });

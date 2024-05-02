@@ -1,11 +1,11 @@
 {
   "name": "developer-icons",
   "description": "Ready-to-use high quality vector icons for developers and designers",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsx ./lib/scripts/build.ts && tsc --p ./tsconfig-build.json && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
