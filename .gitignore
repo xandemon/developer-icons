@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+#lib
+lib/icons/*
+!lib/icons/icons.data.ts
