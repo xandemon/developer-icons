@@ -10,11 +10,14 @@ export default defineConfig({
   build: {
     copyPublicDir: false,
     lib: {
-      entry: resolve(__dirname, "lib/index.ts"),
+      entry: resolve(__dirname, "lib/main.ts"),
       formats: ["es"],
     },
     rollupOptions: {
       external: ["react", "react/jsx-runtime"],
+      output: {
+        entryFileNames: "[name].js",
+      },
     },
   },
 });

@@ -1,13 +1,39 @@
 {
   "name": "developer-icons",
   "description": "Ready-to-use high quality vector icons for developers and designers",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "type": "module",
+  "homepage": "https://github.com/xandemon/developer-icons",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xandemon/developer-icons",
+    "directory": ""
+  },
+  "author": "xandemon",
+  "keywords": [
+    "developer icons",
+    "tech stack icons",
+    "programming icons",
+    "coding icons",
+    "colorful tech icons",
+    "tech icons",
+    "programming language icons",
+    "icons",
+    "vector icons",
+    "svg",
+    "react icons"
+  ],
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsx ./lib/scripts/build.ts && tsc --p ./tsconfig-build.json && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prePublishOnly": "npm run build"
   },
   "peerDependencies": {
     "react": "^18.2.0",
