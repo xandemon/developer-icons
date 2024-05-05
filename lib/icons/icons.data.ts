@@ -176,7 +176,7 @@ const IconsData = [
   },
   {
     id: "vscode",
-    name: "Visual Studio Code",
+    name: "VS Code",
     path: "public/vscode.svg",
     categories: ["development", "tool"],
     keywords: ["vscode", "editor", "code"],
