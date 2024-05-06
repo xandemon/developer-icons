@@ -1,7 +1,7 @@
 {
   "name": "developer-icons",
   "description": "Ready-to-use high quality vector icons for developers and designers",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "type": "module",
   "homepage": "https://github.com/xandemon/developer-icons",
   "repository": {
@@ -10,6 +10,7 @@
     "directory": ""
   },
   "author": "xandemon",
+  "license": "MIT",
   "keywords": [
     "developer icons",
     "tech stack icons",
