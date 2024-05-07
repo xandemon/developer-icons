@@ -1,7 +1,7 @@
 {
   "name": "developer-icons",
   "description": "Ready-to-use high quality vector icons for developers and designers",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "type": "module",
   "homepage": "https://github.com/xandemon/developer-icons",
   "repository": {
@@ -59,8 +59,5 @@
     "vite": "^5.2.0",
     "vite-plugin-dts": "^3.9.0",
     "vite-plugin-lib-inject-css": "^2.0.1"
-  },
-  "dependencies": {
-    "developer-icons": "^1.0.2"
   }
 }
