@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import { DiscordIcon, GithubIcon } from "developer-icons";
+import { CanvaIcon, HtmlIcon } from "../";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <div>
-        <GithubIcon /> <DiscordIcon />
+        <HtmlIcon className="html-test" /> <CanvaIcon />
       </div>
       <h1>Vite + React</h1>
       <div className="card">
