@@ -20,7 +20,11 @@ IconsData.forEach((icon) => {
     .map((item) => capitalizeFirstletter(item))
     .join("")}Icon`;
 
-  const component = createDeveloperIcon(iconName, iconContent);
+  const component = createDeveloperIcon(
+    iconName,
+    iconContent,
+    path.join(svgDir, icon.path)
+  );
   fs.writeFileSync(
     path.join(__dirname, "../icons", `${iconName}.tsx`),
     component
