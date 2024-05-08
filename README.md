@@ -1,13 +1,11 @@
 # Developer Icons
 
-## About
-
 `Developer Icons` is a collection of ready-to-use high-quality vector icons for developers and designers. Fully customizable options with props, className, inline styles, etc. and completely typescript-supported components.
 
 ## Features
 
 - **High-Quality Icons**: A curated set of icons suitable for various development projects.
-- **Easy to Use**: Icons are organized and can be easily integrated into projects.
+- **Easy to Use**: Icons are organized and can be easily integrated into projects as react components.
 - **Open Source**: Freely available for personal and commercial use, adhering to specified licenses.
 
 ## Installation
@@ -38,7 +36,7 @@ Import named icon components from the `developer-icons` package and use it as an
 import { HtmlIcon, JavascriptIcon } from "developer-icons";
 
 //inside your React component JSX
-export const ReactComponent = () => {
+export const YourReactComponent = () => {
   return (
     <div>
       <HtmlIcon className="html-icon" />
