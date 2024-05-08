@@ -1,7 +1,7 @@
 {
   "name": "developer-icons",
   "description": "Ready-to-use high quality vector icons for developers and designers",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "type": "module",
   "homepage": "https://github.com/xandemon/developer-icons",
   "repository": {
@@ -31,7 +31,8 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "tsx ./lib/scripts/build.ts && tsc --p ./tsconfig-build.json && vite build",
+    "clean": "rimraf --glob dist && rimraf --glob lib/icons/*.tsx",
+    "build": "npm run clean && tsx ./lib/scripts/build.ts && tsc --p ./tsconfig-build.json && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "prePublishOnly": "npm run build"
@@ -52,6 +53,7 @@
     "eslint-plugin-react-refresh": "^0.4.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "rimraf": "^5.0.5",
     "svgo": "^3.2.0",
     "svgson": "^5.3.1",
     "tsx": "^4.8.2",
