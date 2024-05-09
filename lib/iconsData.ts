@@ -1,0 +1,215 @@
+export const categoriesData = [
+  "Languages",
+  "Frontend",
+  "Backend",
+  "Database",
+  "Design",
+  "Native App",
+  "DevOps & AI/ML",
+  "Productivity",
+  "Communication",
+  "Companies",
+  "Others",
+] as const;
+
+export const iconsData: IconDataType[] = [
+  {
+    id: "html",
+    name: "HTML",
+    path: "public/html.svg",
+    categories: ["Languages", "Frontend"],
+    keywords: ["html", "markup", "web"],
+  },
+  {
+    id: "canva",
+    name: "Canva",
+    path: "public/canva.svg",
+    categories: ["Design"],
+    keywords: ["canva", "graphics", "creative"],
+  },
+  {
+    id: "chatgpt",
+    name: "ChatGPT",
+    path: "public/chatgpt.svg",
+    categories: ["DevOps & AI/ML", "Productivity"],
+    keywords: ["chatgpt", "ai", "chatbot"],
+  },
+  {
+    id: "css",
+    name: "CSS",
+    path: "public/css.svg",
+    categories: ["Frontend", "Design"],
+    keywords: ["css", "style", "format"],
+  },
+  {
+    id: "discord",
+    name: "Discord",
+    path: "public/discord.svg",
+    categories: ["Communication"],
+    keywords: ["discord", "chat", "community"],
+  },
+  {
+    id: "figma",
+    name: "Figma",
+    path: "public/figma.svg",
+    categories: ["Design"],
+    keywords: ["figma", "ui", "ux"],
+  },
+  {
+    id: "firebase",
+    name: "Firebase",
+    path: "public/firebase.svg",
+    categories: ["Backend", "Database"],
+    keywords: ["firebase", "cloud", "auth"],
+  },
+  {
+    id: "git",
+    name: "Git",
+    path: "public/git.svg",
+    categories: ["DevOps & AI/ML"],
+    keywords: ["git", "versioning", "version control"],
+  },
+  {
+    id: "github",
+    name: "GitHub",
+    path: "public/github.svg",
+    categories: ["DevOps & AI/ML"],
+    keywords: ["github", "code", "collaboration", "version control"],
+  },
+  {
+    id: "gmail",
+    name: "Gmail",
+    path: "public/gmail.svg",
+    categories: ["Communication"],
+    keywords: ["gmail", "email", "communication"],
+  },
+  {
+    id: "instagram",
+    name: "Instagram",
+    path: "public/instagram.svg",
+    categories: ["Communication"],
+    keywords: ["instagram", "social", "media"],
+  },
+  {
+    id: "javascript",
+    name: "JavaScript",
+    path: "public/javascript.svg",
+    categories: ["Languages", "Frontend"],
+    keywords: ["javascript", "scripting", "web"],
+  },
+  {
+    id: "linkedin",
+    name: "LinkedIn",
+    path: "public/linkedin.svg",
+    categories: ["Communication", "Companies"],
+    keywords: ["linkedin", "network", "professional"],
+  },
+  {
+    id: "mongodb",
+    name: "MongoDB",
+    path: "public/mongodb.svg",
+    categories: ["Database"],
+    keywords: ["mongodb", "nosql", "database"],
+  },
+  {
+    id: "nextjs",
+    name: "Next.js",
+    path: "public/nextjs.svg",
+    categories: ["Frontend"],
+    keywords: ["nextjs", "react", "ssr"],
+  },
+  {
+    id: "notion",
+    name: "Notion",
+    path: "public/notion.svg",
+    categories: ["Productivity"],
+    keywords: ["notion", "organize", "collaborate"],
+  },
+  {
+    id: "openai",
+    name: "OpenAI",
+    path: "public/openai.svg",
+    categories: ["DevOps & AI/ML", "Companies"],
+    keywords: ["openai", "ai", "research"],
+  },
+  {
+    id: "postman",
+    name: "Postman",
+    path: "public/postman.svg",
+    categories: ["DevOps & AI/ML", "Backend"],
+    keywords: ["postman", "api", "test"],
+  },
+  {
+    id: "react-native",
+    name: "React Native",
+    path: "public/react-native.svg",
+    categories: ["Native App"],
+    keywords: ["reactnative", "mobile", "development"],
+  },
+  {
+    id: "react",
+    name: "React",
+    path: "public/react.svg",
+    categories: ["Frontend"],
+    keywords: ["react", "frontend", "ui"],
+  },
+  {
+    id: "redux",
+    name: "Redux",
+    path: "public/redux.svg",
+    categories: ["Frontend"],
+    keywords: ["redux", "state", "slice"],
+  },
+  {
+    id: "sass",
+    name: "SASS",
+    path: "public/sass.svg",
+    categories: ["Frontend", "Design"],
+    keywords: ["sass", "css", "preprocessor"],
+  },
+  {
+    id: "tailwindcss",
+    name: "Tailwind CSS",
+    path: "public/tailwindcss.svg",
+    categories: ["Frontend", "Design"],
+    keywords: ["tailwindcss", "utility", "css"],
+  },
+  {
+    id: "typescript",
+    name: "TypeScript",
+    path: "public/typescript.svg",
+    categories: ["Languages", "Frontend"],
+    keywords: ["typescript", "strongtyping", "js"],
+  },
+  {
+    id: "vite",
+    name: "Vite",
+    path: "public/vite.svg",
+    categories: ["Frontend", "DevOps & AI/ML"],
+    keywords: ["vite", "build", "tool"],
+  },
+  {
+    id: "vscode",
+    name: "VS Code",
+    path: "public/vscode.svg",
+    categories: ["Productivity"],
+    keywords: ["vscode", "editor", "development"],
+  },
+  {
+    id: "wordpress",
+    name: "WordPress",
+    path: "public/wordpress.svg",
+    categories: ["Frontend", "Companies"],
+    keywords: ["wordpress", "blog", "cms"],
+  },
+];
+
+type Category = (typeof categoriesData)[number];
+
+interface IconDataType {
+  id: string;
+  name: string;
+  path: string;
+  categories: Category[];
+  keywords: string[];
+}

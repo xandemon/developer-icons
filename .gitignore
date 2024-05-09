@@ -25,4 +25,3 @@ dist-ssr
 
 #lib
 lib/icons/*
-!lib/icons/icons.data.ts
