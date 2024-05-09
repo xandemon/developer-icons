@@ -1,6 +1,6 @@
 import { SVGProps, createElement } from "react";
-import { mergeClassNames } from "./utils/mergeClassNames";
-import defaultAttributes from "./defaultAttributes";
+import { mergeClassNames } from "./utils";
+import { defaultAttributes } from "./constants";
 
 export interface DeveloperIconProps extends Partial<SVGProps<SVGElement>> {
   size?: number;

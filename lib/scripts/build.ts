@@ -3,8 +3,8 @@ import path from "path";
 import { fileURLToPath } from "url";
 import { createDeveloperIcon } from "../createDeveloperIcon";
 
-import IconsData from "../icons/icons.data";
-import { capitalizeFirstletter } from "../utils/capitalizeFirstLetter";
+import { iconsData } from "../iconsData";
+import { capitalizeFirstletter } from "../utils";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -12,7 +12,7 @@ const svgDir = path.join(__dirname, "../../");
 
 let exportStatement = "";
 
-IconsData.forEach((icon) => {
+iconsData.forEach((icon) => {
   //create exportable icon components
   const iconContent = fs.readFileSync(path.join(svgDir, icon.path), "utf-8");
   const iconName = `${icon.name
