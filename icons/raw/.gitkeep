@@ -1,0 +1,1 @@
+While adding new svg icons to the project, first upload them in this folder and then run the script 'optimize-svgs' to optimize the newly added svg icons and auto-move them to the icons folder in the root
