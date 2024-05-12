@@ -19,6 +19,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/apache.svg",
     categories: ["Backend"],
     keywords: ["apache", "server", "web"],
+    url: "https://apache.org",
   },
   {
     id: "appwrite",
@@ -26,6 +27,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/appwrite.svg",
     categories: ["Backend", "Database"],
     keywords: ["appwrite", "backend", "database"],
+    url: "https://appwrite.io",
   },
   {
     id: "arc",
@@ -33,6 +35,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/arc.svg",
     categories: ["Others"],
     keywords: ["arc", "web", "development"],
+    url: "https://arc.io",
   },
   {
     id: "astro",
@@ -40,6 +43,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/astro.svg",
     categories: ["Frontend"],
     keywords: ["astro", "frontend", "framework"],
+    url: "https://astro.build",
   },
   {
     id: "atlassian",
@@ -47,6 +51,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/atlassian.svg",
     categories: ["Productivity"],
     keywords: ["atlassian", "tools", "collaboration"],
+    url: "https://atlassian.com",
   },
   {
     id: "atom",
@@ -54,6 +59,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/atom.svg",
     categories: ["Productivity"],
     keywords: ["atom", "editor", "code"],
+    url: "https://atom.io",
   },
   {
     id: "auth0",
@@ -61,6 +67,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/auth0.svg",
     categories: ["Backend"],
     keywords: ["auth0", "authentication", "security"],
+    url: "https://auth0.com",
   },
   {
     id: "avajs",
@@ -68,6 +75,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/avajs.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["avajs", "testing", "javascript"],
+    url: "https://ava.li",
   },
   {
     id: "aws",
@@ -75,6 +83,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/aws.svg",
     categories: ["Backend", "DevOps & AI/ML"],
     keywords: ["aws", "cloud", "amazon"],
+    url: "https://aws.amazon.com",
   },
   {
     id: "axiom",
@@ -90,6 +99,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/axure.svg",
     categories: ["Design"],
     keywords: ["axure", "design", "prototyping"],
+    url: "https://axure.com",
   },
   {
     id: "azure",
@@ -97,6 +107,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/azure.svg",
     categories: ["Backend", "DevOps & AI/ML"],
     keywords: ["azure", "microsoft", "cloud"],
+    url: "https://azure.microsoft.com",
   },
   {
     id: "babel",
@@ -104,6 +115,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/babel.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["babel", "javascript", "compiler"],
+    url: "https://babeljs.io",
   },
   {
     id: "backbonejs",
@@ -111,6 +123,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/backbonejs.svg",
     categories: ["Frontend"],
     keywords: ["backbonejs", "frontend", "framework"],
+    url: "https://backbonejs.org",
   },
   {
     id: "bash",
@@ -118,6 +131,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/bash.svg",
     categories: ["Others"],
     keywords: ["bash", "shell", "scripting"],
+    url: "https://gnu.org/software/bash",
   },
   {
     id: "bitbucket",
@@ -125,6 +139,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/bitbucket.svg",
     categories: ["Productivity"],
     keywords: ["bitbucket", "git", "version control"],
+    url: "https://bitbucket.org",
   },
   {
     id: "bitnami",
@@ -132,6 +147,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/bitnami.svg",
     categories: ["Backend", "DevOps & AI/ML"],
     keywords: ["bitnami", "cloud", "stacks"],
+    url: "https://bitnami.com",
   },
   {
     id: "blueprintjs",
@@ -139,6 +155,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/blueprintjs.svg",
     categories: ["Frontend"],
     keywords: ["blueprintjs", "ui", "react"],
+    url: "https://blueprintjs.com",
   },
   {
     id: "bootstrap4",
@@ -146,6 +163,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/bootstrap4.svg",
     categories: ["Frontend", "Design"],
     keywords: ["bootstrap4", "css", "frontend"],
+    url: "https://getbootstrap.com",
   },
   {
     id: "bootstrap5",
@@ -153,6 +171,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/bootstrap5.svg",
     categories: ["Frontend", "Design"],
     keywords: ["bootstrap5", "css", "frontend"],
+    url: "https://getbootstrap.com",
   },
   // {
   //   id: "brave",
@@ -160,6 +179,7 @@ export const iconsData: IconDataType[] = [
   //   path: "icons/brave.svg",
   //   categories: ["Others"],
   //   keywords: ["brave", "browser", "privacy"],
+  //   url: "https://brave.com/"
   // },
   {
     id: "bulmaui",
@@ -167,6 +187,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/bulmaui.svg",
     categories: ["Frontend", "Design"],
     keywords: ["bulmaui", "css", "frontend"],
+    url: "https://bulma.io",
   },
   {
     id: "bunjs",
@@ -174,6 +195,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/bunjs.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["bunjs", "javascript", "runtime"],
+    url: "https://bun.sh",
   },
   {
     id: "c-sharp",
@@ -181,6 +203,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/c-sharp.svg",
     categories: ["Languages"],
     keywords: ["c-sharp", "programming", "microsoft", "c#"],
+    url: "https://docs.microsoft.com/en-us/dotnet/csharp/",
   },
   {
     id: "c-plus-plus",
@@ -188,6 +211,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/c-plus-plus.svg",
     categories: ["Languages"],
     keywords: ["c++", "programming", "performance"],
+    url: "https://cplusplus.com",
   },
   {
     id: "cakephp",
@@ -195,6 +219,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/cakephp.svg",
     categories: ["Backend"],
     keywords: ["cakephp", "php", "framework"],
+    url: "https://cakephp.org",
   },
   {
     id: "canva",
@@ -202,6 +227,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/canva.svg",
     categories: ["Design"],
     keywords: ["canva", "design", "graphics"],
+    url: "https://canva.com",
   },
   {
     id: "cassandradb",
@@ -209,6 +235,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/cassandradb.svg",
     categories: ["Database"],
     keywords: ["cassandradb", "database", "nosql"],
+    url: "https://cassandra.apache.org",
   },
   {
     id: "chakraui",
@@ -216,6 +243,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/chakraui.svg",
     categories: ["Frontend", "Design"],
     keywords: ["chakraui", "ui", "react"],
+    url: "https://chakra-ui.com",
   },
   {
     id: "chatgpt",
@@ -223,6 +251,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/chatgpt.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["chatgpt", "ai", "openai"],
+    url: "https://openai.com/chatgpt",
   },
   {
     id: "chrome",
@@ -230,6 +259,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/chrome.svg",
     categories: ["Others"],
     keywords: ["chrome", "browser", "google"],
+    url: "https://google.com/chrome",
   },
   {
     id: "chromium",
@@ -237,6 +267,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/chromium.svg",
     categories: ["Others"],
     keywords: ["chromium", "browser", "opensource"],
+    url: "https://chromium.org",
   },
   {
     id: "circleci",
@@ -244,6 +275,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/circleci.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["circleci", "ci", "cd"],
+    url: "https://circleci.com",
   },
   {
     id: "clickhouse",
@@ -251,6 +283,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/clickhouse.svg",
     categories: ["Database"],
     keywords: ["clickhouse", "database", "analytics"],
+    url: "https://clickhouse.com",
   },
   {
     id: "clojure",
@@ -258,6 +291,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/clojure.svg",
     categories: ["Languages"],
     keywords: ["clojure", "functional", "jvm"],
+    url: "https://clojure.org",
   },
   {
     id: "cloudflare",
@@ -265,6 +299,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/cloudflare.svg",
     categories: ["Others"],
     keywords: ["cloudflare", "security", "cdn"],
+    url: "https://cloudflare.com",
   },
   {
     id: "cloudinary",
@@ -272,6 +307,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/cloudinary.svg",
     categories: ["Media"],
     keywords: ["cloudinary", "media", "cloud"],
+    url: "https://cloudinary.com",
   },
   {
     id: "codefresh",
@@ -279,6 +315,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/codefresh.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["codefresh", "ci", "cd"],
+    url: "https://codefresh.io",
   },
   {
     id: "codeigniter",
@@ -286,6 +323,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/codeigniter.svg",
     categories: ["Backend"],
     keywords: ["codeigniter", "php", "framework"],
+    url: "https://codeigniter.com",
   },
   {
     id: "copilot",
@@ -293,6 +331,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/copilot.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["copilot", "ai", "coding"],
+    url: "https://github.com/features/copilot",
   },
   {
     id: "crystal",
@@ -300,6 +339,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/crystal.svg",
     categories: ["Languages"],
     keywords: ["crystal", "programming", "performance"],
+    url: "https://crystal-lang.org",
   },
   {
     id: "css3",
@@ -307,6 +347,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/css3.svg",
     categories: ["Frontend", "Design"],
     keywords: ["css3", "design", "stylesheets"],
+    url: "https://w3.org/Style/CSS/",
   },
   {
     id: "cypress",
@@ -314,6 +355,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/cypress.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["cypress", "testing", "javascript"],
+    url: "https://cypress.io",
   },
   {
     id: "dart",
@@ -321,6 +363,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/dart.svg",
     categories: ["Languages"],
     keywords: ["dart", "programming", "app development"],
+    url: "https://dart.dev",
   },
   {
     id: "datadog",
@@ -328,6 +371,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/datadog.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["datadog", "monitoring", "analytics"],
+    url: "https://datadoghq.com",
   },
   {
     id: "deno",
@@ -335,6 +379,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/deno.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["deno", "javascript", "typescript"],
+    url: "https://deno.land",
   },
   {
     id: "digitalocean",
@@ -342,6 +387,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/digitalocean.svg",
     categories: ["Backend"],
     keywords: ["digitalocean", "cloud", "servers"],
+    url: "https://digitalocean.com",
   },
   {
     id: "discord",
@@ -349,6 +395,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/discord.svg",
     categories: ["Productivity"],
     keywords: ["discord", "chat", "voice"],
+    url: "https://discord.com",
   },
   {
     id: "django",
@@ -356,6 +403,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/django.svg",
     categories: ["Backend"],
     keywords: ["django", "python", "web"],
+    url: "https://djangoproject.com",
   },
   {
     id: "dlang",
@@ -363,6 +411,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/dlang.svg",
     categories: ["Languages"],
     keywords: ["dlang", "programming", "performance"],
+    url: "https://dlang.org",
   },
   {
     id: "docker",
@@ -370,6 +419,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/docker.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["docker", "containers", "devops"],
+    url: "https://docker.com",
   },
   {
     id: "docusaurus",
@@ -377,6 +427,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/docusaurus.svg",
     categories: ["Others"],
     keywords: ["docusaurus", "documentation", "static site"],
+    url: "https://docusaurus.io",
   },
   {
     id: "dovetail",
@@ -384,6 +435,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/dovetail.svg",
     categories: ["Design"],
     keywords: ["dovetail", "design", "prototyping"],
+    url: "https://dovetailapp.com",
   },
   {
     id: "ec2",
@@ -391,6 +443,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/ec2.svg",
     categories: ["Backend"],
     keywords: ["ec2", "aws", "cloud"],
+    url: "https://aws.amazon.com/ec2",
   },
   {
     id: "edge",
@@ -398,6 +451,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/edge.svg",
     categories: ["Others"],
     keywords: ["edge", "browser", "microsoft"],
+    url: "https://microsoft.com/edge",
   },
   {
     id: "elastic",
@@ -405,6 +459,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/elastic.svg",
     categories: ["Database"],
     keywords: ["elastic", "search", "elasticsearch"],
+    url: "https://elastic.co",
   },
   {
     id: "electron",
@@ -412,6 +467,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/electron.svg",
     categories: ["Native App"],
     keywords: ["electron", "desktop", "apps"],
+    url: "https://electronjs.org",
   },
   {
     id: "elementui",
@@ -419,6 +475,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/elementui.svg",
     categories: ["Frontend", "Design"],
     keywords: ["elementui", "ui", "vue"],
+    url: "https://element.eleme.io",
   },
   {
     id: "elixir",
@@ -426,6 +483,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/elixir.svg",
     categories: ["Languages"],
     keywords: ["elixir", "functional", "concurrent"],
+    url: "https://elixir-lang.org",
   },
   {
     id: "ember",
@@ -433,6 +491,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/ember.svg",
     categories: ["Frontend"],
     keywords: ["ember", "frontend", "framework"],
+    url: "https://emberjs.com",
   },
   {
     id: "erlang",
@@ -440,6 +499,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/erlang.svg",
     categories: ["Languages"],
     keywords: ["erlang", "functional", "concurrent"],
+    url: "https://erlang.org",
   },
   {
     id: "esbuild",
@@ -447,6 +507,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/esbuild.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["esbuild", "javascript", "builder"],
+    url: "https://esbuild.github.io",
   },
   {
     id: "eslint",
@@ -454,6 +515,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/eslint.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["eslint", "javascript", "linting"],
+    url: "https://eslint.org",
   },
   {
     id: "faunadb",
@@ -461,6 +523,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/faunadb.svg",
     categories: ["Database"],
     keywords: ["faunadb", "database", "nosql"],
+    url: "https://fauna.com",
   },
   {
     id: "figma",
@@ -468,6 +531,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/figma.svg",
     categories: ["Design"],
     keywords: ["figma", "design", "ui"],
+    url: "https://figma.com",
   },
   {
     id: "firebase",
@@ -475,6 +539,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/firebase.svg",
     categories: ["Backend", "Database"],
     keywords: ["firebase", "database", "google"],
+    url: "https://firebase.google.com",
   },
   {
     id: "firefox",
@@ -482,6 +547,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/firefox.svg",
     categories: ["Others"],
     keywords: ["firefox", "browser", "mozilla"],
+    url: "https://mozilla.org/firefox",
   },
   {
     id: "flask",
@@ -489,6 +555,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/flask.svg",
     categories: ["Backend"],
     keywords: ["flask", "python", "web"],
+    url: "https://palletsprojects.com/p/flask/",
   },
   {
     id: "flutter",
@@ -496,6 +563,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/flutter.svg",
     categories: ["Native App"],
     keywords: ["flutter", "mobile", "apps"],
+    url: "https://flutter.dev",
   },
   {
     id: "flyio",
@@ -503,6 +571,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/flyio.svg",
     categories: ["Backend"],
     keywords: ["flyio", "hosting", "cloud"],
+    url: "https://fly.io",
   },
   {
     id: "framer",
@@ -510,6 +579,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/framer.svg",
     categories: ["Design"],
     keywords: ["framer", "design", "prototyping"],
+    url: "https://framer.com",
   },
   {
     id: "gatsby",
@@ -517,6 +587,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/gatsby.svg",
     categories: ["Frontend"],
     keywords: ["gatsby", "react", "static site"],
+    url: "https://gatsbyjs.com",
   },
   {
     id: "git",
@@ -524,6 +595,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/git.svg",
     categories: ["Productivity"],
     keywords: ["git", "version control", "code"],
+    url: "https://git-scm.com",
   },
   {
     id: "github-copilot",
@@ -531,6 +603,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/github-copilot.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["github-copilot", "ai", "coding"],
+    url: "https://copilot.github.com",
   },
   {
     id: "github",
@@ -538,6 +611,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/github.svg",
     categories: ["Productivity"],
     keywords: ["github", "git", "repository"],
+    url: "https://github.com",
   },
   {
     id: "gitlab",
@@ -545,6 +619,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/gitlab.svg",
     categories: ["Productivity"],
     keywords: ["gitlab", "git", "ci/cd"],
+    url: "https://gitlab.com",
   },
   {
     id: "gmail",
@@ -552,6 +627,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/gmail.svg",
     categories: ["Productivity"],
     keywords: ["gmail", "email", "google"],
+    url: "https://mail.google.com",
   },
   {
     id: "go",
@@ -559,6 +635,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/go.svg",
     categories: ["Languages"],
     keywords: ["go", "programming", "google"],
+    url: "https://golang.org",
   },
   {
     id: "google-cloud",
@@ -566,6 +643,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/google-cloud.svg",
     categories: ["Backend", "DevOps & AI/ML"],
     keywords: ["google-cloud", "cloud", "google"],
+    url: "https://cloud.google.com",
   },
   {
     id: "grafana",
@@ -573,6 +651,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/grafana.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["grafana", "monitoring", "metrics"],
+    url: "https://grafana.com",
   },
   {
     id: "grafbase",
@@ -580,6 +659,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/grafbase.svg",
     categories: ["Database"],
     keywords: ["grafbase", "graphql", "database"],
+    url: "https://grafbase.com",
   },
   {
     id: "graphite",
@@ -587,6 +667,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/graphite.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["graphite", "monitoring", "metrics"],
+    url: "https://graphiteapp.org",
   },
   {
     id: "graphql",
@@ -594,6 +675,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/graphql.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["graphql", "api", "query"],
+    url: "https://graphql.org",
   },
   {
     id: "gridsome",
@@ -601,6 +683,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/gridsome.svg",
     categories: ["Frontend"],
     keywords: ["gridsome", "vue", "static site"],
+    url: "https://gridsome.org",
   },
   {
     id: "gruntjs",
@@ -608,6 +691,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/gruntjs.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["gruntjs", "javascript", "task"],
+    url: "https://gruntjs.com",
   },
   {
     id: "gulp",
@@ -615,6 +699,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/gulp.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["gulp", "javascript", "task"],
+    url: "https://gulpjs.com",
   },
   {
     id: "haskell",
@@ -622,6 +707,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/haskell.svg",
     categories: ["Languages"],
     keywords: ["haskell", "functional", "programming"],
+    url: "https://haskell.org",
   },
   {
     id: "headlessui",
@@ -629,6 +715,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/headlessui.svg",
     categories: ["Frontend", "Design"],
     keywords: ["headlessui", "ui", "tailwind"],
+    url: "https://headlessui.dev",
   },
   {
     id: "heroku",
@@ -636,6 +723,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/heroku.svg",
     categories: ["Backend"],
     keywords: ["heroku", "cloud", "hosting"],
+    url: "https://heroku.com",
   },
   {
     id: "hexo",
@@ -643,6 +731,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/hexo.svg",
     categories: ["Others"],
     keywords: ["hexo", "static site", "nodejs"],
+    url: "https://hexo.io",
   },
   {
     id: "hhvm",
@@ -650,6 +739,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/hhvm.svg",
     categories: ["Others"],
     keywords: ["hhvm", "virtual machine", "php"],
+    url: "https://hhvm.com",
   },
   {
     id: "homebrew",
@@ -657,6 +747,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/homebrew.svg",
     categories: ["Others"],
     keywords: ["homebrew", "macos", "linux"],
+    url: "https://brew.sh",
   },
   {
     id: "hotjar",
@@ -664,6 +755,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/hotjar.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["hotjar", "analytics", "user behavior"],
+    url: "https://hotjar.com",
   },
   {
     id: "html5",
@@ -671,6 +763,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/html5.svg",
     categories: ["Frontend", "Design"],
     keywords: ["html5", "markup", "web"],
+    url: "https://html.spec.whatwg.org/",
   },
   // {
   //   id: "hyper",
@@ -685,6 +778,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/hyper2.svg",
     categories: ["Productivity"],
     keywords: ["hyper2", "terminal", "shell"],
+    url: "https://hyper.is",
   },
   {
     id: "i18next",
@@ -692,6 +786,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/i18next.svg",
     categories: ["Others"],
     keywords: ["i18next", "i18n", "localization"],
+    url: "https://i18next.com",
   },
   {
     id: "indesign",
@@ -699,6 +794,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/indesign.svg",
     categories: ["Design"],
     keywords: ["indesign", "adobe", "layout"],
+    url: "https://adobe.com/products/indesign.html",
   },
   // {
   //   id: "inkspace",
@@ -713,6 +809,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/insomnia.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["insomnia", "api", "testing"],
+    url: "https://insomnia.rest",
   },
   {
     id: "instagram",
@@ -720,6 +817,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/instagram.svg",
     categories: ["Media"],
     keywords: ["instagram", "social", "media"],
+    url: "https://instagram.com",
   },
   {
     id: "internet-explorer",
@@ -727,6 +825,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/internet-explorer.svg",
     categories: ["Others"],
     keywords: ["internet-explorer", "browser", "microsoft"],
+    url: "https://support.microsoft.com/en-us/internet-explorer",
   },
   {
     id: "invision",
@@ -734,6 +833,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/invision.svg",
     categories: ["Design"],
     keywords: ["invision", "design", "prototyping"],
+    url: "https://invisionapp.com",
   },
   {
     id: "ionic",
@@ -741,6 +841,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/ionic.svg",
     categories: ["Native App"],
     keywords: ["ionic", "mobile", "hybrid"],
+    url: "https://ionicframework.com",
   },
   {
     id: "jamstack",
@@ -748,6 +849,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/jamstack.svg",
     categories: ["Others"],
     keywords: ["jamstack", "static site", "web"],
+    url: "https://jamstack.org",
   },
   {
     id: "java",
@@ -755,6 +857,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/java.svg",
     categories: ["Languages"],
     keywords: ["java", "programming", "jvm"],
+    url: "https://oracle.com/java/",
   },
   {
     id: "javascript",
@@ -762,6 +865,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/javascript.svg",
     categories: ["Languages"],
     keywords: ["javascript", "programming", "web"],
+    url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
   },
   {
     id: "jest",
@@ -769,6 +873,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/jest.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["jest", "testing", "javascript"],
+    url: "https://jestjs.io",
   },
   {
     id: "jira",
@@ -776,6 +881,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/jira.svg",
     categories: ["Productivity"],
     keywords: ["jira", "atlassian", "project management"],
+    url: "https://atlassian.com/software/jira",
   },
   {
     id: "jquery",
@@ -783,6 +889,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/jquery.svg",
     categories: ["Frontend"],
     keywords: ["jquery", "javascript", "library"],
+    url: "https://jquery.com",
   },
   {
     id: "jslint",
@@ -790,6 +897,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/jslint.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["jslint", "javascript", "linting"],
+    url: "https://jslint.com",
   },
   {
     id: "json",
@@ -797,6 +905,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/json.svg",
     categories: ["Others"],
     keywords: ["json", "data", "format"],
+    url: "https://json.org",
   },
   {
     id: "kibana",
@@ -804,6 +913,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/kibana.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["kibana", "elasticsearch", "dashboard"],
+    url: "https://elastic.co/kibana",
   },
   {
     id: "kotlin",
@@ -811,6 +921,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/kotlin.svg",
     categories: ["Languages"],
     keywords: ["kotlin", "programming", "jvm"],
+    url: "https://kotlinlang.org",
   },
   {
     id: "kubernetes",
@@ -818,6 +929,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/kubernetes.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["kubernetes", "containers", "orchestration"],
+    url: "https://kubernetes.io",
   },
   {
     id: "laravel",
@@ -825,6 +937,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/laravel.svg",
     categories: ["Backend"],
     keywords: ["laravel", "php", "web"],
+    url: "https://laravel.com",
   },
   {
     id: "less",
@@ -832,6 +945,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/less.svg",
     categories: ["Frontend", "Design"],
     keywords: ["less", "css", "preprocessor"],
+    url: "https://lesscss.org",
   },
   {
     id: "lightroom",
@@ -839,6 +953,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/lightroom.svg",
     categories: ["Design"],
     keywords: ["lightroom", "adobe", "photo editing"],
+    url: "https://adobe.com/products/photoshop-lightroom.html",
   },
   {
     id: "linkedin",
@@ -846,6 +961,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/linkedin.svg",
     categories: ["Media"],
     keywords: ["linkedin", "social", "network"],
+    url: "https://linkedin.com",
   },
   {
     id: "linux",
@@ -853,6 +969,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/linux.svg",
     categories: ["Others"],
     keywords: ["linux", "os", "open source"],
+    url: "https://kernel.org",
   },
   {
     id: "lit",
@@ -860,6 +977,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/lit.svg",
     categories: ["Frontend"],
     keywords: ["lit", "web components", "javascript"],
+    url: "https://lit.dev",
   },
   {
     id: "liveblocks",
@@ -867,6 +985,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/liveblocks.svg",
     categories: ["Backend"],
     keywords: ["liveblocks", "real-time", "collaboration"],
+    url: "https://liveblocks.io",
   },
   {
     id: "logrocket",
@@ -874,6 +993,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/logrocket.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["logrocket", "monitoring", "user experience"],
+    url: "https://logrocket.com",
   },
   {
     id: "lokalise",
@@ -881,6 +1001,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/lokalise.svg",
     categories: ["Others"],
     keywords: ["lokalise", "localization", "translation"],
+    url: "https://lokalise.com",
   },
   {
     id: "lua",
@@ -888,6 +1009,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/lua.svg",
     categories: ["Languages"],
     keywords: ["lua", "scripting", "game development"],
+    url: "https://lua.org",
   },
   {
     id: "lunacy",
@@ -895,6 +1017,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/lunacy.svg",
     categories: ["Design"],
     keywords: ["lunacy", "design", "vector graphics"],
+    url: "https://icons8.com/lunacy",
   },
   {
     id: "mariadb",
@@ -902,6 +1025,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/mariadb.svg",
     categories: ["Database"],
     keywords: ["mariadb", "database", "mysql"],
+    url: "https://mariadb.org",
   },
   {
     id: "marionette",
@@ -909,6 +1033,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/marionette.svg",
     categories: ["Frontend"],
     keywords: ["marionette", "javascript", "mvc"],
+    url: "https://marionettejs.com",
   },
   {
     id: "markdown",
@@ -916,6 +1041,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/markdown.svg",
     categories: ["Others"],
     keywords: ["markdown", "writing", "documentation"],
+    url: "https://daringfireball.net/projects/markdown/",
   },
   {
     id: "materialui",
@@ -923,6 +1049,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/materialui.svg",
     categories: ["Frontend", "Design"],
     keywords: ["materialui", "ui", "react"],
+    url: "https://mui.com",
   },
   {
     id: "meta",
@@ -930,6 +1057,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/meta.svg",
     categories: ["Companies"],
     keywords: ["meta", "facebook", "social media"],
+    url: "https://meta.com",
   },
   {
     id: "microsoft",
@@ -937,6 +1065,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/microsoft.svg",
     categories: ["Companies"],
     keywords: ["microsoft", "software", "technology"],
+    url: "https://microsoft.com",
   },
   {
     id: "miro",
@@ -944,6 +1073,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/miro.svg",
     categories: ["Design"],
     keywords: ["miro", "whiteboard", "collaboration"],
+    url: "https://miro.com",
   },
   {
     id: "mochajs",
@@ -951,6 +1081,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/mochajs.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["mochajs", "testing", "javascript"],
+    url: "https://mochajs.org",
   },
   {
     id: "mongodb",
@@ -958,6 +1089,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/mongodb.svg",
     categories: ["Database"],
     keywords: ["mongodb", "database", "nosql"],
+    url: "https://mongodb.com",
   },
   {
     id: "mozilla",
@@ -965,6 +1097,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/mozilla.svg",
     categories: ["Companies"],
     keywords: ["mozilla", "software", "technology"],
+    url: "https://mozilla.org",
   },
   {
     id: "mysql",
@@ -972,6 +1105,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/mysql.svg",
     categories: ["Database"],
     keywords: ["mysql", "database", "sql"],
+    url: "https://mysql.com",
   },
   {
     id: "neovim",
@@ -979,6 +1113,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/neovim.svg",
     categories: ["Productivity"],
     keywords: ["neovim", "editor", "vim"],
+    url: "https://neovim.io",
   },
   {
     id: "nestjs",
@@ -986,6 +1121,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/nestjs.svg",
     categories: ["Backend"],
     keywords: ["nestjs", "nodejs", "typescript"],
+    url: "https://nestjs.com",
   },
   {
     id: "netlify",
@@ -993,6 +1129,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/netlify.svg",
     categories: ["Backend"],
     keywords: ["netlify", "hosting", "static site"],
+    url: "https://netlify.com",
   },
   {
     id: "netlify2",
@@ -1000,6 +1137,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/netlify2.svg",
     categories: ["Backend"],
     keywords: ["netlify2", "hosting", "static site"],
+    url: "https://netlify.com",
   },
   {
     id: "nextjs-wordmark",
@@ -1007,6 +1145,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/nextjs-wordmark.svg",
     categories: ["Frontend"],
     keywords: ["nextjs-wordmark", "nextjs", "react"],
+    url: "https://nextjs.org",
   },
   {
     id: "nextjs",
@@ -1014,6 +1153,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/nextjs.svg",
     categories: ["Frontend"],
     keywords: ["nextjs", "react", "ssr"],
+    url: "https://nextjs.org",
   },
   {
     id: "nim",
@@ -1021,6 +1161,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/nim.svg",
     categories: ["Languages"],
     keywords: ["nim", "programming", "efficient"],
+    url: "https://nim-lang.org",
   },
   // {
   //   id: "nitro",
@@ -1035,6 +1176,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/nodejs.svg",
     categories: ["Backend"],
     keywords: ["nodejs", "javascript", "server"],
+    url: "https://nodejs.org",
   },
   {
     id: "npm-wordmark",
@@ -1042,6 +1184,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/npm-wordmark.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["npm-wordmark", "npm", "javascript"],
+    url: "https://npmjs.com",
   },
   {
     id: "npm",
@@ -1049,6 +1192,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/npm.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["npm", "package manager", "nodejs"],
+    url: "https://npmjs.com",
   },
   {
     id: "nuxtjs",
@@ -1056,6 +1200,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/nuxtjs.svg",
     categories: ["Frontend"],
     keywords: ["nuxtjs", "vue", "ssr"],
+    url: "https://nuxtjs.org",
   },
   {
     id: "ocaml",
@@ -1063,6 +1208,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/ocaml.svg",
     categories: ["Languages"],
     keywords: ["ocaml", "functional", "programming"],
+    url: "https://ocaml.org",
   },
   {
     id: "onedrive",
@@ -1070,6 +1216,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/onedrive.svg",
     categories: ["Others"],
     keywords: ["onedrive", "cloud", "microsoft"],
+    url: "https://onedrive.live.com",
   },
   {
     id: "openai",
@@ -1077,6 +1224,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/openai.svg",
     categories: ["Companies", "DevOps & AI/ML"],
     keywords: ["openai", "ai", "machine learning"],
+    url: "https://openai.com",
   },
   {
     id: "opera",
@@ -1084,6 +1232,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/opera.svg",
     categories: ["Others"],
     keywords: ["opera", "browser", "web"],
+    url: "https://opera.com",
   },
   {
     id: "oracle",
@@ -1091,6 +1240,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/oracle.svg",
     categories: ["Companies", "Database"],
     keywords: ["oracle", "database", "enterprise"],
+    url: "https://oracle.com",
   },
   {
     id: "pandacss",
@@ -1098,6 +1248,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/pandacss.svg",
     categories: ["Frontend", "Design"],
     keywords: ["pandacss", "css", "styling"],
+    url: "https://panda-css.com",
   },
   {
     id: "photoshop",
@@ -1105,6 +1256,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/photoshop.svg",
     categories: ["Design"],
     keywords: ["photoshop", "adobe", "graphics"],
+    url: "https://adobe.com/products/photoshop.html",
   },
   {
     id: "php",
@@ -1112,6 +1264,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/php.svg",
     categories: ["Languages", "Backend"],
     keywords: ["php", "web", "backend"],
+    url: "https://php.net",
   },
   {
     id: "pinia",
@@ -1119,6 +1272,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/pinia.svg",
     categories: ["Frontend"],
     keywords: ["pinia", "state", "vue"],
+    url: "https://pinia.vuejs.org",
   },
   {
     id: "pixijs",
@@ -1126,6 +1280,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/pixijs.svg",
     categories: ["Media"],
     keywords: ["pixijs", "webgl", "rendering"],
+    url: "https://pixijs.com",
   },
   {
     id: "playwright",
@@ -1133,6 +1288,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/playwright.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["playwright", "testing", "browser"],
+    url: "https://playwright.dev",
   },
   {
     id: "postgresql",
@@ -1140,6 +1296,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/postgresql.svg",
     categories: ["Database"],
     keywords: ["postgresql", "database", "sql"],
+    url: "https://postgresql.org",
   },
   {
     id: "postman",
@@ -1147,6 +1304,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/postman.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["postman", "api", "testing"],
+    url: "https://postman.com",
   },
   {
     id: "powershell",
@@ -1154,6 +1312,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/powershell.svg",
     categories: ["Others"],
     keywords: ["powershell", "shell", "scripting"],
+    url: "https://microsoft.com/powershell",
   },
   {
     id: "preact",
@@ -1161,6 +1320,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/preact.svg",
     categories: ["Frontend"],
     keywords: ["preact", "react", "performance"],
+    url: "https://preactjs.com",
   },
   {
     id: "presto",
@@ -1168,6 +1328,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/presto.svg",
     categories: ["Database"],
     keywords: ["presto", "sql", "analytics"],
+    url: "https://prestodb.io",
   },
   {
     id: "prettier",
@@ -1175,6 +1336,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/prettier.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["prettier", "code", "formatter"],
+    url: "https://prettier.io",
   },
   {
     id: "prisma",
@@ -1182,6 +1344,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/prisma.svg",
     categories: ["Backend"],
     keywords: ["prisma", "orm", "database"],
+    url: "https://prisma.io",
   },
   {
     id: "pugjs",
@@ -1189,6 +1352,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/pugjs.svg",
     categories: ["Backend"],
     keywords: ["pugjs", "template", "html"],
+    url: "https://pugjs.org",
   },
   {
     id: "pwa",
@@ -1196,6 +1360,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/pwa.svg",
     categories: ["Frontend"],
     keywords: ["pwa", "web app", "offline"],
+    url: "https://web.dev/progressive-web-apps/",
   },
   {
     id: "python",
@@ -1203,6 +1368,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/python.svg",
     categories: ["Languages"],
     keywords: ["python", "programming", "general purpose"],
+    url: "https://python.org",
   },
   {
     id: "pytorch",
@@ -1210,6 +1376,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/pytorch.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["pytorch", "machine learning", "deep learning"],
+    url: "https://pytorch.org",
   },
   {
     id: "pytorch3d",
@@ -1217,6 +1384,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/pytorch3d.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["pytorch3d", "3d", "machine learning"],
+    url: "https://pytorch3d.org",
   },
   {
     id: "qwik",
@@ -1224,6 +1392,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/qwik.svg",
     categories: ["Frontend"],
     keywords: ["qwik", "frontend", "performance"],
+    url: "https://qwik.builder.io",
   },
   {
     id: "radixui",
@@ -1231,6 +1400,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/radixui.svg",
     categories: ["Frontend", "Design"],
     keywords: ["radixui", "ui", "design systems"],
+    url: "https://radix-ui.com",
   },
   {
     id: "rails",
@@ -1238,6 +1408,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/rails.svg",
     categories: ["Backend"],
     keywords: ["rails", "ruby", "web"],
+    url: "https://rubyonrails.org",
   },
   {
     id: "railway",
@@ -1245,6 +1416,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/railway.svg",
     categories: ["Backend"],
     keywords: ["railway", "hosting", "cloud"],
+    url: "https://railway.app",
   },
   {
     id: "react-query",
@@ -1252,6 +1424,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/react-query.svg",
     categories: ["Frontend"],
     keywords: ["react-query", "react", "data fetching"],
+    url: "https://react-query.tanstack.com",
   },
   {
     id: "reactjs",
@@ -1259,6 +1432,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/reactjs.svg",
     categories: ["Frontend"],
     keywords: ["reactjs", "ui", "javascript"],
+    url: "https://reactjs.org",
   },
   {
     id: "reactrouter",
@@ -1266,6 +1440,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/reactrouter.svg",
     categories: ["Frontend"],
     keywords: ["reactrouter", "routing", "react"],
+    url: "https://reactrouter.com",
   },
   {
     id: "redhat",
@@ -1273,6 +1448,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/redhat.svg",
     categories: ["Companies"],
     keywords: ["redhat", "linux", "enterprise"],
+    url: "https://redhat.com",
   },
   {
     id: "redis",
@@ -1280,6 +1456,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/redis.svg",
     categories: ["Database"],
     keywords: ["redis", "database", "cache"],
+    url: "https://redis.io",
   },
   {
     id: "redux-saga",
@@ -1287,6 +1464,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/redux-saga.svg",
     categories: ["Frontend"],
     keywords: ["redux-saga", "redux", "effects"],
+    url: "https://redux-saga.js.org",
   },
   {
     id: "redux",
@@ -1294,6 +1472,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/redux.svg",
     categories: ["Frontend"],
     keywords: ["redux", "state", "react"],
+    url: "https://redux.js.org",
   },
   {
     id: "render",
@@ -1301,6 +1480,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/render.svg",
     categories: ["Backend"],
     keywords: ["render", "hosting", "cloud"],
+    url: "https://render.com",
   },
   {
     id: "resend",
@@ -1308,6 +1488,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/resend.svg",
     categories: ["Others"],
     keywords: ["resend", "email", "messaging"],
+    url: "https://resend.com",
   },
   {
     id: "rollup",
@@ -1315,6 +1496,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/rollup.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["rollup", "javascript", "bundler"],
+    url: "https://rollupjs.org",
   },
   {
     id: "ruby",
@@ -1322,6 +1504,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/ruby.svg",
     categories: ["Languages"],
     keywords: ["ruby", "programming", "dynamic"],
+    url: "https://ruby-lang.org",
   },
   {
     id: "rust",
@@ -1329,6 +1512,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/rust.svg",
     categories: ["Languages"],
     keywords: ["rust", "programming", "systems"],
+    url: "https://rust-lang.org",
   },
   {
     id: "safari",
@@ -1336,6 +1520,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/safari.svg",
     categories: ["Others"],
     keywords: ["safari", "browser", "apple"],
+    url: "https://apple.com/safari",
   },
   {
     id: "sass",
@@ -1343,6 +1528,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/sass.svg",
     categories: ["Frontend", "Design"],
     keywords: ["sass", "css", "stylesheets"],
+    url: "https://sass-lang.com",
   },
   {
     id: "scala",
@@ -1350,6 +1536,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/scala.svg",
     categories: ["Languages"],
     keywords: ["scala", "jvm", "functional"],
+    url: "https://scala-lang.org",
   },
   {
     id: "semanticui",
@@ -1357,6 +1544,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/semanticui.svg",
     categories: ["Frontend", "Design"],
     keywords: ["semanticui", "ui", "design"],
+    url: "https://semantic-ui.com",
   },
   {
     id: "serverless",
@@ -1364,6 +1552,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/serverless.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["serverless", "cloud", "aws"],
+    url: "https://serverless.com",
   },
   {
     id: "shadcnui",
@@ -1371,6 +1560,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/shadcnui.svg",
     categories: ["Others"],
     keywords: ["shadcnui"],
+    url: "https://ui.shadcn.com/",
   },
   {
     id: "sketch",
@@ -1378,6 +1568,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/sketch.svg",
     categories: ["Design"],
     keywords: ["sketch", "design", "vector"],
+    url: "https://sketch.com",
   },
   {
     id: "sketch2",
@@ -1385,6 +1576,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/sketch2.svg",
     categories: ["Design"],
     keywords: ["sketch2", "design", "vector"],
+    url: "https://sketch.com",
   },
   {
     id: "slack",
@@ -1392,6 +1584,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/slack.svg",
     categories: ["Productivity"],
     keywords: ["slack", "chat", "team"],
+    url: "https://slack.com",
   },
   {
     id: "solidity",
@@ -1399,6 +1592,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/solidity.svg",
     categories: ["Languages"],
     keywords: ["solidity", "ethereum", "smart contracts"],
+    url: "https://soliditylang.org",
   },
   {
     id: "solidjs",
@@ -1406,6 +1600,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/solidjs.svg",
     categories: ["Frontend"],
     keywords: ["solidjs", "reactive", "ui"],
+    url: "https://solidjs.com",
   },
   {
     id: "spring",
@@ -1413,6 +1608,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/spring.svg",
     categories: ["Backend"],
     keywords: ["spring", "java", "enterprise"],
+    url: "https://spring.io",
   },
   {
     id: "storyblok",
@@ -1420,6 +1616,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/storyblok.svg",
     categories: ["Others"],
     keywords: ["storyblok", "cms", "headless"],
+    url: "https://storyblok.com",
   },
   {
     id: "storybook",
@@ -1435,6 +1632,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/stream.svg",
     categories: ["Others"],
     keywords: ["stream", "api", "real-time"],
+    url: "https://getstream.io",
   },
   {
     id: "stylelint",
@@ -1442,6 +1640,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/stylelint.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["stylelint", "css", "linting"],
+    url: "https://stylelint.io",
   },
   {
     id: "sublime",
@@ -1449,6 +1648,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/sublime.svg",
     categories: ["Productivity"],
     keywords: ["sublime", "text editor", "code"],
+    url: "https://sublimetext.com",
   },
   {
     id: "supabase",
@@ -1456,6 +1656,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/supabase.svg",
     categories: ["Backend", "Database"],
     keywords: ["supabase", "database", "real-time"],
+    url: "https://supabase.com",
   },
   {
     id: "sveltejs",
@@ -1463,6 +1664,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/sveltejs.svg",
     categories: ["Frontend"],
     keywords: ["sveltejs", "frontend", "compiler"],
+    url: "https://svelte.dev",
   },
   {
     id: "swagger",
@@ -1470,6 +1672,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/swagger.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["swagger", "api", "documentation"],
+    url: "https://swagger.io",
   },
   {
     id: "swift",
@@ -1477,6 +1680,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/swift.svg",
     categories: ["Languages"],
     keywords: ["swift", "programming", "apple"],
+    url: "https://swift.org",
   },
   {
     id: "tailwindcss",
@@ -1484,6 +1688,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/tailwindcss.svg",
     categories: ["Frontend", "Design"],
     keywords: ["tailwindcss", "utility", "css"],
+    url: "https://tailwindcss.com",
   },
   {
     id: "threejs",
@@ -1491,6 +1696,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/threejs.svg",
     categories: ["Media"],
     keywords: ["threejs", "3d", "webgl"],
+    url: "https://threejs.org",
   },
   {
     id: "tinyhttp",
@@ -1498,6 +1704,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/tinyhttp.svg",
     categories: ["Backend"],
     keywords: ["tinyhttp", "nodejs", "minimalist"],
+    url: "https://tinyhttp.v1rtl.site",
   },
   {
     id: "tRPC",
@@ -1505,6 +1712,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/trpc.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["trpc", "typescript", "rpc"],
+    url: "https://trpc.io",
   },
   {
     id: "typescript",
@@ -1512,6 +1720,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/typescript.svg",
     categories: ["Languages"],
     keywords: ["typescript", "javascript", "types"],
+    url: "https://typescriptlang.org",
   },
   {
     id: "ubuntu",
@@ -1519,6 +1728,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/ubuntu.svg",
     categories: ["Others"],
     keywords: ["ubuntu", "linux", "os"],
+    url: "https://ubuntu.com",
   },
   {
     id: "unjs",
@@ -1534,6 +1744,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/vim.svg",
     categories: ["Productivity"],
     keywords: ["vim", "editor", "terminal"],
+    url: "https://vim.org",
   },
   {
     id: "visualbasic",
@@ -1541,6 +1752,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/visualbasic.svg",
     categories: ["Languages"],
     keywords: ["visualbasic", "basic", "microsoft"],
+    url: "https://docs.microsoft.com/en-us/dotnet/visual-basic/",
   },
   {
     id: "vitejs",
@@ -1548,6 +1760,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/vitejs.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["vitejs", "builder", "frontend"],
+    url: "https://vitejs.dev",
   },
   {
     id: "vitest",
@@ -1555,6 +1768,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/vitest.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["vitest", "testing", "javascript"],
+    url: "https://vitest.dev",
   },
   {
     id: "vscode",
@@ -1562,6 +1776,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/vscode.svg",
     categories: ["Productivity"],
     keywords: ["vscode", "editor", "microsoft"],
+    url: "https://code.visualstudio.com",
   },
   {
     id: "vuejs",
@@ -1569,6 +1784,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/vuejs.svg",
     categories: ["Frontend"],
     keywords: ["vuejs", "frontend", "framework"],
+    url: "https://vuejs.org",
   },
   {
     id: "webassembly",
@@ -1576,6 +1792,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/webassembly.svg",
     categories: ["Others"],
     keywords: ["webassembly", "wasm", "web"],
+    url: "https://webassembly.org",
   },
   {
     id: "webpack",
@@ -1583,6 +1800,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/webpack.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["webpack", "javascript", "bundler"],
+    url: "https://webpack.js.org",
   },
   {
     id: "wordpress",
@@ -1590,6 +1808,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/wordpress.svg",
     categories: ["Others"],
     keywords: ["wordpress", "cms", "blog"],
+    url: "https://wordpress.org",
   },
   {
     id: "xamarin",
@@ -1597,6 +1816,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/xamarin.svg",
     categories: ["Native App"],
     keywords: ["xamarin", "mobile", "c#"],
+    url: "https://dotnet.microsoft.com/apps/xamarin",
   },
   {
     id: "xd",
@@ -1604,6 +1824,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/xd.svg",
     categories: ["Design"],
     keywords: ["xd", "adobe", "ux/ui"],
+    url: "https://adobe.com/products/xd.html",
   },
   {
     id: "yoga",
@@ -1611,6 +1832,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/yoga.svg",
     categories: ["Others"],
     keywords: ["yoga", "layout", "facebook"],
+    url: "https://yogalayout.com",
   },
   {
     id: "zod",
@@ -1618,6 +1840,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/zod.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["zod", "validation", "typescript"],
+    url: "https://github.com/colinhacks/zod", // GitHub page as main resource
   },
 ];
 
@@ -1629,4 +1852,5 @@ interface IconDataType {
   path: string;
   categories: Category[];
   keywords: string[];
+  url: string;
 }
