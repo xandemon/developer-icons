@@ -82,13 +82,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/axiom.svg",
     categories: ["Others"],
     keywords: ["axiom", "data", "analysis"],
-  },
-  {
-    id: "axm",
-    name: "AXM",
-    path: "icons/axm.svg",
-    categories: ["Others"],
-    keywords: ["axm"],
+    url: "https://axiom.co",
   },
   {
     id: "axure",
@@ -1433,13 +1427,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/storybook.svg",
     categories: ["Design"],
     keywords: ["storybook", "ui", "components"],
-  },
-  {
-    id: "strada",
-    name: "Strada",
-    path: "icons/strada.svg",
-    categories: ["Others"],
-    keywords: ["strada"],
+    url: "https://storybook.js.org",
   },
   {
     id: "stream",
@@ -1538,13 +1526,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/unjs.svg",
     categories: ["Frontend"],
     keywords: ["unjs", "javascript", "modern"],
-  },
-  {
-    id: "ur",
-    name: "UR",
-    path: "icons/ur.svg",
-    categories: ["Others"],
-    keywords: ["ur"],
+    url: "https://unjs.io",
   },
   {
     id: "vim",
