@@ -1,13 +1,13 @@
 ---
 import { cn } from "@/lib/utils";
 
-const { classNames } = Astro.props;
+const { className } = Astro.props;
 ---
 
 <div
   class={cn(
     "container flex items-center justify-center w-full py-3",
-    classNames
+    className
   )}
 >
   <slot />

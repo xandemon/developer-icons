@@ -1,4 +1,7 @@
 ---
+import Container from "@/components/Container.astro";
+import Navbar from "@/components/Navbar.astro";
+
 interface Props {
   title: string;
 }
@@ -16,7 +19,10 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="text-zinc-300 bg-zinc-900">
-    <slot />
+  <body class="text-zinc-300 bg-zinc-900 min-h-screen">
+    <Navbar />
+    <Container>
+      <slot />
+    </Container>
   </body>
 </html>
