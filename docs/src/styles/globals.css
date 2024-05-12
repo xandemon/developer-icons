@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.navbar .developer-icons.github path {
+  fill: #d4d4d8;
+}

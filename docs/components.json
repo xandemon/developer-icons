@@ -6,7 +6,7 @@
   "tailwind": {
     "config": "tailwind.config.mjs",
     "css": "./src/styles/globals.css",
-    "baseColor": "slate",
+    "baseColor": "zinc",
     "cssVariables": false,
     "prefix": ""
   },
