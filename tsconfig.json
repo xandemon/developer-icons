@@ -21,6 +21,6 @@
     "noFallthroughCasesInSwitch": true,
     "noImplicitAny": false
   },
-  "include": ["src"],
+  "include": ["playground"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
