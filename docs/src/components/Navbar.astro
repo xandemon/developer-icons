@@ -1,0 +1,36 @@
+---
+import { GithubIcon, NpmIcon } from "developer-icons";
+import Container from "./Container.astro";
+---
+
+<div class="navbar">
+  <Container className="justify-between">
+    <a href="/" class="flex items-center gap-2">
+      <img src="/favicon.svg" width="30" height="30" />
+      <span class="font-semibold text-lg">Developer Icons</span>
+    </a>
+    <nav
+      class="flex items-center justify-end gap-6 font-medium [&>a:hover]:text-sky-500"
+    >
+      <a href="/icons">Icons</a>
+      <a href="/docs">Docs</a>
+
+      <span class="w-[1px] h-4 bg-zinc-700"></span>
+
+      <a
+        href="https://github.com/xandemon/developer-icons"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <GithubIcon size={20} className="github" /></a
+      >
+      <a
+        href="https://www.npmjs.com/package/developer-icons"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <NpmIcon size={20} /></a
+      >
+    </nav>
+  </Container>
+</div>
