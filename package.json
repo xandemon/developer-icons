@@ -33,6 +33,7 @@
     "dev": "vite",
     "clean": "rimraf --glob dist && rimraf --glob lib/icons/*.tsx",
     "build": "npm run clean && tsx ./lib/scripts/build.ts && tsc --p ./tsconfig-build.json && vite build",
+    "build:docs": "cd docs && npm run build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "prePublishOnly": "npm run build",
