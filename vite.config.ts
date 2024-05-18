@@ -8,7 +8,7 @@ import { resolve } from "path";
 export default defineConfig({
   plugins: [react(), libInjectCss(), dts({ include: ["lib"] })],
   build: {
-    copyPublicDir: false,
+    // copyPublicDir: false,
     lib: {
       entry: resolve(__dirname, "lib/main.ts"),
       formats: ["es"],
