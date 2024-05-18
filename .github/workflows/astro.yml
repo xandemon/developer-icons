@@ -66,8 +66,6 @@ jobs:
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
         working-directory: ${{ env.BUILD_PATH }}
-      - name: Copy public folder
-        run: cp -r ${{ env.BUILD_PATH }}/public/* ${{ env.BUILD_PATH }}/dist/
       - name: Build with Astro
         run: |
           ${{ steps.detect-package-manager.outputs.runner }} astro build \
