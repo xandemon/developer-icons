@@ -7,6 +7,7 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   site: "https://xandemon.github.io",
   base: "/developer-icons/docs",
+  publicDir: "/developer-icons/docs/public",
   integrations: [
     react(),
     tailwind({
