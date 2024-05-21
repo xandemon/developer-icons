@@ -1,17 +1,14 @@
-# Sample workflow for building and deploying an Astro site to GitHub Pages
-#
-# To get started with Astro see: https://docs.astro.build/en/getting-started/
-#
-name: Deploy Astro site to Pages
+name: Deploy to GitHub Pages
 
 on:
   # Trigger the workflow every time you push to the `main` branch
+  # Using a different branch name? Replace `main` with your branch’s name
   push:
-    branches: [deploy, main]
+    branches: [deploy]
   # Allows you to run this workflow manually from the Actions tab on GitHub.
   workflow_dispatch:
 
-  # Allow this job to clone the repo and create a page deployment
+# Allow this job to clone the repo and create a page deployment
 permissions:
   contents: read
   pages: write
@@ -21,35 +18,26 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out your repository using git
-        uses: actions/checkout@v2
-
-      - name: Use Node.js 20
-        uses: actions/setup-node@v2
+      - name: Checkout your repository using git
+        uses: actions/checkout@v4
+      - name: Install, build, and upload your site
+        uses: withastro/action@v2
         with:
-          node-version: "20"
-          cache: "npm"
-
-      # Not using npm? Change `npm ci` to `yarn install` or `pnpm i`
-      - name: Install dependencies
-        run: cd docs && npm ci
-
-      # Not using npm? Change `npm run build` to `yarn build` or `pnpm run build`
-      - name: Build Astro
-        run: npm run build:docs --if-present
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: ./docs/dist
+          path: ./docs
+          node-version: 20
+          package-manager: npm@latest
+        # with:
+        # path: . # The root location of your Astro project inside the repository. (optional)
+        # node-version: 20 # The specific version of Node that should be used to build your site. Defaults to 20. (optional)
+        # package-manager: pnpm@latest # The Node package manager that should be used to install dependencies and build your site. Automatically detected based on your lockfile. (optional)
 
   deploy:
+    needs: build
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
