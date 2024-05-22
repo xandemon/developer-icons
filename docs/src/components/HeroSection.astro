@@ -2,6 +2,7 @@
 import { ArrowUpRight } from "lucide-react";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
+import { publicBaseUrl } from "@/lib/utils";
 ---
 
 <div class="flex items-center justify-between gap-4 w-full py-4">
@@ -33,7 +34,7 @@ import { Button } from "./ui/button";
   </div>
 
   <img
-    src="/developer-icons/docs/assets/hero-image.png"
+    src={`${publicBaseUrl}/hero-image.png`}
     class="rounded-lg w-full h-[350px] max-w-[45%] object-contain shadow-md shadow-zinc-800"
   />
 </div>
