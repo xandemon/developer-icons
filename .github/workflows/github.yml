@@ -25,6 +25,7 @@ concurrency:
   cancel-in-progress: false
 
 env:
+  VITE_PUBLIC_BASE_URL: "/developer-icons"
   BUILD_PATH: "docs" # default value when not using subfolders
   # BUILD_PATH: subfolder
 
