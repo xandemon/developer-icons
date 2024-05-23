@@ -1,9 +1,9 @@
 {
   "name": "developer-icons",
-  "description": "Ready-to-use high quality scalable vector icons for developers and designers",
-  "version": "3.1.0",
+  "description": "Ready-to-use high-quality customizable tech icons - made for the developers",
+  "version": "3.1.2",
   "type": "module",
-  "homepage": "https://github.com/xandemon/developer-icons",
+  "homepage": "https://xandemon.github.io/developer-icons",
   "repository": {
     "type": "git",
     "url": "https://github.com/xandemon/developer-icons",
