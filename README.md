@@ -1,12 +1,15 @@
 # Developer Icons
 
-`Developer Icons` is a collection of ready-to-use high-quality vector icons for developers and designers. Fully customizable options with props, className, inline styles, etc. and completely typescript-supported components.
+**`Developer Icons`** is a collection of ready-to-use high-quality customizable tech icons **for developers and designers**. Icon components are made **fully type-safe with typescript** and can be readily used in any React or Next.js projects with `developer-icons` npm package, or the icons can be manually downloaded in image formats to easily use in designs from the [official website](https://xandemon.github.io/developer-icons/ "Homepage | Developer Icons").
 
 ## Features
 
-- **High-Quality Icons**: A curated set of icons suitable for various development projects.
-- **Easy to Use**: Icons are organized and can be easily integrated into projects as react components.
-- **Open Source**: Freely available for personal and commercial use, adhering to specified licenses.
+- **Highly optimized:** Icons are optimized for performance and size. They are designed to be as small as possible while maintaining the quality.
+- **Customizable:** Cusomizations are available for all icons. You can change the size, color, stroke width, and much more.
+- **Perfectly scalable:** Icons are designed to be properly scaled to any size without compromising the quality.
+- **Consistent icons:** No more dealing with inconsistent styles and designs. All icons are designed with a pre-defined set of rules.
+- **Various versions:** Icons come with their own set of families such as light and dark mode, wordmark, and other versions.
+- **Free & open-source:** Completely free and open-source with license. No need to worry about privately hidden malicious code and be a contributor yourself.
 
 ## Installation
 
@@ -30,7 +33,7 @@ pnpm add developer-icons
 
 ## Usage
 
-Import named icon components from the `developer-icons` package and use it as any other component with props similar to that of an svg:
+Import named icon components from the `developer-icons` package and use it as any other component with props/attributes similar to that of an svg:
 
 ```javascript
 import { HtmlIcon, JavascriptIcon } from "developer-icons";
@@ -40,7 +43,7 @@ export const YourReactComponent = () => {
   return (
     <div>
       <HtmlIcon className="html-icon" />
-      <JavascriptIcon height={52} width={52} />
+      <JavascriptIcon size={52} style={{ marginLeft: 20 }} />
     </div>
   );
 };
