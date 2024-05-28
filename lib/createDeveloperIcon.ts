@@ -10,7 +10,7 @@ export const createDeveloperIcon = (
   const svgObject = parseSync(optimizedSvg, { camelcase: true });
   const children = [...svgObject.children.map((child) => stringify(child))];
 
-  return `import { createElement } from 'react';\nimport {Icon, DeveloperIconProps} from '../main';\nexport const ${iconName} = (props: DeveloperIconProps) => createElement(Icon, {...${JSON.stringify(
+  return `import { createElement } from 'react';\nimport {Icon, DeveloperIconProps} from '../icon';\nexport const ${iconName} = (props: DeveloperIconProps) => createElement(Icon, {...${JSON.stringify(
     svgObject.attributes
   )}, ...props, children: [${children}]
   })`;
