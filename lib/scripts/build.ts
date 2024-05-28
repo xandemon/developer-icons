@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 
-import { capitalizeFirstletter } from "../utils";
+import { generateIconCompName } from "../utils";
 import { createDeveloperIcon } from "../createDeveloperIcon";
 import { iconsData } from "../iconsData";
 
@@ -15,15 +15,7 @@ let exportStatement = "";
 iconsData.forEach((icon) => {
   //create exportable icon components
   const iconContent = fs.readFileSync(path.join(svgDir, icon.path), "utf-8");
-  const rawIconName = icon.name
-    .replace(/#/g, "-sharp")
-    .replace(/\+/g, "-plus")
-    .split(/[-. ]+/)
-    .map((item) => capitalizeFirstletter(item))
-    .join("");
-  const iconName = rawIconName.includes("Wordmark")
-    ? rawIconName
-    : `${rawIconName}Icon`;
+  const iconName = generateIconCompName(icon.name);
 
   const component = createDeveloperIcon(
     iconName,
