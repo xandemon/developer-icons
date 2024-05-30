@@ -4,13 +4,12 @@ import { SearchIcon } from "lucide-react";
 import DI from "developer-icons";
 import { categoriesData, iconsData } from "../../../lib/iconsData";
 import { generateIconCompName } from "../../../lib/utils";
-import UnderDevelopment from "@/components/UnderDevelopment.astro";
 ---
 
 <Layout title="Icons | Developer Icons">
-  <main class="relative w-full h-[calc(100vh-78px)] flex gap-4">
+  <main class="w-full h-[calc(100vh-78px)] flex gap-4">
     <aside
-      class="w-1/4 h-full border-r-2 border-zinc-800 flex flex-col gap-2 text-zinc-400 p-1"
+      class="w-1/4 h-full border-r-2 border-zinc-800 flex flex-col gap-2 text-zinc-400 p-1 sticky top-0"
     >
       {
         ["All", ...categoriesData].map((category) => (
@@ -33,22 +32,19 @@ import UnderDevelopment from "@/components/UnderDevelopment.astro";
         />
       </div>
 
-      <UnderDevelopment />
-      <!-- <div class="grid grid-cols-auto-fit gap-4">
+      <div class="grid grid-cols-auto-fit gap-4 overflow-auto pr-1">
         {
-          iconsData.map((icon, index) => {
-            //@ts-ignore
+          iconsData.map((icon) => {
             const DynamicIcon = DI[generateIconCompName(icon.name)];
             return (
-              <div class="w-full h-32 border border-zinc-800 rounded-lg flex flex-col items-center justify-center">
-                {/* <img src={`../../../${icon.path}`} /> */}
-                <DynamicIcon />
+              <div class="w-full h-32 border border-zinc-800 rounded-lg flex flex-col items-center justify-center gap-2">
+                <DynamicIcon size={50} />
                 <p class="">{icon.name}</p>
               </div>
             );
           })
         }
-      </div> -->
+      </div>
     </section>
   </main>
 </Layout>
