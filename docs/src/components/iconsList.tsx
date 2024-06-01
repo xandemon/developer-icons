@@ -1,9 +1,11 @@
 import DI from "developer-icons";
 import { useMemo, useState } from "react";
-import { SearchIcon, X } from "lucide-react";
+import { Copy, Copyright, SearchIcon, X } from "lucide-react";
 import type { IconDataType } from "../../../lib/iconsData";
 import { generateIconCompName } from "../../../lib/utils";
 import { useDebounce } from "@/lib/hooks";
+import { Badge } from "./ui/badge";
+import { publicBaseUrl } from "@/lib/utils";
 
 export const IconsList = ({ iconsData }: { iconsData: IconDataType[] }) => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -19,6 +21,11 @@ export const IconsList = ({ iconsData }: { iconsData: IconDataType[] }) => {
       ),
     [iconsData, debouncedSearch]
   );
+
+  const copyComponent = (iconName: string) => {
+    const compName = generateIconCompName(iconName);
+    navigator.clipboard.writeText(`<${compName} />`);
+  };
 
   return (
     <section className="w-full flex flex-col gap-3">
@@ -48,10 +55,46 @@ export const IconsList = ({ iconsData }: { iconsData: IconDataType[] }) => {
           return (
             <div
               key={index}
-              className="w-full h-32 border border-zinc-800 rounded-xl flex flex-col items-center justify-center gap-2"
+              className="w-full max-w-64 h-44 border border-zinc-800 rounded-xl flex flex-col items-center justify-center gap-2"
             >
               <DynamicIcon size={50} />
-              <p>{icon.name}</p>
+              <p className="font-semibold">{icon.name}</p>
+              <div className="flex items-center gap-1 flex-wrap ">
+                {icon.categories.map((category, index) => (
+                  <a
+                    key={index}
+                    href={`${publicBaseUrl}/icons/${category
+                      .replace("DevOps & AI/ML", "DevOps")
+                      .replaceAll(" ", "-")}`}
+                  >
+                    <Badge
+                      variant={"secondary"}
+                      className="font-normal text-xs"
+                    >
+                      {category}
+                    </Badge>
+                  </a>
+                ))}
+              </div>
+              <div className="flex items-center justify-center gap-3 text-zinc-400">
+                <Copy
+                  size={18}
+                  className="hover:text-zinc-300 cursor-pointer"
+                  onClick={() => copyComponent(icon.name)}
+                />
+                {/* <a href={svgIcon} download={icon.name}>
+                  <Download
+                    size={18}
+                    className="hover:text-zinc-300 cursor-pointer"
+                  />
+                </a> */}
+                <a href={icon.url} target="_blank" rel="noreferrer">
+                  <Copyright
+                    size={18}
+                    className="hover:text-zinc-300 cursor-pointer"
+                  />
+                </a>
+              </div>
             </div>
           );
         })}
