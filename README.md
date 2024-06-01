@@ -1,6 +1,6 @@
 # Developer Icons
 
-**`Developer Icons`** is a collection of ready-to-use high-quality customizable tech icons **for developers and designers**. Icon components are made **fully type-safe with typescript** and can be readily used in any React or Next.js projects with `developer-icons` npm package, or the icons can be manually downloaded in image formats to easily use in designs from the [official website](https://xandemon.github.io/developer-icons/ "Homepage | Developer Icons").
+`developer-icons` is a collection of ready-to-use high-quality customizable tech icons**for developers and designers**. Icon components are made **fully type-safe with typescript** and can be readily used in any React or Next.js projects with `developer-icons` npm package, or the icons can be manually downloaded in image formats to easily use in designs from the [official website](https://xandemon.github.io/developer-icons/ "Homepage | Developer Icons").
 
 ## Features
 
