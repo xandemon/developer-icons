@@ -5,3 +5,8 @@
 .navbar .developer-icons.github path {
   fill: #d4d4d8;
 }
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #18181b #27272a;
+}

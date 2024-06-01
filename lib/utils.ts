@@ -1,3 +1,5 @@
+import DI from "./main";
+
 export const capitalizeFirstletter = (str: string, invert?: boolean) =>
   invert
     ? `${str[0].toLowerCase()}${str.slice(1)}`
@@ -16,5 +18,5 @@ export const generateIconCompName = (initialName: string) => {
   const iconCompName = rawIconName.includes("Wordmark")
     ? rawIconName
     : `${rawIconName}Icon`;
-  return iconCompName;
+  return iconCompName as keyof typeof DI;
 };
