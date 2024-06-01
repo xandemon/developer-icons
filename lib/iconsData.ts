@@ -1844,9 +1844,9 @@ export const iconsData: IconDataType[] = [
   },
 ];
 
-type Category = (typeof categoriesData)[number];
+export type Category = (typeof categoriesData)[number];
 
-interface IconDataType {
+export interface IconDataType {
   id: string;
   name: string;
   path: string;
