@@ -4,8 +4,7 @@ import { SearchIcon } from "lucide-react";
 import DI from "developer-icons";
 import { categoriesData, iconsData } from "../../../../lib/iconsData";
 import { generateIconCompName } from "../../../../lib/utils";
-import { publicBaseUrl } from "@/lib/utils";
-import clsx from "clsx";
+import { cn, publicBaseUrl } from "@/lib/utils";
 
 export function getStaticPaths() {
   return ["All", ...categoriesData].map((category) => ({
@@ -34,16 +33,16 @@ const filteredIconsData =
 <Layout title="Icons | Developer Icons">
   <main class="w-full h-[calc(100vh-78px)] flex gap-4">
     <aside
-      class="w-1/4 h-full border-r-2 border-zinc-800 flex flex-col gap-2 text-zinc-400 p-1 sticky top-0"
+      class="w-1/4 h-full border border-zinc-800 rounded-xl flex flex-col gap-2 text-zinc-400 px-2 py-4 sticky top-0"
     >
       {
         ["All", ...categoriesData].map((item) => (
           <a
             href={`${publicBaseUrl}/icons/${item.replace("DevOps & AI/ML", "DevOps").replaceAll(" ", "-")}`}
-            class={clsx(
+            class={cn(
               `w-full rounded-lg hover:bg-zinc-800 px-4 py-2 cursor-pointer`,
               {
-                "bg-zinc-700":
+                "bg-sky-700 bg-opacity-90 hover:bg-sky-700 hover:bg-opacity-90 text-zinc-200":
                   item
                     .replace("DevOps & AI/ML", "DevOps")
                     .replaceAll(" ", "-") === category,
@@ -72,7 +71,7 @@ const filteredIconsData =
           filteredIconsData.map((icon) => {
             const DynamicIcon = DI[generateIconCompName(icon.name)];
             return (
-              <div class="w-full h-32 border border-zinc-800 rounded-lg flex flex-col items-center justify-center gap-2">
+              <div class="w-full h-32 border border-zinc-800 rounded-xl flex flex-col items-center justify-center gap-2">
                 <DynamicIcon size={50} />
                 <p>{icon.name}</p>
               </div>
