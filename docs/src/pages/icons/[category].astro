@@ -1,9 +1,8 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import { SearchIcon } from "lucide-react";
-import DI from "developer-icons";
+import { IconsList } from "@/components/iconsList";
 import { categoriesData, iconsData } from "../../../../lib/iconsData";
-import { generateIconCompName } from "../../../../lib/utils";
+import type { Category as CategoryType } from "../../../../lib/iconsData";
 import { cn, publicBaseUrl } from "@/lib/utils";
 
 export function getStaticPaths() {
@@ -17,7 +16,6 @@ export function getStaticPaths() {
 }
 
 const { category } = Astro.params;
-console.log(category);
 
 // Filter iconsData based on the selected category
 const filteredIconsData =
@@ -25,7 +23,9 @@ const filteredIconsData =
     ? iconsData
     : iconsData.filter((icon) =>
         icon.categories.includes(
-          category.replace("DevOps", "DevOps & AI/ML").replaceAll("-", " ")
+          category
+            .replace("DevOps", "DevOps & AI/ML")
+            .replaceAll("-", " ") as CategoryType
         )
       );
 ---
@@ -54,31 +54,7 @@ const filteredIconsData =
         ))
       }
     </aside>
-    <section class="w-full flex flex-col gap-3">
-      <div class="relative w-full">
-        <SearchIcon
-          className="absolute top-1/2 left-3 -translate-y-1/2"
-          size={16}
-        />
-        <input
-          type="text"
-          placeholder="Search developer icons"
-          class="w-full p-2 px-5 pl-10 rounded-xl bg-transparent border border-zinc-800 placeholder:text-zinc-500"
-        />
-      </div>
-      <div class="grid grid-cols-auto-fit gap-4 overflow-auto pr-1">
-        {
-          filteredIconsData.map((icon) => {
-            const DynamicIcon = DI[generateIconCompName(icon.name)];
-            return (
-              <div class="w-full h-32 border border-zinc-800 rounded-xl flex flex-col items-center justify-center gap-2">
-                <DynamicIcon size={50} />
-                <p>{icon.name}</p>
-              </div>
-            );
-          })
-        }
-      </div>
-    </section>
+
+    <IconsList iconsData={filteredIconsData} client:load />
   </main>
 </Layout>
