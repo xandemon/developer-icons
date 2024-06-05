@@ -1,0 +1,60 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+
+  &:not(:first-child) {
+    margin-top: 1.5rem;
+  }
+}
+
+h1 {
+  font-size: 1.75rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+p {
+  line-height: 1.75;
+
+  a {
+    color: #0284c7;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  code {
+    padding: 2px 6px;
+    border-radius: 4px;
+    background-color: #24292e;
+  }
+}
+
+pre {
+  padding: 12px;
+  border-radius: 8px;
+}
+
+ul {
+  list-style: disc;
+  list-style-position: inside;
+}
+
+li {
+  padding-bottom: 8px;
+
+  strong {
+    padding-right: 4px;
+  }
+}

@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar.astro";
 import { cn, publicBaseUrl } from "@/lib/utils";
 import "@fontsource-variable/noto-sans";
 import "../styles/globals.css";
+import "../styles/docs.css";
 
 interface Props {
   title: string;
@@ -36,7 +37,7 @@ console.log(docs, props);
     <Navbar />
     <Container className="items-stretch justify-start min-h-[calc(100vh-78px)]">
       <aside
-        class="w-1/4 flex flex-col items-start justify-start gap-3 p-4 border-r border-zinc-800"
+        class="w-1/5 min-w-[20%] flex flex-col items-start justify-start gap-3 p-4 border-r border-zinc-800"
       >
         {
           docs.map((doc) => (
