@@ -1,0 +1,66 @@
+---
+import Container from "@/components/Container.astro";
+import Navbar from "@/components/Navbar.astro";
+import { cn, publicBaseUrl } from "@/lib/utils";
+import "@fontsource-variable/noto-sans";
+import "../styles/globals.css";
+import "../styles/docs.css";
+
+interface Props {
+  title: string;
+  frontmatter: {
+    title: string;
+  };
+}
+
+const props = Astro.props;
+
+const docs = await Astro.glob("../pages/docs/*.md");
+console.log(docs, props);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Ready-to-use beautiful tech stack icon components for developers"
+    />
+    <meta name="viewport" content="width=device-width" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href={`${publicBaseUrl}/favicon.svg`}
+    />
+    <meta name="generator" content={Astro.generator} />
+
+    <title>{props.frontmatter.title}</title>
+  </head>
+  <body class="text-zinc-300 bg-zinc-900 min-h-screen">
+    <Navbar />
+    <Container className="items-stretch justify-start min-h-[calc(100vh-78px)]">
+      <aside
+        class="w-1/5 min-w-[20%] flex flex-col items-start justify-start gap-3 p-4 border-r border-zinc-800"
+      >
+        {
+          docs.map((doc) => (
+            <a
+              href={doc.url}
+              class={cn(
+                "w-full rounded-lg hover:bg-zinc-800 px-4 py-2 cursor-pointer font-medium",
+                {
+                  "bg-sky-700 bg-opacity-90 hover:bg-sky-700 hover:bg-opacity-90 text-zinc-300":
+                    props.frontmatter.title === doc.frontmatter.title,
+                }
+              )}
+            >
+              {doc.frontmatter.title}
+            </a>
+          ))
+        }
+      </aside>
+      <div class="flex flex-col gap-4 p-6"><slot /></div>
+    </Container>
+  </body>
+</html>
