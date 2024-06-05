@@ -8,6 +8,9 @@ import "../styles/docs.css";
 
 interface Props {
   title: string;
+  frontmatter: {
+    title: string;
+  };
 }
 
 const props = Astro.props;
@@ -31,6 +34,7 @@ console.log(docs, props);
       href={`${publicBaseUrl}/favicon.svg`}
     />
     <meta name="generator" content={Astro.generator} />
+
     <title>{props.frontmatter.title}</title>
   </head>
   <body class="text-zinc-300 bg-zinc-900 min-h-screen">
