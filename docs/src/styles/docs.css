@@ -4,11 +4,27 @@ h3,
 h4,
 h5,
 h6 {
+  width: 100%;
   font-weight: 700;
-  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
 
   &:not(:first-child) {
     margin-top: 1.5rem;
+  }
+}
+
+h1,
+h2,
+h3 {
+  border-bottom: 2px solid #44444444;
+}
+
+h4,
+h5,
+h6 {
+  padding-bottom: 0;
+  &:not(:first-child) {
+    margin-top: 0.4rem;
   }
 }
 
