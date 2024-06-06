@@ -1,6 +1,7 @@
 ---
 layout: ../../layouts/DocsLayout.astro
 title: Usage Guide
+order: 2
 ---
 
 # 🚀 Usage Guide

@@ -1,6 +1,7 @@
 ---
 layout: ../../layouts/DocsLayout.astro
 title: Contributing
+order: 4
 ---
 
 # 🌟 Contributing Guidelines

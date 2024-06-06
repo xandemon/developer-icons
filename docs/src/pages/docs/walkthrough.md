@@ -1,6 +1,7 @@
 ---
 layout: ../../layouts/DocsLayout.astro
 title: Walkthrough
+order: 3
 ---
 
 # 📚 Project Walkthrough
