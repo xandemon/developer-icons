@@ -7,6 +7,8 @@ title: Contributing
 
 Thank you for considering contributing to **Developer Icons**! We welcome contributions of all kinds, whether you're looking to add new icons, improve existing ones, or enhance the overall project.
 
+To better understand the project before contributing, you should refer to the [project walkthrough](https://xandemon.github.io/developer-icons/docs/walkthrough) first.
+
 ## 🚀 How to Contribute
 
 #### 1. Fork the Repository
