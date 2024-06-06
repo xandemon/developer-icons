@@ -10,12 +10,14 @@ interface Props {
   title: string;
   frontmatter: {
     title: string;
+    order: number;
   };
 }
 
 const props = Astro.props;
 
 const docs = await Astro.glob("../pages/docs/*.md");
+docs.sort((a, b) => a.frontmatter.order - b.frontmatter.order);
 console.log(docs, props);
 ---
 

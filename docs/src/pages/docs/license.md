@@ -1,6 +1,7 @@
 ---
 layout: ../../layouts/DocsLayout.astro
 title: License
+order: 5
 ---
 
 # License

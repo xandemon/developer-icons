@@ -1,6 +1,7 @@
 ---
 layout: ../../layouts/DocsLayout.astro
 title: Introduction
+order: 1
 ---
 
 # Introduction
