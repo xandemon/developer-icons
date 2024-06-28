@@ -25,3 +25,4 @@ dist-ssr
 
 #lib
 lib/icons/*
+lib/sortedData.json

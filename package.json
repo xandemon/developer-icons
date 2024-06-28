@@ -37,6 +37,7 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "prePublishOnly": "npm run build",
+    "sort:data": "tsx ./lib/scripts/sortData.ts",
     "optimize-svgs": "svgo -f ./icons/raw -o ./icons && rimraf --glob icons/raw/*"
   },
   "peerDependencies": {
