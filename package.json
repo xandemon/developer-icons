@@ -1,7 +1,7 @@
 {
   "name": "developer-icons",
   "description": "Ready-to-use high-quality customizable tech icons - made for the developers",
-  "version": "4.0.1",
+  "version": "4.1.1",
   "type": "module",
   "homepage": "https://xandemon.github.io/developer-icons",
   "repository": {
@@ -37,6 +37,7 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "prePublishOnly": "npm run build",
+    "sort:data": "tsx ./lib/scripts/sortData.ts",
     "optimize-svgs": "svgo -f ./icons/raw -o ./icons && rimraf --glob icons/raw/*"
   },
   "peerDependencies": {
