@@ -40,13 +40,13 @@ const features = [
   {
     features.map((feature) => (
       <div class="flex flex-col gap-3 bg-gradient-to-br from-zinc-800 to-[#27272a77] p-5 rounded-xl">
-        <div class="p-4 bg-zinc-900 rounded-lg w-fit text-sky-500">
-          {feature.title === "Highly Optimized" && <ShieldCheck />}
-          {feature.title === "Customizable" && <Pickaxe />}
-          {feature.title === "Perfectly Scalable" && <Scaling />}
-          {feature.title === "Consistent Icons" && <Fingerprint />}
-          {feature.title === "Various Variants" && <Shapes />}
-          {feature.title === "Free & Open-Source" && <PackageOpen />}
+        <div class="p-3 bg-zinc-900 rounded-lg w-fit text-2xl text-sky-500">
+          {feature.title === "Highly Optimized" && "⚡"}
+          {feature.title === "Customizable" && "🎨"}
+          {feature.title === "Perfectly Scalable" && "🚀"}
+          {feature.title === "Consistent Icons" && "🎯"}
+          {feature.title === "Various Variants" && "🌗"}
+          {feature.title === "Free & Open-Source" && "⭐"}
         </div>
         <h3 class="text-lg font-semibold">{feature.title}</h3>
         <p class=" opacity-80">{feature.desc}</p>

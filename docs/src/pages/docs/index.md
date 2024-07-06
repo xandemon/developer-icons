@@ -12,8 +12,8 @@ Welcome to **`developer-icons`**, a collection of high-quality, customizable tec
 
 - ⚡**Highly optimized:** Icons are optimized for performance and size. They are designed to be as small as possible while maintaining the quality.
 - 🎨**Customizable:** Cusomizations are available for all icons. You can change the size, color, stroke width, and much more.
-- 🔍**Perfectly scalable:** Icons are designed to be properly scaled to any size without compromising the quality.
-- 🔄**Consistent icons:** No more dealing with inconsistent styles and designs. All icons are designed with a pre-defined set of rules.
+- 🚀**Perfectly scalable:** Icons are designed to be properly scaled to any size without compromising the quality.
+- 🎯**Consistent icons:** No more dealing with inconsistent styles and designs. All icons are designed with a pre-defined set of rules.
 - 🌗**Various variants:** Icons come with their own set of families such as light and dark mode, wordmark, and other variants.
 - ⭐**Free & open-source:** Completely free and open-source with license. No need to worry about privately hidden malicious code and be a contributor yourself.
 
