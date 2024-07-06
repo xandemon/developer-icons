@@ -1,4 +1,4 @@
-import { INode, parseSync } from "svgson";
+import { INode, parseSync, stringify } from "svgson";
 import { PluginConfig, optimize } from "svgo";
 import { capitalizeFirstletter } from "./utils";
 import svgoConfig from "../svgo.config.mjs";
@@ -23,7 +23,17 @@ export const createDeveloperIcon = (
 
   const svgObject = parseSync(optimizedSvg, { camelcase: true });
   const sanitizedSvgObject = sanitizeStyles(svgObject);
-  const children = sanitizedSvgObject.children.map(stringifyWithStyles);
+  const children = sanitizedSvgObject.children.map((child) =>
+    stringify(child, {
+      transformAttr(key, value) {
+        if (key === "style" && typeof value === "object") {
+          return `${key}={${JSON.stringify(value)}}`;
+        } else {
+          return `${key}=${JSON.stringify(value)}`;
+        }
+      },
+    })
+  );
 
   return `import { createElement } from 'react';\nimport {Icon, DeveloperIconProps} from '../icon';\nexport const ${iconName} = (props: DeveloperIconProps) => createElement(Icon, {...${JSON.stringify(
     sanitizedSvgObject.attributes
@@ -59,26 +69,4 @@ const sanitizeStyles = (svgObject: INode) => {
     modifiedSvgObject.children = modifiedSvgObject.children.map(sanitizeStyles);
   }
   return modifiedSvgObject;
-};
-
-const stringifyWithStyles = (node: INode): string => {
-  const attrs = Object.entries(node.attributes).reduce((acc, [key, value]) => {
-    if (key === "style" && typeof value === "object") {
-      acc[key] = `{${JSON.stringify(value)}}`;
-    } else {
-      acc[key] = JSON.stringify(value);
-    }
-    return acc;
-  }, {} as Record<string, string>);
-
-  const attrString = Object.entries(attrs)
-    .map(([key, value]) => `${key}=${value}`)
-    .join(" ");
-
-  if (node.children && node.children.length) {
-    const childrenString = node.children.map(stringifyWithStyles).join(",");
-    return `<${node.name} ${attrString}>${childrenString}</${node.name}>`;
-  } else {
-    return `<${node.name} ${attrString}/>`;
-  }
 };
