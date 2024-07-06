@@ -1513,7 +1513,7 @@ export const iconsData: IconDataType[] = [
   {
     id: "reddit-wordmark",
     name: "Reddit Wordmark",
-    path: "icons/reddi-wordmarkt.svg",
+    path: "icons/reddit-wordmark.svg",
     categories: ["Media"],
     keywords: ["reddit", "social", "community"],
     url: "https://reddit.com",
