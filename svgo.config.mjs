@@ -11,5 +11,18 @@ export default {
     },
     "removeDimensions",
     "convertStyleToAttrs",
+    {
+      name: "removeClass",
+      description: "Remove class attributes",
+      fn: () => {
+        return {
+          element: {
+            enter: (node) => {
+              delete node.attributes.class;
+            },
+          },
+        };
+      },
+    },
   ],
 };
