@@ -2,6 +2,8 @@
 
 Welcome to **`developer-icons`**, a collection of high-quality, customizable tech icons designed for developers and designers. With full TypeScript support, these icons are perfect for use in any React or Next.js project. Alternatively, download the icons in image formats for your design needs directly from our [official website](https://xandemon.github.io/developer-icons/ "Homepage | Developer Icons").
 
+![Developer Icons Cover Image](/public/cover-image.webp "Developer Icons")
+
 ## Features
 
 - ⚡**Highly optimized:** Icons are optimized for performance and size. They are designed to be as small as possible while maintaining the quality.
