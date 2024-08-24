@@ -1,5 +1,5 @@
 import "./App.css";
-import { InstagramIcon, ReactIcon } from "../dist/main";
+import { InstagramIcon, ReactIcon, MicrosoftSQLServerIcon } from "../dist/main";
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
           Edit <code>playground/App.tsx</code> and save to see changes
         </p>
       </div>
+      <MicrosoftSQLServerIcon size={150} />
       <p className="read-the-docs">
         Test around with <i>developer-icons</i> components here while developing
         them
