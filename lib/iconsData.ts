@@ -39,14 +39,6 @@ export const iconsData: IconDataType[] = [
     url: "https://appwrite.io",
   },
   {
-    id: "microsoft-sql-server",
-    name: "Microsoft SQL Server",
-    path: "icons/microsoft-sql-server.svg",
-    categories: ["Database", "Backend"], 
-    keywords: ["microsoft-sql-server", "database", "sql", "microsoft"],
-    url: "https://www.microsoft.com/en-us/sql-server",
-  },
-  {
     id: "arc",
     name: "ARC",
     path: "icons/arc.svg",
@@ -1141,6 +1133,14 @@ export const iconsData: IconDataType[] = [
     categories: ["Companies"],
     keywords: ["microsoft", "software", "technology"],
     url: "https://microsoft.com",
+  },
+  {
+    id: "microsoft-sql-server",
+    name: "Microsoft SQL Server",
+    path: "icons/microsoft-sql-server.svg",
+    categories: ["Database", "Backend"],
+    keywords: ["microsoft-sql-server", "database", "sql", "microsoft"],
+    url: "https://www.microsoft.com/en-us/sql-server",
   },
   {
     id: "miro",
