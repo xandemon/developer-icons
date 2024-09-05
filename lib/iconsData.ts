@@ -407,6 +407,14 @@ export const iconsData: IconDataType[] = [
     url: "https://deno.land",
   },
   {
+    id: "developer-icons",
+    name: "Developer Icons",
+    path: "icons/developer-icons.svg",
+    categories: ["Frontend", "Design"],
+    keywords: ["library", "icons", "react"],
+    url: "https://xandemon.github.io/developer-icons",
+  },
+  {
     id: "digitalocean",
     name: "DigitalOcean",
     path: "icons/digitalocean.svg",
@@ -1110,6 +1118,7 @@ export const iconsData: IconDataType[] = [
     keywords: ["materialui", "ui", "react"],
     url: "https://mui.com",
   },
+
   {
     id: "messenger",
     name: "Messenger",
