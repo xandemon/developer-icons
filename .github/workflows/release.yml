@@ -2,7 +2,6 @@ name: Publish and Release Packages
 
 on:
   push:
-    branches: ["main"]
     tags:
       - "v*.*.*"
 
@@ -23,6 +22,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
+          registry-url: "https://registry.npmjs.org/"
           node-version: "20"
         #   cache: pnpm
 
