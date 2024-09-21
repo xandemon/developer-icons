@@ -1,9 +1,14 @@
-name: Publish and Release Packages
+name: Publish NPM Package and Create Release
 
 on:
   push:
     tags:
       - "v*.*.*"
+
+permissions:
+  contents: write
+  packages: write
+  id-token: write
 
 jobs:
   release:
@@ -41,7 +46,7 @@ jobs:
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: ${{ github.ref }}
+          tag_name: ${{ github.ref_name }}
           #   body: |
           #     Changes in this release:
           #     - New version published to npm: ${{ github.ref }}
