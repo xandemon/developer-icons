@@ -1,0 +1,51 @@
+name: Publish and Release Packages
+
+on:
+  push:
+    branches: ["main"]
+    tags:
+      - "v*.*.*"
+
+jobs:
+  release:
+    name: Create Release and Publish NPM
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      #   - name: Install pnpm
+      #     uses: pnpm/action-setup@v4
+      #     with:
+      #       version: 9
+      #       run_install: false
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+        #   cache: pnpm
+
+      - name: Install dependencies
+        run: npm install
+        # run: pnpm install --frozen-lockfile
+
+      - name: Build the package
+        run: npm run build
+
+      - name: Publish to NPM
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ github.ref }}
+          #   body: |
+          #     Changes in this release:
+          #     - New version published to npm: ${{ github.ref }}
+          files: |
+            dist/*.js
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
