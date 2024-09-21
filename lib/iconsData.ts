@@ -1866,7 +1866,7 @@ export const iconsData: IconDataType[] = [
   {
     id: "tRPC",
     name: "tRPC",
-    path: "icons/trpc.svg",
+    path: "icons/tRPC.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["trpc", "typescript", "rpc"],
     url: "https://trpc.io",
