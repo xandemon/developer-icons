@@ -1,5 +1,5 @@
 import "./App.css";
-import { InstagramIcon, ReactIcon, DeveloperIconsIcon } from "../dist/main";
+import { InstagramIcon, ReactIcon, DeveloperIconsIcon, RustDarkIcon, TensorflowIcon, CIcon, FlaskDarkIcon, GitHubDarkIcon } from "../dist/main";
 
 function App() {
   return (
@@ -8,6 +8,11 @@ function App() {
         <ReactIcon size={150} />
         <InstagramIcon size={150} />
         <DeveloperIconsIcon size={150} />
+        <RustDarkIcon size={150} />
+        <CIcon size={150} />
+        <FlaskDarkIcon size={150} />
+        <GitHubDarkIcon size={150} />
+        <TensorflowIcon size={150} />
       </div>
       <h1>Developer-Icons Playground</h1>
       <div className="card">
