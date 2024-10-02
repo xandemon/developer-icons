@@ -249,7 +249,7 @@ export const iconsData: IconDataType[] = [
   {
     id: "c",
     name: "C",
-    path: "icons/C.svg",
+    path: "icons/c.svg",
     categories: ["Languages"],
     keywords: ["c", "programming"],
     url: "https://devdocs.io/c/",
@@ -642,7 +642,7 @@ export const iconsData: IconDataType[] = [
     id: "flask-dark",
     name: "Flask Dark",
     path: "icons/flask-dark.svg",
-    categories: ["Browser"],
+    categories: ["Backend"],
     keywords: ["flask-dark", "python", "web"],
     url: "https://palletsprojects.com/p/flask/",
   },
