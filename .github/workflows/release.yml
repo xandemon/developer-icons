@@ -47,6 +47,7 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           tag_name: ${{ github.ref_name }}
+          draft: true
           #   body: |
           #     Changes in this release:
           #     - New version published to npm: ${{ github.ref }}
