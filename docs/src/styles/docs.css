@@ -58,13 +58,23 @@ p {
 }
 
 pre {
-  padding: 12px;
+  margin: 4px 0;
+  padding: 8px 12px;
   border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+ol, ul {
+  list-style-position: outside;
+  margin-left: 1.5rem;
+}
+
+ol {
+  list-style-type: decimal;
 }
 
 ul {
-  list-style: disc;
-  list-style-position: inside;
+  list-style-type: disc;
 }
 
 li {
@@ -73,4 +83,16 @@ li {
   strong {
     padding-right: 4px;
   }
+}
+
+.contributing-body ol, .contributing-body ul {
+  @apply pt-2;
+}
+
+.contributing-body a {
+  @apply text-blue-300 font-medium;
+}
+
+.contributing-body a:hover {
+  @apply text-blue-400 underline;
 }

@@ -16,9 +16,13 @@ interface Props {
 
 const props = Astro.props;
 
-const docs = await Astro.glob("../pages/docs/*.md");
-docs.sort((a, b) => a.frontmatter.order - b.frontmatter.order);
-console.log(docs, props);
+const docs = await Astro.glob("../pages/docs/*.{astro,md}");
+const flattenedDocs = docs.map((doc) =>
+  "frontmatter" in doc
+    ? doc
+    : { ...doc, frontmatter: { title: "Contributing", order: 4 } }
+);
+flattenedDocs.sort((a, b) => a.frontmatter.order - b.frontmatter.order);
 ---
 
 <!doctype html>
@@ -46,7 +50,7 @@ console.log(docs, props);
         class="w-1/5 min-w-[20%] flex flex-col items-start justify-start gap-3 p-4 border-r border-zinc-800"
       >
         {
-          docs.map((doc) => (
+          flattenedDocs.map((doc) => (
             <a
               href={doc.url}
               class={cn(
