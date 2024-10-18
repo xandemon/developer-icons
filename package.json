@@ -6,7 +6,7 @@
   "homepage": "https://xandemon.github.io/developer-icons",
   "repository": {
     "type": "git",
-    "url": "https://github.com/xandemon/developer-icons",
+    "url": "git+https://github.com/xandemon/developer-icons.git",
     "directory": ""
   },
   "author": "xandemon",
