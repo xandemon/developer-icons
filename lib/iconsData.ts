@@ -115,7 +115,7 @@ export const iconsData: IconDataType[] = [
     name: "AVA",
     path: "icons/avajs.svg",
     categories: ["DevOps & AI/ML"],
-    keywords: ["avajs", "testing", "javascript"],
+    keywords: ["avajs", "testing", "javascript", "js"],
     url: "https://ava.li",
   },
   {
@@ -155,7 +155,7 @@ export const iconsData: IconDataType[] = [
     name: "Babel",
     path: "icons/babel.svg",
     categories: ["DevOps & AI/ML"],
-    keywords: ["babel", "javascript", "compiler"],
+    keywords: ["babel", "javascript", "js", "compiler"],
     url: "https://babeljs.io",
   },
   {
@@ -243,7 +243,7 @@ export const iconsData: IconDataType[] = [
     name: "Bun.js",
     path: "icons/bunjs.svg",
     categories: ["DevOps & AI/ML"],
-    keywords: ["bunjs", "javascript", "runtime"],
+    keywords: ["bunjs", "javascript", "js", "runtime"],
     url: "https://bun.sh",
   },
   {
@@ -411,7 +411,7 @@ export const iconsData: IconDataType[] = [
     name: "Cypress",
     path: "icons/cypress.svg",
     categories: ["DevOps & AI/ML"],
-    keywords: ["cypress", "testing", "javascript"],
+    keywords: ["cypress", "testing", "javascript", "js"],
     url: "https://cypress.io",
   },
   {
@@ -443,7 +443,7 @@ export const iconsData: IconDataType[] = [
     name: "Deno",
     path: "icons/deno.svg",
     categories: ["DevOps & AI/ML"],
-    keywords: ["deno", "javascript", "typescript"],
+    keywords: ["deno", "javascript", "js", "typescript"],
     url: "https://deno.land",
   },
   {
@@ -571,7 +571,7 @@ export const iconsData: IconDataType[] = [
     name: "esbuild",
     path: "icons/esbuild.svg",
     categories: ["DevOps & AI/ML"],
-    keywords: ["esbuild", "javascript", "builder"],
+    keywords: ["esbuild", "javascript", "js", "builder"],
     url: "https://esbuild.github.io",
   },
   {
@@ -579,7 +579,7 @@ export const iconsData: IconDataType[] = [
     name: "ESLint",
     path: "icons/eslint.svg",
     categories: ["DevOps & AI/ML"],
-    keywords: ["eslint", "javascript", "linting"],
+    keywords: ["eslint", "javascript", "js", "linting"],
     url: "https://eslint.org",
   },
   {
@@ -587,7 +587,7 @@ export const iconsData: IconDataType[] = [
     name: "Express.js Dark",
     path: "icons/expressjs-dark.svg",
     categories: ["Backend"],
-    keywords: ["expressjs", "javascript", "framework", "dark"],
+    keywords: ["expressjs", "javascript", "js", "framework", "dark"],
     url: "https://expressjs.com",
   },
   {
@@ -595,7 +595,7 @@ export const iconsData: IconDataType[] = [
     name: "Express.js Light",
     path: "icons/expressjs-light.svg",
     categories: ["Backend"],
-    keywords: ["expressjs", "javascript", "framework", "light"],
+    keywords: ["expressjs", "javascript", "js", "framework", "light"],
     url: "https://expressjs.com",
   },
   {
@@ -811,7 +811,7 @@ export const iconsData: IconDataType[] = [
     name: "Grunt.js",
     path: "icons/gruntjs.svg",
     categories: ["DevOps & AI/ML"],
-    keywords: ["gruntjs", "javascript", "task"],
+    keywords: ["gruntjs", "javascript", "js", "task"],
     url: "https://gruntjs.com",
   },
   {
@@ -819,7 +819,7 @@ export const iconsData: IconDataType[] = [
     name: "Gulp",
     path: "icons/gulp.svg",
     categories: ["DevOps & AI/ML"],
-    keywords: ["gulp", "javascript", "task"],
+    keywords: ["gulp", "javascript", "js", "task"],
     url: "https://gulpjs.com",
   },
   {
@@ -979,7 +979,7 @@ export const iconsData: IconDataType[] = [
     name: "JavaScript",
     path: "icons/javascript.svg",
     categories: ["Languages"],
-    keywords: ["javascript", "programming", "web"],
+    keywords: ["javascript", "js", "programming", "web"],
     url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
   },
   {
@@ -987,7 +987,7 @@ export const iconsData: IconDataType[] = [
     name: "Jest",
     path: "icons/jest.svg",
     categories: ["DevOps & AI/ML"],
-    keywords: ["jest", "testing", "javascript"],
+    keywords: ["jest", "testing", "javascript", "js"],
     url: "https://jestjs.io",
   },
   {
@@ -1003,7 +1003,7 @@ export const iconsData: IconDataType[] = [
     name: "jQuery",
     path: "icons/jquery.svg",
     categories: ["Frontend"],
-    keywords: ["jquery", "javascript", "library"],
+    keywords: ["jquery", "javascript", "js", "library"],
     url: "https://jquery.com",
   },
   {
@@ -1011,7 +1011,7 @@ export const iconsData: IconDataType[] = [
     name: "JSLint",
     path: "icons/jslint.svg",
     categories: ["DevOps & AI/ML"],
-    keywords: ["jslint", "javascript", "linting"],
+    keywords: ["jslint", "javascript", "js", "linting"],
     url: "https://jslint.com",
   },
   {
@@ -1091,7 +1091,7 @@ export const iconsData: IconDataType[] = [
     name: "Lit",
     path: "icons/lit.svg",
     categories: ["Frontend"],
-    keywords: ["lit", "web components", "javascript"],
+    keywords: ["lit", "web components", "javascript", "js"],
     url: "https://lit.dev",
   },
   {
@@ -1147,7 +1147,7 @@ export const iconsData: IconDataType[] = [
     name: "Marionette",
     path: "icons/marionette.svg",
     categories: ["Frontend"],
-    keywords: ["marionette", "javascript", "mvc"],
+    keywords: ["marionette", "javascript", "js", "mvc"],
     url: "https://marionettejs.com",
   },
   {
@@ -1220,7 +1220,7 @@ export const iconsData: IconDataType[] = [
     name: "MochaJS",
     path: "icons/mochajs.svg",
     categories: ["DevOps & AI/ML"],
-    keywords: ["mochajs", "testing", "javascript"],
+    keywords: ["mochajs", "testing", "javascript", "js"],
     url: "https://mochajs.org",
   },
   {
@@ -1260,7 +1260,7 @@ export const iconsData: IconDataType[] = [
     name: "NestJS",
     path: "icons/nestjs.svg",
     categories: ["Backend"],
-    keywords: ["nestjs", "nodejs", "typescript"],
+    keywords: ["nestjs", "nodejs", "typescript", "js"],
     url: "https://nestjs.com",
   },
   {
@@ -1308,7 +1308,7 @@ export const iconsData: IconDataType[] = [
     name: "Node.js",
     path: "icons/nodejs.svg",
     categories: ["Backend"],
-    keywords: ["nodejs", "javascript", "server"],
+    keywords: ["nodejs", "javascript", "js", "server"],
     url: "https://nodejs.org",
   },
   {
@@ -1332,7 +1332,7 @@ export const iconsData: IconDataType[] = [
     name: "NPM Wordmark",
     path: "icons/npm-wordmark.svg",
     categories: ["DevOps & AI/ML"],
-    keywords: ["npm-wordmark", "npm", "javascript"],
+    keywords: ["npm-wordmark", "npm", "javascript", "js"],
     url: "https://npmjs.com",
   },
   {
@@ -1572,7 +1572,7 @@ export const iconsData: IconDataType[] = [
     name: "React",
     path: "icons/reactjs.svg",
     categories: ["Frontend"],
-    keywords: ["reactjs", "ui", "javascript"],
+    keywords: ["reactjs", "ui", "javascript", "js"],
     url: "https://reactjs.org",
   },
   {
@@ -1660,7 +1660,7 @@ export const iconsData: IconDataType[] = [
     name: "Rollup",
     path: "icons/rollup.svg",
     categories: ["DevOps & AI/ML"],
-    keywords: ["rollup", "javascript", "bundler"],
+    keywords: ["rollup", "javascript", "js", "bundler"],
     url: "https://rollupjs.org",
   },
   {
@@ -1956,7 +1956,7 @@ export const iconsData: IconDataType[] = [
     name: "TypeScript",
     path: "icons/typescript.svg",
     categories: ["Languages"],
-    keywords: ["typescript", "javascript", "types"],
+    keywords: ["typescript", "javascript", "js", "ts", "types"],
     url: "https://typescriptlang.org",
   },
   {
@@ -1972,7 +1972,7 @@ export const iconsData: IconDataType[] = [
     name: "Un.js",
     path: "icons/unjs.svg",
     categories: ["Frontend"],
-    keywords: ["unjs", "javascript", "modern"],
+    keywords: ["unjs", "javascript", "js", "modern"],
     url: "https://unjs.io",
   },
   {
@@ -2068,7 +2068,7 @@ export const iconsData: IconDataType[] = [
     name: "Vitest",
     path: "icons/vitest.svg",
     categories: ["DevOps & AI/ML"],
-    keywords: ["vitest", "testing", "javascript"],
+    keywords: ["vitest", "testing", "javascript", "js"],
     url: "https://vitest.dev",
   },
   {
@@ -2108,7 +2108,7 @@ export const iconsData: IconDataType[] = [
     name: "Webpack",
     path: "icons/webpack.svg",
     categories: ["DevOps & AI/ML"],
-    keywords: ["webpack", "javascript", "bundler"],
+    keywords: ["webpack", "javascript", "js", "bundler"],
     url: "https://webpack.js.org",
   },
   {
