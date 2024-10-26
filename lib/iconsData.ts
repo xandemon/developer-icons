@@ -2176,6 +2176,14 @@ export const iconsData: IconDataType[] = [
     url: "https://youtube.com",
   },
   {
+    id: "zen",
+    name: "Zen",
+    path: "icons/zen.svg",
+    categories: ["Browser", "Productivity"],
+    keywords: ["zen", "browser", "firefox", "open source"],
+    url: "https://zen-browser.app/",
+  },
+  {
     id: "zod",
     name: "Zod",
     path: "icons/zod.svg",
