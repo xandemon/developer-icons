@@ -5,7 +5,8 @@ import type { IconDataType } from "../../../../lib/iconsData";
 import { generateIconCompName } from "../../../../lib/utils";
 import { Badge } from "./badge";
 import { Loader } from "./loader";
-import { downloader, publicBaseUrl } from "@/lib/utils";
+import { downloader } from "@/lib/utils";
+import { publicBaseUrl } from "@/config";
 
 export const IconCard = ({ icon }: { icon: IconDataType }) => {
   const [downloadLoading, setDownloadLoading] = useState(false);

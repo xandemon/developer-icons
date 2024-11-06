@@ -27,13 +27,14 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  VITE_PUBLIC_BASE_URL: "/developer-icons"
   BUILD_PATH: "docs" # default value when not using subfolders
   # BUILD_PATH: subfolder
 
 jobs:
   build:
     name: Build
+    env:
+      PUBLIC_GA_MEASUREMENT_ID: ${{ secrets.PUBLIC_GA_MEASUREMENT_ID }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

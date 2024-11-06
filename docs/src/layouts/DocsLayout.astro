@@ -1,7 +1,8 @@
 ---
 import Container from "@/components/Container.astro";
 import Navbar from "@/components/Navbar.astro";
-import { cn, publicBaseUrl } from "@/lib/utils";
+import { cn } from "@/lib/utils";
+import { publicBaseUrl } from "@/config";
 import "@fontsource-variable/noto-sans";
 import "../styles/globals.css";
 import "../styles/docs.css";
@@ -15,6 +16,7 @@ interface Props {
 }
 
 const props = Astro.props;
+const measurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID;
 
 const docs = await Astro.glob("../pages/docs/*.{astro,md}");
 const flattenedDocs = docs.map((doc) =>
@@ -42,6 +44,20 @@ flattenedDocs.sort((a, b) => a.frontmatter.order - b.frontmatter.order);
     <meta name="generator" content={Astro.generator} />
 
     <title>{props.frontmatter.title}</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      type="text/partytown"
+      src={`https://www.googletagmanager.com/gtag/js?id=${measurementId}`}
+    ></script>
+    <script type="text/partytown" define:vars={{ measurementId }}>
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function gtag() {
+        dataLayer.push(arguments);
+      };
+      gtag("js", new Date());
+      gtag("config", measurementId);
+    </script>
   </head>
   <body class="text-zinc-300 bg-zinc-900 min-h-screen">
     <Navbar />
