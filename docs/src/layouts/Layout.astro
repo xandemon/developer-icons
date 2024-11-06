@@ -28,6 +28,25 @@ const { title } = Astro.props;
     />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      type="text/partytown"
+      src="https://www.googletagmanager.com/gtag/js?id=G-ELYLP3JJDR"></script>
+    <script
+      type="text/partytown"
+      define:vars={{ measurementId: import.meta.env.PUBLIC_GA_MEASUREMENT_ID }}
+    >
+      {
+        `window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "${measurementId}");`;
+      }
+      console.log(measurementId);
+    </script>
   </head>
   <body class="text-zinc-300 bg-zinc-900 min-h-screen">
     <Navbar />

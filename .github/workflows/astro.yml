@@ -34,6 +34,8 @@ env:
 jobs:
   build:
     name: Build
+    env:
+      PUBLIC_GA_MEASUREMENT_ID: ${{ secrets.PUBLIC_GA_MEASUREMENT_ID }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

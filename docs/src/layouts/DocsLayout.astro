@@ -42,6 +42,24 @@ flattenedDocs.sort((a, b) => a.frontmatter.order - b.frontmatter.order);
     <meta name="generator" content={Astro.generator} />
 
     <title>{props.frontmatter.title}</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      type="text/partytown"
+      src="https://www.googletagmanager.com/gtag/js?id=G-ELYLP3JJDR"></script>
+    <script
+      type="text/partytown"
+      define:vars={{ measurementId: import.meta.env.PUBLIC_GA_MEASUREMENT_ID }}
+    >
+      {
+        `window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "${measurementId}");`;
+      }
+    </script>
   </head>
   <body class="text-zinc-300 bg-zinc-900 min-h-screen">
     <Navbar />
