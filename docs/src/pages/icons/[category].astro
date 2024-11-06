@@ -3,7 +3,8 @@ import Layout from "@/layouts/Layout.astro";
 import { IconsList } from "@/components/iconsList";
 import { categoriesData, iconsData } from "../../../../lib/iconsData";
 import type { Category as CategoryType } from "../../../../lib/iconsData";
-import { cn, publicBaseUrl } from "@/lib/utils";
+import { cn } from "@/lib/utils";
+import { publicBaseUrl } from "@/config";
 
 export function getStaticPaths() {
   return ["All", ...categoriesData].map((category) => ({
