@@ -1,23 +1,21 @@
 import "./App.css";
 import {
-  InstagramIcon,
-  ReactIcon,
-  DeveloperIconsIcon,
-  CIcon,
-  GitHubDarkIcon,
-  ZenIcon,
+  Instagram,
+  DeveloperIcons,
+  GitHubDark,
+  Zen,
+  NextJsWordmark,
 } from "../dist/main";
 
 function App() {
   return (
     <>
       <div style={{ display: "flex", alignItems: "center", gap: 30 }}>
-        <ReactIcon size={150} />
-        <InstagramIcon size={150} />
-        <DeveloperIconsIcon size={150} />
-        <CIcon size={150} />
-        <ZenIcon size={150} />
-        <GitHubDarkIcon size={150} />
+        <NextJsWordmark size={150} />
+        <Instagram size={150} />
+        <DeveloperIcons size={150} />
+        <Zen size={150} />
+        <GitHubDark size={150} />
       </div>
       <h1>Developer-Icons Playground</h1>
       <div className="card">

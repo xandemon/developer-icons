@@ -9,14 +9,11 @@ export const mergeClassNames = (defaultClass: string, className?: string) =>
   `${defaultClass} ${className ?? ""}`;
 
 export const generateIconCompName = (initialName: string) => {
-  const rawIconName = initialName
+  const iconName = initialName
     .replace(/#/g, "-sharp")
     .replace(/\+/g, "-plus")
     .split(/[-. ]+/)
     .map((item) => capitalizeFirstletter(item))
     .join("");
-  const iconCompName = rawIconName.includes("Wordmark")
-    ? rawIconName
-    : `${rawIconName}Icon`;
-  return iconCompName as keyof typeof DI;
+  return iconName as keyof typeof DI;
 };
