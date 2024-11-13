@@ -1,7 +1,7 @@
 {
   "name": "developer-icons",
-  "description": "Ready-to-use high-quality customizable tech icons - made for the developers",
-  "version": "5.0.0",
+  "description": "A collection of well-optimized SVG tech logos for developers and designers—customizable, scalable, and free.",
+  "version": "5.0.1",
   "type": "module",
   "homepage": "https://xandemon.github.io/developer-icons",
   "repository": {
@@ -13,6 +13,7 @@
   "license": "MIT",
   "keywords": [
     "developer icons",
+    "tech logos",
     "tech stack icons",
     "programming icons",
     "coding icons",
