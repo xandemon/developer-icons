@@ -31,6 +31,7 @@ flattenedDocs.sort((a, b) => a.frontmatter.order - b.frontmatter.order);
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <title>{props.frontmatter.title}</title>
     <meta
       name="description"
       content="Ready-to-use beautiful tech stack icon components for developers"
@@ -41,9 +42,8 @@ flattenedDocs.sort((a, b) => a.frontmatter.order - b.frontmatter.order);
       type="image/svg+xml"
       href={`${publicBaseUrl}/favicon.svg`}
     />
+    <link rel="sitemap" href={`${publicBaseUrl}/sitemap-index.xml`} />
     <meta name="generator" content={Astro.generator} />
-
-    <title>{props.frontmatter.title}</title>
 
     <!-- Google tag (gtag.js) -->
     <script
