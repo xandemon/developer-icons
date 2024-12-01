@@ -20,28 +20,30 @@ export const IconsList = ({ iconsData }: { iconsData: IconDataType[] }) => {
   );
 
   return (
-    <section className="w-full flex flex-col gap-3">
-      <div className="relative w-full">
-        <SearchIcon
-          className="absolute top-1/2 left-3 -translate-y-1/2"
-          size={16}
-        />
-        <input
-          type="text"
-          placeholder="Search developer icons"
-          className="w-full p-2 px-5 pl-10 rounded-xl bg-transparent border border-zinc-800 placeholder:text-zinc-500 focus:outline-none focus:border-zinc-600"
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.currentTarget.value)}
-        />
-        {!!searchQuery && (
-          <X
-            className="absolute top-1/2 right-3 -translate-y-1/2 text-zinc-500 hover:text-zinc-400 cursor-pointer"
+    <section className="relative w-full flex flex-col h-full max-h-full overflow-scroll">
+      <div className="sticky top-0 bg-zinc-900 pb-3">
+        <div className="relative top-0 w-full">
+          <SearchIcon
+            className="absolute top-1/2 left-3 -translate-y-1/2"
             size={16}
-            onClick={() => setSearchQuery("")}
           />
-        )}
+          <input
+            type="text"
+            placeholder="Search developer icons"
+            className="w-full p-2 px-5 pl-10 rounded-xl bg-transparent border border-zinc-800 placeholder:text-zinc-500 focus:outline-none focus:border-zinc-600"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.currentTarget.value)}
+          />
+          {!!searchQuery && (
+            <X
+              className="absolute top-1/2 right-3 -translate-y-1/2 text-zinc-500 hover:text-zinc-400 cursor-pointer"
+              size={16}
+              onClick={() => setSearchQuery("")}
+            />
+          )}
+        </div>
       </div>
-      <div className="grid grid-cols-auto-fit gap-4 overflow-auto pr-1">
+      <div className="grid grid-cols-auto-fit gap-4 pr-1">
         {filteredIcons.map((icon, index) => (
           <IconCard key={index} icon={icon} />
         ))}

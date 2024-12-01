@@ -33,7 +33,7 @@ export const IconCard = ({ icon }: { icon: IconDataType }) => {
   };
 
   return (
-    <div className="w-full max-w-64 h-44 border border-zinc-800 rounded-xl flex flex-col items-center justify-center gap-2">
+    <div className="w-full h-44 border border-zinc-800 rounded-xl flex flex-col items-center justify-center gap-2">
       <DynamicIcon size={50} />
       <p className="font-semibold">{icon.name}</p>
       <div className="flex items-center gap-1 flex-wrap ">
@@ -53,18 +53,18 @@ export const IconCard = ({ icon }: { icon: IconDataType }) => {
       <div className="flex items-center justify-center gap-3 text-zinc-400">
         <Copy
           size={18}
-          className="hover:text-zinc-300 cursor-pointer"
+          className="hover:text-yellow-300 cursor-pointer"
           onClick={() => copyComponent(icon.name)}
         />
         <Loader loading={downloadLoading} className="w-[18px] h-[18px]">
           <Download
             size={18}
-            className="hover:text-zinc-300 cursor-pointer"
+            className="hover:text-blue-300 cursor-pointer"
             onClick={() => downloadIcon(icon.path)}
           />
         </Loader>
         <a href={icon.url} target="_blank" rel="noreferrer">
-          <Copyright size={18} className="hover:text-zinc-300 cursor-pointer" />
+          <Copyright size={18} className="hover:text-rose-300 cursor-pointer" />
         </a>
       </div>
     </div>
