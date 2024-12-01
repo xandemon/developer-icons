@@ -9,9 +9,7 @@ export default {
     container: {
       center: true,
       padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
+      screens:{}
     },
     extend: {
       fontFamily: {
@@ -32,7 +30,7 @@ export default {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       gridTemplateColumns: {
-        "auto-fit": "repeat(auto-fit, minmax(200px, 1fr))",
+        "auto-fit": "repeat(auto-fit, minmax(230px, 1fr))",
       },
     },
   },

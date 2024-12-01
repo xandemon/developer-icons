@@ -3,42 +3,69 @@ import { GitHubDark, NPM } from "developer-icons";
 import Container from "./Container.astro";
 import { publicBaseUrl } from "@/config";
 import { DisclaimerAlert } from "./disclaimerAlert";
+import { cn } from "@/lib/utils";
 
 const url = Astro.url;
+
+const navLinks = [
+  { title: "Home", href: `/` },
+  { title: "Icons", href: `/icons/All` },
+  { title: "Docs", href: `/docs` },
+];
+
+const matchSamePage = (href: string) => {
+  if (href === "/") return url.pathname === `${publicBaseUrl}/`;
+  const baseLink = href.replace(/^(\/[^/]*).*/g, "$1");
+  return url.pathname.startsWith(publicBaseUrl + baseLink);
+};
 ---
 
-<div class="navbar bg-zinc-900">
-  <Container className="justify-between">
-    <a href={publicBaseUrl} class="flex items-center gap-2">
-      <img src={`${publicBaseUrl}/favicon.svg`} width="30" height="30" />
-      <span class="font-semibold text-lg">Developer Icons</span>
-    </a>
-    <nav
-      class="flex items-center justify-end gap-6 font-medium [&>a:hover]:text-sky-500"
+<div
+  class="navbar flex items-center justify-between py-3 px-8 bg-zinc-900 sticky top-0"
+>
+  <a href={publicBaseUrl} class="flex items-center gap-2">
+    <img
+      src={`${publicBaseUrl}/favicon.svg`}
+      width="30"
+      height="30"
+      alt="Developer Icons Logo"
+    />
+    <span class="font-semibold text-lg">Developer Icons</span>
+  </a>
+  <nav class="flex items-center justify-end gap-6 font-medium">
+    <DisclaimerAlert client:load url={url} />
+
+    <span class="w-[1px] h-4 bg-zinc-700"></span>
+
+    {
+      navLinks.map((link, index) => (
+        <a
+          href={publicBaseUrl + link.href}
+          class={cn(
+            "hover:text-sky-200",
+            matchSamePage(link.href) && "text-sky-500"
+          )}
+        >
+          {link.title}
+        </a>
+      ))
+    }
+
+    <span class="w-[1px] h-4 bg-zinc-700"></span>
+
+    <a
+      href="https://github.com/xandemon/developer-icons"
+      target="_blank"
+      rel="noopener noreferrer"
     >
-      <DisclaimerAlert client:load url={url} />
-
-      <span class="w-[1px] h-4 bg-zinc-700"></span>
-
-      <a href={`${publicBaseUrl}/icons/All`}>Icons</a>
-      <a href={`${publicBaseUrl}/docs`}>Docs</a>
-
-      <span class="w-[1px] h-4 bg-zinc-700"></span>
-
-      <a
-        href="https://github.com/xandemon/developer-icons"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <GitHubDark size={20} className="github" /></a
-      >
-      <a
-        href="https://www.npmjs.com/package/developer-icons"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <NPM size={20} /></a
-      >
-    </nav>
-  </Container>
+      <GitHubDark size={20} className="github" /></a
+    >
+    <a
+      href="https://www.npmjs.com/package/developer-icons"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <NPM size={20} /></a
+    >
+  </nav>
 </div>
