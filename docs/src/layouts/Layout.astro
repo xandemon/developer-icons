@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar.astro";
 import { publicBaseUrl } from "@/config";
 import "@fontsource-variable/noto-sans";
 import "../styles/globals.css";
+import { TooltipProvider } from "@/components/ui/tooltip";
 
 interface Props {
   title: string;
@@ -14,7 +15,7 @@ const measurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <title>{title}</title>
@@ -46,9 +47,11 @@ const measurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID;
     </script>
   </head>
   <body class="text-zinc-300 bg-zinc-900">
-    <Navbar />
-    <Container className="items-start h-[calc(100vh-60px)]">
-      <slot />
-    </Container>
+    <TooltipProvider delayDuration={100}>
+      <Navbar />
+      <Container className="items-start h-[calc(100vh-60px)]">
+        <slot />
+      </Container>
+    </TooltipProvider>
   </body>
 </html>
