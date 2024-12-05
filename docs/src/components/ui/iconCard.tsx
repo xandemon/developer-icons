@@ -1,15 +1,21 @@
 import DI from "developer-icons";
-import { useState } from "react";
+import React, { useEffect, useState, type ReactNode } from "react";
 import { Copy, Copyright, Download } from "lucide-react";
 import type { IconDataType } from "../../../../lib/iconsData";
 import { generateIconCompName } from "../../../../lib/utils";
 import { Badge } from "./badge";
 import { Loader } from "./loader";
-import { downloader } from "@/lib/utils";
+import { cn, downloader } from "@/lib/utils";
 import { publicBaseUrl } from "@/config";
+import { Popover, PopoverContent, PopoverTrigger } from "./popover";
+import { Tooltip, TooltipContent, TooltipTrigger } from "./tooltip";
+
+type ActiveTooltipType = "copy" | "download" | "source" | undefined;
 
 export const IconCard = ({ icon }: { icon: IconDataType }) => {
   const [downloadLoading, setDownloadLoading] = useState(false);
+  const [showCopied, setShowCopied] = useState(false);
+  const [activeTooltip, setActiveTooltip] = useState<ActiveTooltipType>();
 
   const DynamicIcon = DI[generateIconCompName(icon.name)];
 
@@ -32,9 +38,26 @@ export const IconCard = ({ icon }: { icon: IconDataType }) => {
     setDownloadLoading(false);
   };
 
+  useEffect(() => {
+    let copyTimeout: NodeJS.Timeout;
+    if (showCopied) {
+      copyTimeout = setTimeout(() => setShowCopied(false), 2000);
+      return () => copyTimeout && clearTimeout(copyTimeout);
+    }
+  }, [showCopied]);
+
+  useEffect(() => {
+    if (showCopied) {
+      !!activeTooltip && setShowCopied(false);
+    }
+  }, [activeTooltip, showCopied]);
+
   return (
-    <div className="w-full h-44 border border-zinc-800 rounded-xl flex flex-col items-center justify-center gap-2">
-      <DynamicIcon size={50} />
+    <div className="w-full h-44 border border-zinc-800 rounded-xl flex flex-col items-center justify-center gap-2 from-zinc-950/25 to-zinc-950/50 hover:bg-gradient-to-br group">
+      <DynamicIcon
+        size={50}
+        className="group-hover:drop-shadow-[0_4px_4px_rgba(256,256,256,0.1)]"
+      />
       <p className="font-semibold">{icon.name}</p>
       <div className="flex items-center gap-1 flex-wrap ">
         {icon.categories.map((category, index) => (
@@ -50,23 +73,108 @@ export const IconCard = ({ icon }: { icon: IconDataType }) => {
           </a>
         ))}
       </div>
-      <div className="flex items-center justify-center gap-3 text-zinc-400">
-        <Copy
-          size={18}
-          className="hover:text-yellow-300 cursor-pointer"
-          onClick={() => copyComponent(icon.name)}
-        />
+      <div className="flex items-center justify-center gap-2 text-zinc-400">
+        <Popover
+          open={showCopied}
+          onOpenChange={(value) => setShowCopied(value)}
+        >
+          <ActionTooltip
+            trigger={
+              <PopoverTrigger asChild>
+                <span
+                  className="p-1 flex flex-center cursor-pointer hover:text-yellow-300"
+                  onClick={() => copyComponent(icon.name)}
+                >
+                  <Copy size={18} />
+                </span>
+              </PopoverTrigger>
+            }
+            content={"Copy Component"}
+            action={"copy"}
+            activeTooltip={activeTooltip}
+            setActiveTooltip={setActiveTooltip}
+          />
+          <PopoverContent className="max-w-fit rounded-full py-2 text-sm opacity-70">
+            <span className="flex items-center gap-1 w-full">
+              Copied{" "}
+              <strong className="text-sky-300">{`<${generateIconCompName(
+                icon.name
+              )} />`}</strong>
+              🎉
+            </span>
+          </PopoverContent>
+        </Popover>
         <Loader loading={downloadLoading} className="w-[18px] h-[18px]">
-          <Download
-            size={18}
-            className="hover:text-blue-300 cursor-pointer"
-            onClick={() => downloadIcon(icon.path)}
+          <ActionTooltip
+            trigger={
+              <span
+                className="p-1 flex flex-center cursor-pointer hover:text-blue-300"
+                onClick={() => downloadIcon(icon.name)}
+              >
+                <Download size={18} />
+              </span>
+            }
+            content={"Download SVG"}
+            action={"download"}
+            activeTooltip={activeTooltip}
+            setActiveTooltip={setActiveTooltip}
           />
         </Loader>
-        <a href={icon.url} target="_blank" rel="noreferrer">
-          <Copyright size={18} className="hover:text-rose-300 cursor-pointer" />
-        </a>
+        <ActionTooltip
+          trigger={
+            <a
+              href={icon.url}
+              target="_blank"
+              rel="noreferrer"
+              className={cn(
+                "p-1 flex flex-center cursor-pointer hover:text-rose-300",
+                { "pointer-events-none": showCopied }
+              )}
+            >
+              <Copyright size={18} />
+            </a>
+          }
+          content={"Visit Source"}
+          action={"source"}
+          activeTooltip={activeTooltip}
+          setActiveTooltip={setActiveTooltip}
+        />
       </div>
     </div>
+  );
+};
+
+const ActionTooltip = ({
+  trigger,
+  content,
+  action,
+  activeTooltip,
+  setActiveTooltip,
+}: {
+  trigger: ReactNode;
+  content: string | ReactNode;
+  action: ActiveTooltipType;
+  activeTooltip: ActiveTooltipType;
+  setActiveTooltip: React.Dispatch<React.SetStateAction<ActiveTooltipType>>;
+}) => {
+  const closeTooltip = () => setActiveTooltip(undefined);
+
+  return (
+    <Tooltip open={activeTooltip === action}>
+      <TooltipTrigger
+        asChild
+        onClick={closeTooltip}
+        onMouseEnter={() => setActiveTooltip(action)}
+        onMouseLeave={closeTooltip}
+      >
+        {trigger}
+      </TooltipTrigger>
+      <TooltipContent
+        side="bottom"
+        className="max-w-fit rounded-full py-2 px-5 text-sm opacity-75"
+      >
+        {content}
+      </TooltipContent>
+    </Tooltip>
   );
 };
