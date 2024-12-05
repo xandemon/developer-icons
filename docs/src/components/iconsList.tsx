@@ -3,6 +3,7 @@ import { SearchIcon, X } from "lucide-react";
 import type { IconDataType } from "../../../lib/iconsData";
 import { IconCard } from "./ui/iconCard";
 import { useDebounce } from "@/lib/hooks";
+import { TooltipProvider } from "./ui/tooltip";
 
 export const IconsList = ({ iconsData }: { iconsData: IconDataType[] }) => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -43,11 +44,13 @@ export const IconsList = ({ iconsData }: { iconsData: IconDataType[] }) => {
           )}
         </div>
       </div>
-      <div className="grid grid-cols-auto-fit gap-4 pr-1">
-        {filteredIcons.map((icon, index) => (
-          <IconCard key={index} icon={icon} />
-        ))}
-      </div>
+      <TooltipProvider>
+        <div className="grid grid-cols-auto-fit gap-4 pr-1">
+          {filteredIcons.map((icon, index) => (
+            <IconCard key={index} icon={icon} />
+          ))}
+        </div>
+      </TooltipProvider>
     </section>
   );
 };
