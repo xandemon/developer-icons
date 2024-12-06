@@ -52,7 +52,7 @@ In this example, we import `HtmlIcon` and `JavascriptIcon` from the `developer-i
 
 <div style="margin-top: 12px" />
 
-To explore all the available icons, visit our [icons page](https://xandemon.github.io/developer-icons/icons "Icons | Developer Icons").
+To explore all the available icons, visit our [icons page](https://xandemon.github.io/developer-icons/icons/All "Icons | Developer Icons").
 
 <div style="margin-top: 20px">
 Happy coding! 🚀
