@@ -423,6 +423,14 @@ export const iconsData: IconDataType[] = [
     url: "https://crystal-lang.org",
   },
   {
+    id: "css",
+    name: "CSS",
+    path: "icons/css.svg",
+    categories: ["Frontend", "Design"],
+    keywords: ["css", "design", "stylesheets"],
+    url: "https://w3.org/Style/CSS/",
+  },
+  {
     id: "css3",
     name: "CSS3",
     path: "icons/css3.svg",
