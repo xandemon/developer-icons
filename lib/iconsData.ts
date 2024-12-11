@@ -31,6 +31,14 @@ export const iconsData: IconDataType[] = [
     url: "https://www.android.com",
   },
   {
+    id: "angular",
+    name: "Angular",
+    path: "icons/angular.svg",
+    categories: ["Frontend"],
+    keywords: ["angular", "frontend", "typescript"],
+    url: "https://angular.dev",
+  },
+  {
     id: "anthropic",
     name: "Anthropic",
     path: "icons/anthropic.svg",
