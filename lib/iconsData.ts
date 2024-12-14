@@ -215,6 +215,14 @@ export const iconsData: IconDataType[] = [
     url: "https://bing.com",
   },
   {
+    id: "biome",
+    name: "Biome",
+    path: "icons/biome.svg",
+    categories: ["DevOps & AI/ML"],
+    keywords: ["biome", "code", "javascript", "js", "linting"],
+    url: "https://biomejs.dev/",
+  },
+  {
     id: "bitbucket",
     name: "Bitbucket",
     path: "icons/bitbucket.svg",
