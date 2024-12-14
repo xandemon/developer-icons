@@ -1424,6 +1424,14 @@ export const iconsData: IconDataType[] = [
     url: "https://oracle.com",
   },
   {
+    id: "outlook",
+    name: "Outlook",
+    path: "icons/outlook.svg",
+    categories: ["Productivity"],
+    keywords: ["outlook", "email", "microsoft"],
+    url: "https://outlook.live.com",
+  },
+  {
     id: "pandacss",
     name: "Panda CSS",
     path: "icons/pandacss.svg",
