@@ -54,7 +54,7 @@ export const IconCard = ({ icon }: { icon: IconDataType }) => {
   }, [activeTooltip, showCopied]);
 
   return (
-    <div className="w-full h-44 border border-zinc-800 rounded-xl flex flex-col items-center justify-center gap-2 from-zinc-950/25 to-zinc-950/50 hover:bg-gradient-to-br group">
+    <div className="w-full max-w-[300px] h-44 border border-zinc-800 rounded-xl flex flex-col items-center justify-center gap-2 from-zinc-950/25 to-zinc-950/50 hover:bg-gradient-to-br group">
       <DynamicIcon
         size={50}
         className="group-hover:drop-shadow-[0_4px_4px_rgba(256,256,256,0.1)]"
