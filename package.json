@@ -65,7 +65,7 @@
     "tsx": "^4.8.2",
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
-    "vite-plugin-dts": "^3.9.0",
+    "vite-plugin-dts": "^4.3.0",
     "vite-plugin-lib-inject-css": "^2.0.1"
   }
 }
