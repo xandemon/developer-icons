@@ -49,12 +49,13 @@ p {
       text-decoration: underline;
     }
   }
+}
 
-  code {
-    padding: 2px 6px;
-    border-radius: 4px;
-    background-color: #24292e;
-  }
+code:not(pre code) {
+  padding: 2px 6px;
+  border-radius: 4px;
+  background-color: #24292e;
+  font-size: 0.8rem;
 }
 
 pre {
@@ -65,7 +66,8 @@ pre {
   font-size: 0.9rem;
 }
 
-ol, ul {
+ol,
+ul {
   list-style-position: outside;
   margin-left: 1.5rem;
 }
@@ -86,7 +88,8 @@ li {
   }
 }
 
-.contributing-body ol, .contributing-body ul {
+.contributing-body ol,
+.contributing-body ul {
   @apply pt-2;
 }
 
