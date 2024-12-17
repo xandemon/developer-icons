@@ -110,7 +110,7 @@ export const IconCard = ({ icon }: { icon: IconDataType }) => {
             trigger={
               <span
                 className="p-1 flex flex-center cursor-pointer hover:text-blue-300"
-                onClick={() => downloadIcon(icon.name)}
+                onClick={() => downloadIcon(icon.path)}
               >
                 <Download size={18} />
               </span>
