@@ -32,13 +32,13 @@
   ],
   "scripts": {
     "dev:playground": "vite",
-    "dev:docs": "cd docs && npm run dev",
+    "dev:showcase": "cd showcase && npm run dev",
     "clean": "rimraf --glob dist && rimraf --glob lib/icons/*.tsx",
     "build": "npm run clean && tsx ./lib/scripts/build.ts && tsc --p ./tsconfig-build.json && vite build",
-    "build:docs": "cd docs && npm run build",
+    "build:showcase": "cd showcase && npm run build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "preview:docs": "cd docs && npm run preview",
+    "preview:showcase": "cd showcase && npm run preview",
     "prePublishOnly": "npm run build",
     "sort:data": "tsx ./lib/scripts/sortData.ts",
     "optimize-svgs": "svgo -f ./icons/raw -o ./icons && rimraf --glob icons/raw/*"

@@ -28,10 +28,10 @@ Before you begin:
    ```
 3. Install dependencies
    - For the package: `npm install` in `root`
-   - For the docs website: `npm install` in `/docs`
+   - For the showcase website: `npm install` in `/showcase`
 4. Set up your development environment:
    - For the playground: `npm run dev:playground`
-   - For the documentation: `npm run dev:docs`
+   - For the documentation: `npm run dev:showcase`
 
 ## 📝 Submitting Changes
 
