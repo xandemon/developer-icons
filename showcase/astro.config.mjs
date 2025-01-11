@@ -7,7 +7,7 @@ import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 export default defineConfig({
   site: "https://xandemon.github.io",
-  base: "/developer-icons/docs",
+  base: "/developer-icons/showcase",
   publicDir: "./assets",
   integrations: [react(), tailwind({
     applyBaseStyles: false,
