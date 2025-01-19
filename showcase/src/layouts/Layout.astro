@@ -15,7 +15,7 @@ const measurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID;
 ---
 
 <!doctype html>
-<html lang="en" class="dark">
+<html lang="en" class="light">
   <head>
     <meta charset="UTF-8" />
     <title>{title}</title>
@@ -31,22 +31,23 @@ const measurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID;
     />
     <link rel="sitemap" href={`${publicBaseUrl}/sitemap-index.xml`} />
     <meta name="generator" content={Astro.generator} />
-
-    <!-- Google tag (gtag.js) -->
-    <script
-      type="text/partytown"
-      src={`https://www.googletagmanager.com/gtag/js?id=${measurementId}`}
-    ></script>
-    <script type="text/partytown" define:vars={{ measurementId }}>
-      window.dataLayer = window.dataLayer || [];
-      window.gtag = function gtag() {
-        dataLayer.push(arguments);
-      };
-      gtag("js", new Date());
-      gtag("config", measurementId);
-    </script>
+    <!-- <script is:inline>
+      const theme = (() => {
+        if (
+          typeof localStorage !== "undefined" &&
+          localStorage.getItem("theme")
+        ) {
+          return localStorage.getItem("theme");
+        }
+        if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+          return "dark";
+        }
+        return "light";
+      })();
+      document.documentElement.classList.add(theme);
+    </script> -->
   </head>
-  <body class="text-zinc-300 bg-zinc-900">
+  <body class="text-zinc-700 dark:text-zinc-300 bg-zinc-100 dark:bg-zinc-900">
     <TooltipProvider delayDuration={100}>
       <Navbar />
       <Container className="items-start h-[calc(100vh-60px)]">

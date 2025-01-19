@@ -4,5 +4,12 @@
 
 * {
   scrollbar-width: thin;
+}
+
+.light * {
   scrollbar-color: #18181b #27272a;
+}
+
+.dark * {
+    scrollbar-color: #18181b #27272a;
 }

@@ -1,5 +1,5 @@
 ---
-import { GitHubLight, NPM } from "developer-icons";
+import { GitHubDark, GitHubLight, NPM } from "developer-icons";
 import { publicBaseUrl } from "@/config";
 import { DisclaimerAlert } from "./disclaimerAlert";
 import { cn } from "@/lib/utils";
@@ -20,7 +20,7 @@ const matchSamePage = (href: string) => {
 ---
 
 <div
-  class="navbar flex items-center justify-between py-3 px-8 bg-zinc-900 sticky top-0"
+  class="navbar flex items-center justify-between py-3 px-8 bg-zinc-100 dark:bg-zinc-900 sticky top-0"
 >
   <a href={publicBaseUrl} class="flex items-center gap-2">
     <img
@@ -29,19 +29,21 @@ const matchSamePage = (href: string) => {
       height="30"
       alt="Developer Icons Logo"
     />
-    <span class="font-semibold text-lg">Developer Icons</span>
+    <span class="font-semibold text-lg text-zinc-900 dark:text-zinc-100"
+      >Developer Icons</span
+    >
   </a>
   <nav class="flex items-center justify-end gap-6 font-medium">
     <DisclaimerAlert client:load url={url} />
 
-    <span class="w-[1px] h-4 bg-zinc-700"></span>
+    <span class="w-[1px] h-4 bg-zinc-300 dark:bg-zinc-700"></span>
 
     {
       navLinks.map((link, index) => (
         <a
           href={publicBaseUrl + link.href}
           class={cn(
-            "hover:text-sky-200",
+            "hover:text-sky-800 dark:hover:text-sky-200",
             matchSamePage(link.href) && "text-sky-500"
           )}
         >
@@ -50,15 +52,16 @@ const matchSamePage = (href: string) => {
       ))
     }
 
-    <span class="w-[1px] h-4 bg-zinc-700"></span>
+    <span class="w-[1px] h-4 bg-zinc-300 dark:bg-zinc-700"></span>
 
     <a
       href="https://github.com/xandemon/developer-icons"
       target="_blank"
       rel="noopener noreferrer"
     >
-      <GitHubLight size={20} className="github" /></a
-    >
+      <GitHubLight size={20} className="hidden dark:inline-block" />
+      <GitHubDark size={20} className="inline-block dark:hidden" />
+    </a>
     <a
       href="https://www.npmjs.com/package/developer-icons"
       target="_blank"

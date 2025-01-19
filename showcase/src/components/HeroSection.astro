@@ -8,17 +8,21 @@ import { publicBaseUrl } from "@/config";
 <div class="flex items-center justify-between gap-4 w-full py-4">
   <div class="flex flex-col gap-4">
     <Badge className="tracking-widest">🚀 v5.2.4</Badge>
-    <p class="text-5xl font-bold leading-tight">
+    <p
+      class="text-5xl font-bold leading-tight text-zinc-900 dark:text-zinc-100"
+    >
       <span class="text-sky-600">Ready-to-use</span>
       <br />
       customizable tech icons
     </p>
-    <p class="text-xl text-zinc-500 font-medium opacity-80">
+    <p class="text-xl text-zinc-600 dark:text-zinc-500 font-medium">
       No more searching for "<em>transparent</em>" PNGs and SVGs.
     </p>
     <div class="flex items-center gap-3 pt-4">
       <a href={`${publicBaseUrl}/icons/All`}>
-        <Button className="px-5">Browse all icons</Button>
+        <Button className="px-5 bg-sky-500 text-zinc-100 hover:bg-sky-500/90"
+          >Browse all icons</Button
+        >
       </a>
       <a href={`${publicBaseUrl}/docs`}>
         <Button variant="secondary" className="px-5"> Read Docs </Button>
