@@ -93,7 +93,7 @@ flattenedDocs.sort((a, b) => a.frontmatter.order - b.frontmatter.order);
                 className={cn(
                   `w-full rounded-lg px-4 py-2 cursor-pointer justify-start`,
                   {
-                    "bg-transparent text-zinc-600 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-700":
+                    "bg-transparent dark:bg-transparent text-zinc-600 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-700":
                       props.frontmatter.title !== doc.frontmatter.title,
                   }
                 )}

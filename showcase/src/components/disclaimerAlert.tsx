@@ -94,7 +94,12 @@ export const DisclaimerAlert = ({ url }: { url: URL }) => {
         </AlertDialogDescription>
         <AlertDialogFooter>
           <AlertDialogAction asChild>
-            <Button onClick={onDisclaimerUnderstand}>I Understand</Button>
+            <Button
+              className="bg-sky-500 text-zinc-100 hover:bg-sky-500/90"
+              onClick={onDisclaimerUnderstand}
+            >
+              I Understand
+            </Button>
           </AlertDialogAction>
         </AlertDialogFooter>
       </AlertDialogContent>

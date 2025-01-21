@@ -9,7 +9,7 @@ const badgeVariants = cva(
     variants: {
       variant: {
         default:
-          "border-transparent bg-zinc-300 text-zinc-800 hover:bg-zinc-700/80 dark:hover:bg-zinc-300/80 dark:bg-zinc-800 dark:text-zinc-300 dark:hover:bg-zinc-800/80 pl-3 pr-5",
+          "border-transparent bg-zinc-200 text-zinc-800 hover:bg-zinc-300/80 dark:hover:bg-zinc-300/80 dark:bg-zinc-800 dark:text-zinc-300 dark:hover:bg-zinc-800/80 pl-3 pr-5",
         secondary:
           "border-zinc-200 dark:border-zinc-800 bg-zinc-200 dark:bg-zinc-800 bg-opacity-25 text-zinc-950 dark:text-zinc-50 hover:bg-zinc-200/80 dark:hover:bg-zinc-800/80",
         destructive:
