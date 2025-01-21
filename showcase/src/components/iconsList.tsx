@@ -22,7 +22,7 @@ export const IconsList = ({ iconsData }: { iconsData: IconDataType[] }) => {
 
   return (
     <section className="relative w-full flex flex-col h-full max-h-full overflow-scroll">
-      <div className="sticky top-0 bg-zinc-900 pb-3">
+      <div className="sticky top-0 bg-zinc-100 dark:bg-zinc-900 pb-3">
         <div className="relative top-0 w-full">
           <SearchIcon
             className="absolute top-1/2 left-3 -translate-y-1/2"
@@ -31,13 +31,13 @@ export const IconsList = ({ iconsData }: { iconsData: IconDataType[] }) => {
           <input
             type="text"
             placeholder="Search developer icons"
-            className="w-full p-2 px-5 pl-10 rounded-xl bg-transparent border border-zinc-800 placeholder:text-zinc-500 focus:outline-none focus:border-zinc-600"
+            className="w-full p-2 px-5 pl-10 rounded-xl bg-transparent border border-zinc-200 dark:border-zinc-800 placeholder:text-zinc-500 focus:outline-none focus:border-zinc-400 dark:focus:border-zinc-600"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.currentTarget.value)}
           />
           {!!searchQuery && (
             <X
-              className="absolute top-1/2 right-3 -translate-y-1/2 text-zinc-500 hover:text-zinc-400 cursor-pointer"
+              className="absolute top-1/2 right-3 -translate-y-1/2 text-zinc-500 hover:text-zinc-600 dark:hover:text-zinc-400 cursor-pointer"
               size={16}
               onClick={() => setSearchQuery("")}
             />

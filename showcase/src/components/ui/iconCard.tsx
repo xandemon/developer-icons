@@ -54,10 +54,10 @@ export const IconCard = ({ icon }: { icon: IconDataType }) => {
   }, [activeTooltip, showCopied]);
 
   return (
-    <div className="w-full max-w-[300px] h-44 border border-zinc-800 rounded-xl flex flex-col items-center justify-center gap-2 from-zinc-950/25 to-zinc-950/50 hover:bg-gradient-to-br group">
+    <div className="w-full max-w-[300px] h-44 border border-zinc-200 dark:border-zinc-800 rounded-xl flex flex-col items-center justify-center gap-2 from-zinc-200/50 dark:from-zinc-950/25 to-zinc-200/75 dark:to-zinc-950/50 hover:bg-gradient-to-br group">
       <DynamicIcon
         size={50}
-        className="group-hover:drop-shadow-[0_4px_4px_rgba(256,256,256,0.1)]"
+        className="group-hover:drop-shadow-[0_4px_4px_rgba(0,0,0,0.1)] dark:group-hover:drop-shadow-[0_4px_4px_rgba(256,256,256,0.1)]"
       />
       <p className="font-semibold">{icon.name}</p>
       <div className="flex items-center gap-1 flex-wrap ">
@@ -68,13 +68,16 @@ export const IconCard = ({ icon }: { icon: IconDataType }) => {
               .replace("DevOps & AI/ML", "DevOps")
               .replaceAll(" ", "-")}`}
           >
-            <Badge variant={"secondary"} className="font-normal text-xs">
+            <Badge
+              variant={"secondary"}
+              className="font-normal text-xs group-hover:bg-zinc-300"
+            >
               {category}
             </Badge>
           </a>
         ))}
       </div>
-      <div className="flex items-center justify-center gap-2 text-zinc-400">
+      <div className="flex items-center justify-center gap-2 text-zinc-600 dark:text-zinc-400">
         <Popover
           open={showCopied}
           onOpenChange={(value) => setShowCopied(value)}
@@ -83,7 +86,7 @@ export const IconCard = ({ icon }: { icon: IconDataType }) => {
             trigger={
               <PopoverTrigger asChild>
                 <span
-                  className="p-1 flex flex-center cursor-pointer hover:text-yellow-300"
+                  className="p-1 flex flex-center cursor-pointer hover:text-yellow-500 dark:hover:text-yellow-300"
                   onClick={() => copyComponent(icon.name)}
                 >
                   <Copy size={18} />
@@ -98,7 +101,7 @@ export const IconCard = ({ icon }: { icon: IconDataType }) => {
           <PopoverContent className="max-w-fit rounded-full py-2 text-sm opacity-70">
             <span className="flex items-center gap-1 w-full">
               Copied{" "}
-              <strong className="text-sky-300">{`<${generateIconCompName(
+              <strong className="text-sky-500 dark:text-sky-300">{`<${generateIconCompName(
                 icon.name
               )} />`}</strong>
               🎉
@@ -109,7 +112,7 @@ export const IconCard = ({ icon }: { icon: IconDataType }) => {
           <ActionTooltip
             trigger={
               <span
-                className="p-1 flex flex-center cursor-pointer hover:text-blue-300"
+                className="p-1 flex flex-center cursor-pointer hover:text-blue-500 dark:hover:text-blue-300"
                 onClick={() => downloadIcon(icon.path)}
               >
                 <Download size={18} />
@@ -128,7 +131,7 @@ export const IconCard = ({ icon }: { icon: IconDataType }) => {
               target="_blank"
               rel="noreferrer"
               className={cn(
-                "p-1 flex flex-center cursor-pointer hover:text-rose-300",
+                "p-1 flex flex-center cursor-pointer hover:text-rose-500 dark:hover:text-rose-300",
                 { "pointer-events-none": showCopied }
               )}
             >

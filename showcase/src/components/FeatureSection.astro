@@ -39,8 +39,8 @@ const features = [
 <div class="grid grid-cols-3 gap-4">
   {
     features.map((feature) => (
-      <div class="flex flex-col gap-3 bg-gradient-to-br from-zinc-800 to-[#27272a77] p-5 rounded-xl">
-        <div class="p-3 bg-zinc-900 rounded-lg w-fit text-2xl text-sky-500">
+      <div class="flex flex-col gap-3 bg-gradient-to-br from-zinc-200/75 to-zinc-200 dark:from-zinc-800 dark:to-[#27272a77] p-5 rounded-xl">
+        <div class="p-3 bg-white dark:bg-zinc-900 rounded-lg w-fit text-2xl text-sky-500 pointer-events-none">
           {feature.title === "Highly Optimized" && "⚡"}
           {feature.title === "Customizable" && "🎨"}
           {feature.title === "Perfectly Scalable" && "🚀"}
@@ -48,8 +48,10 @@ const features = [
           {feature.title === "Various Variants" && "🌗"}
           {feature.title === "Free & Open-Source" && "⭐"}
         </div>
-        <h3 class="text-lg font-semibold">{feature.title}</h3>
-        <p class=" opacity-80">{feature.desc}</p>
+        <h3 class="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
+          {feature.title}
+        </h3>
+        <p class="text-zinc-700 dark:text-zinc-400">{feature.desc}</p>
       </div>
     ))
   }
