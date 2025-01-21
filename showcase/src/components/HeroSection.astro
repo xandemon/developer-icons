@@ -7,7 +7,7 @@ import { publicBaseUrl } from "@/config";
 
 <div class="flex items-center justify-between gap-4 w-full py-4">
   <div class="flex flex-col gap-4">
-    <Badge className="tracking-widest">🚀 v5.2.4</Badge>
+    <Badge className="tracking-widest pointer-events-none">🚀 v5.2.4</Badge>
     <p
       class="text-5xl font-bold leading-tight text-zinc-900 dark:text-zinc-100"
     >
@@ -15,7 +15,7 @@ import { publicBaseUrl } from "@/config";
       <br />
       customizable tech icons
     </p>
-    <p class="text-xl text-zinc-600 dark:text-zinc-500 font-medium">
+    <p class="text-xl text-zinc-600 dark:text-zinc-3000 font-medium">
       No more searching for "<em>transparent</em>" PNGs and SVGs.
     </p>
     <div class="flex items-center gap-3 pt-4">
@@ -39,9 +39,16 @@ import { publicBaseUrl } from "@/config";
     </div>
   </div>
 
-  <img
-    src={`${publicBaseUrl}/hero-image.png`}
-    class="rounded-lg w-full h-[350px] max-w-[45%] object-cover shadow-lg shadow-zinc-950"
-    alt="Developer Icons Hero Image"
-  />
+  <>
+    <img
+      src={`${publicBaseUrl}/hero-image-light.png`}
+      class="dark:hidden rounded-lg w-full h-[350px] max-w-[45%] object-cover shadow-lg shadow-zinc-300 dark:shadow-zinc-950"
+      alt="Developer Icons Hero Image"
+    />
+    <img
+      src={`${publicBaseUrl}/hero-image-dark.png`}
+      class="hidden dark:block rounded-lg w-full h-[350px] max-w-[45%] object-cover shadow-lg shadow-zinc-300 dark:shadow-zinc-950"
+      alt="Developer Icons Hero Image"
+    />
+  </>
 </div>
