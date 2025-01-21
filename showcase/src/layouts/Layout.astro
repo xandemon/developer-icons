@@ -31,7 +31,8 @@ const measurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID;
     />
     <link rel="sitemap" href={`${publicBaseUrl}/sitemap-index.xml`} />
     <meta name="generator" content={Astro.generator} />
-    <!-- <script is:inline>
+
+    <script is:inline>
       const theme = (() => {
         if (
           typeof localStorage !== "undefined" &&
@@ -45,7 +46,20 @@ const measurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID;
         return "light";
       })();
       document.documentElement.classList.add(theme);
-    </script> -->
+    </script>
+
+    <script
+      type="text/partytown"
+      src={`https://www.googletagmanager.com/gtag/js?id=${measurementId}`}
+    ></script>
+    <script type="text/partytown" define:vars={{ measurementId }}>
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function gtag() {
+        dataLayer.push(arguments);
+      };
+      gtag("js", new Date());
+      gtag("config", measurementId);
+    </script>
   </head>
   <body class="text-zinc-700 dark:text-zinc-300 bg-zinc-100 dark:bg-zinc-900">
     <TooltipProvider delayDuration={100}>

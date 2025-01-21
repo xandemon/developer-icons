@@ -1,7 +1,8 @@
 ---
 import { GitHubDark, GitHubLight, NPM } from "developer-icons";
-import { publicBaseUrl } from "@/config";
 import { DisclaimerAlert } from "./disclaimerAlert";
+import { ThemeToggle } from "./ui/themeToggle";
+import { publicBaseUrl } from "@/config";
 import { cn } from "@/lib/utils";
 
 const url = Astro.url;
@@ -36,6 +37,8 @@ const matchSamePage = (href: string) => {
   </a>
   <nav class="flex items-center justify-end gap-6 font-medium">
     <DisclaimerAlert client:load url={url} />
+
+    <ThemeToggle client:load />
 
     <span class="w-[1px] h-4 bg-zinc-300 dark:bg-zinc-700"></span>
 
