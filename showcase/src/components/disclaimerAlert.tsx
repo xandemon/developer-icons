@@ -39,7 +39,7 @@ export const DisclaimerAlert = ({ url }: { url: URL }) => {
       open={showDisclaimer}
       onOpenChange={() => setShowDisclaimer((prev) => !prev)}
     >
-      <AlertDialogTrigger className="px-4 py-2 text-sm font-medium text-zinc-900 dark:text-white bg-zinc-300/50 dark:bg-zinc-800/50 hover:bg-zinc-300/100 dark:hover:bg-zinc-800/10 rounded-lg transition-colors">
+      <AlertDialogTrigger className="hidden lg:block px-4 py-2 text-sm font-medium text-zinc-900 dark:text-white bg-zinc-300/50 dark:bg-zinc-800/50 hover:bg-zinc-300/100 dark:hover:bg-zinc-800/10 rounded-lg transition-colors">
         Disclaimer
       </AlertDialogTrigger>
       <AlertDialogContent className="max-w-3xl bg-zinc-100 dark:bg-zinc-900 text-zinc-900 dark:text-white border border-zinc-200 dark:border-zinc-800">
