@@ -57,8 +57,8 @@ p {
   }
 }
 
-code {
-  text-wrap: auto;;
+code, pre {
+  text-wrap: wrap;;
 }
 
 code:not(pre code) {
