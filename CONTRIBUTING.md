@@ -1,4 +1,4 @@
-# Contributing to Developer Icons
+# Contributing Guide
 
 We appreciate your thought of contributing to **Developer-Icons**. We welcome contributions of all kinds, from bug fixes to new features and icons. Your efforts help make this project better for everyone.
 

@@ -4,7 +4,7 @@ title: Walkthrough
 order: 3
 ---
 
-# 📚 Project Walkthrough
+# Project Walkthrough
 
 Welcome to the **Developer Icons** project! This document provides an overview of the project structure and helps you navigate the repository.
 

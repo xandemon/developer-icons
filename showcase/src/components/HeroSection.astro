@@ -1,39 +1,49 @@
 ---
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, BookOpenText, Github } from "lucide-react";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 import { publicBaseUrl } from "@/config";
 ---
 
-<div class="flex items-center justify-between gap-4 w-full py-4">
+<div
+  class="flex lg:items-center flex-col lg:flex-row lg:justify-between gap-6 lg:gap-4 w-full py-4"
+>
   <div class="flex flex-col gap-4">
     <Badge className="tracking-widest pointer-events-none">🚀 v5.2.5</Badge>
     <p
-      class="text-5xl font-bold leading-tight text-zinc-900 dark:text-zinc-100"
+      class="text-2xl md:text-4xl lg:text-5xl font-bold leading-tight text-zinc-900 dark:text-zinc-100"
     >
       <span class="text-sky-600">Ready-to-use</span>
       <br />
       customizable tech icons
     </p>
-    <p class="text-xl text-zinc-600 dark:text-zinc-3000 font-medium">
+    <p class="text-lg md:text-xl text-zinc-600 dark:text-zinc-3000 font-medium">
       No more searching for "<em>transparent</em>" PNGs and SVGs.
     </p>
-    <div class="flex items-center gap-3 pt-4">
+    <div class="flex items-center gap-3 lg:pt-4">
       <a href={`${publicBaseUrl}/icons/All`}>
         <Button className="px-5 bg-sky-500 text-zinc-100 hover:bg-sky-500/90"
           >Browse all icons</Button
         >
       </a>
       <a href={`${publicBaseUrl}/docs`}>
-        <Button variant="secondary" className="px-5"> Read Docs </Button>
+        <Button variant="secondary" className="hidden md:block px-5">
+          Read Docs
+        </Button>
+        <Button variant="secondary" className="block md:hidden px-5">
+          <BookOpenText size={18} />
+        </Button>
       </a>
       <a
         href="https://github.com/xandemon/developer-icons"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Button variant="secondary" className="px-5">
+        <Button variant="secondary" className="hidden md:flex px-5">
           Github <ArrowUpRight className="pl-1" />
+        </Button>
+        <Button variant="secondary" className="flex md:hidden px-5">
+          <Github size={18} />
         </Button>
       </a>
     </div>
@@ -42,12 +52,12 @@ import { publicBaseUrl } from "@/config";
   <>
     <img
       src={`${publicBaseUrl}/hero-image-light.png`}
-      class="dark:hidden rounded-lg w-full h-[350px] max-w-[45%] object-cover shadow-lg shadow-zinc-300 dark:shadow-zinc-950"
+      class="dark:hidden rounded-lg w-full h-[350px] lg:max-w-[45%] object-cover shadow-lg shadow-zinc-300 dark:shadow-zinc-950"
       alt="Developer Icons Hero Image"
     />
     <img
       src={`${publicBaseUrl}/hero-image-dark.png`}
-      class="hidden dark:block rounded-lg w-full h-[350px] max-w-[45%] object-cover shadow-lg shadow-zinc-300 dark:shadow-zinc-950"
+      class="hidden dark:block rounded-lg w-full h-[350px] lg:max-w-[45%] object-cover shadow-lg shadow-zinc-300 dark:shadow-zinc-950"
       alt="Developer Icons Hero Image"
     />
   </>

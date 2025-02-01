@@ -22,7 +22,7 @@ export const IconsList = ({ iconsData }: { iconsData: IconDataType[] }) => {
 
   return (
     <section className="relative w-full flex flex-col h-full max-h-full overflow-scroll">
-      <div className="sticky top-0 bg-zinc-100 dark:bg-zinc-900 pb-3">
+      <div className="sticky top-0 bg-zinc-100 dark:bg-zinc-900 pb-3 pr-1">
         <div className="relative top-0 w-full">
           <SearchIcon
             className="absolute top-1/2 left-3 -translate-y-1/2"
@@ -45,7 +45,7 @@ export const IconsList = ({ iconsData }: { iconsData: IconDataType[] }) => {
         </div>
       </div>
       <TooltipProvider>
-        <div className="grid grid-cols-auto-fit gap-4 pr-1">
+        <div className="grid grid-cols-1 min-[400px]:grid-cols-2 sm:grid-cols-3 md:grid-cols-auto-fit auto-rows-min gap-4 pr-1 h-[calc(100vh-130px)]">
           {filteredIcons.map((icon, index) => (
             <IconCard key={index} icon={icon} />
           ))}

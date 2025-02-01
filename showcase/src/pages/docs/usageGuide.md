@@ -4,7 +4,7 @@ title: Usage Guide
 order: 2
 ---
 
-# 🚀 Usage Guide
+# Usage Guide
 
 If you're a designer or just want to grab icons without any installations, simply head over to the [icons page](https://xandemon.github.io/developer-icons/icons) and download your desired icons.
 
