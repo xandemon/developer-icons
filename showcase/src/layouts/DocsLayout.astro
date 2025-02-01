@@ -1,12 +1,13 @@
 ---
 import Container from "@/components/Container.astro";
 import Navbar from "@/components/Navbar.astro";
+import { Button } from "@/components/ui/button";
+import { MobileDocsMenu } from "@/components/mobileDocsMenu";
 import { cn } from "@/lib/utils";
 import { publicBaseUrl } from "@/config";
 import "@fontsource-variable/noto-sans";
 import "../styles/globals.css";
 import "../styles/docs.css";
-import { Button } from "@/components/ui/button";
 
 interface Props {
   title: string;
@@ -14,17 +15,18 @@ interface Props {
     title: string;
     order: number;
   };
+  class: string;
 }
 
-const props = Astro.props;
+const { props, url } = Astro;
 const measurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID;
 
 const docs = await Astro.glob("../pages/docs/*.{astro,md}");
-const flattenedDocs = docs.map((doc) =>
-  "frontmatter" in doc
+const flattenedDocs = docs.map((doc) => {
+  return "frontmatter" in doc
     ? doc
-    : { ...doc, frontmatter: { title: "Contributing", order: 4 } }
-);
+    : { ...doc, frontmatter: { title: "Contributing", order: 4 } };
+});
 flattenedDocs.sort((a, b) => a.frontmatter.order - b.frontmatter.order);
 ---
 
@@ -84,7 +86,7 @@ flattenedDocs.sort((a, b) => a.frontmatter.order - b.frontmatter.order);
       className="items-stretch justify-start h-[calc(100vh-80px)] pb-0 relative overflow-scroll"
     >
       <aside
-        class="w-full max-w-[250px] h-full min-h-full border border-zinc-200 dark:border-zinc-800 rounded-xl flex flex-col gap-2 text-zinc-600 dark:text-zinc-400 p-3 sticky top-0"
+        class="hidden w-full max-w-[250px] h-full min-h-full border border-zinc-200 dark:border-zinc-800 rounded-xl md:flex flex-col gap-2 text-zinc-600 dark:text-zinc-400 p-3 sticky top-0"
       >
         {
           flattenedDocs.map((doc) => (
@@ -104,7 +106,24 @@ flattenedDocs.sort((a, b) => a.frontmatter.order - b.frontmatter.order);
           ))
         }
       </aside>
-      <div class="flex flex-col gap-4 p-6 pt-2 h-full"><slot /></div>
+      <div class="flex flex-col gap-4 lg:p-6 pt-2 h-full">
+        <div
+          class="flex items-center justify-between w-full gap-2 md:hidden border-b-2 border-[#e4e4e7]"
+        >
+          <h1 class="block border-none">
+            {
+              flattenedDocs.find((doc) => doc.url === url.pathname)?.frontmatter
+                .title
+            }
+          </h1>
+          <MobileDocsMenu menuList={flattenedDocs} client:load />
+        </div>
+        <div
+          class={`flex flex-col gap-4 h-full w-full max-md:[&_h1:first-child]:hidden ${props.class || ""}`}
+        >
+          <slot />
+        </div>
+      </div>
     </Container>
   </body>
 </html>
