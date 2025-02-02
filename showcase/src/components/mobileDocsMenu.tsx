@@ -17,8 +17,8 @@ export const MobileDocsMenu = ({
         <Menu size={24} />
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="rounded-lg">
-        {menuList.map((doc) => (
-          <DropdownMenuItem className="pl-3 pr-5">
+        {menuList.map((doc, index) => (
+          <DropdownMenuItem key={index} className="pl-3 pr-5">
             <a href={doc.url} className="w-full">
               {doc.frontmatter.title}
             </a>

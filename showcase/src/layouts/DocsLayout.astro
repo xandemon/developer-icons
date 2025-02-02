@@ -66,10 +66,11 @@ flattenedDocs.sort((a, b) => a.frontmatter.order - b.frontmatter.order);
 
     <!-- Google tag (gtag.js) -->
     <script
+      is:inline
       type="text/partytown"
       src={`https://www.googletagmanager.com/gtag/js?id=${measurementId}`}
     ></script>
-    <script type="text/partytown" define:vars={{ measurementId }}>
+    <script is:inline type="text/partytown" define:vars={{ measurementId }}>
       window.dataLayer = window.dataLayer || [];
       window.gtag = function gtag() {
         dataLayer.push(arguments);

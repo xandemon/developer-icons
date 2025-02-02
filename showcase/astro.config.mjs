@@ -8,6 +8,7 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
   site: "https://xandemon.github.io",
   base: "/developer-icons/showcase",
+  trailingSlash: "never",
   publicDir: "./assets",
   integrations: [react(), tailwind({
     applyBaseStyles: false,
