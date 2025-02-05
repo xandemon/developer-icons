@@ -487,6 +487,22 @@ export const iconsData: IconDataType[] = [
     url: "https://datadoghq.com",
   },
   {
+    id: "deepseek",
+    name: "DeepSeek",
+    path: "icons/deepseek.svg",
+    categories: ["DevOps & AI/ML"],
+    keywords: ["deepseek", "chat", "ai"],
+    url: "https://www.deepseek.com",
+  },
+  {
+    id: "deepseek-wordmark",
+    name: "DeepSeek Wordmark",
+    path: "icons/deepseek-wordmark.svg",
+    categories: ["DevOps & AI/ML"],
+    keywords: ["deepseek", "chat", "ai"],
+    url: "https://www.deepseek.com",
+  },
+  {
     id: "deno",
     name: "Deno",
     path: "icons/deno.svg",
