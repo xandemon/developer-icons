@@ -6,24 +6,35 @@
 </div>
 
 <div align="center">
-  <a href="https://astro.build/" target="_blank">
-    <img src="https://img.shields.io/badge/Astro-333333?logo=astro&logoColor=BC52EE" alt="Astro">
-  </a>
-  <a href="https://tailwindcss.com/" target="_blank">
-  <img src="https://img.shields.io/badge/Tailwind_CSS-333?logo=tailwindcss&logoColor=06B6D4&style=flat" alt="Tailwind CSS">
-  </a>
-  <a href="https://www.npmjs.com/package/developer-icons" target="_blank">
-    <img src="https://img.shields.io/npm/dy/developer-icons?logo=npm&logoColor=CB3837&label=Downloads&labelColor=333&color=148ACF&style=flat" alt="Developer-Icons NPM Package Downloads">
-  </a>
-  <a href="https://github.com/xandemon/developer-icons/releases" target="_blank">
-    <img src="https://img.shields.io/npm/v/developer-icons?logo=github&logoColor=fff&label=Release&labelColor=333&color=148ACF&style=flat" alt="Developer-Icons NPM Package Version">
-  </a>
-  <a href="https://github.com/xandemon/developer-icons/stargazers" target="_blank">
-    <img src="https://img.shields.io/github/stars/xandemon/developer-icons?logo=github&logoColor=fff&label=Stars&labelColor=333&color=FFD700&style=flat" alt="Developer-Icons GitHub Stars">
-  </a>
-  <a href="https://github.com/xandemon/developer-icons/blob/main/LICENSE" target="_blank">
-    <img src="https://img.shields.io/github/license/xandemon/developer-icons?logo=github&logoColor=fff&label=License&labelColor=333&color=3EC508&style=flat" alt="Developer-Icons License">
-  </a>
+  <div>
+    <a href="https://astro.build/" target="_blank">
+      <img src="https://img.shields.io/badge/Astro-333333?logo=astro&logoColor=BC52EE" alt="Astro">
+    </a>
+    <a href="https://tailwindcss.com/" target="_blank">
+      <img src="https://img.shields.io/badge/Tailwind_CSS-333?logo=tailwindcss&logoColor=06B6D4&style=flat" alt="Tailwind CSS">
+    </a>
+    <a href="https://react.dev/" target="_blank">
+      <img src="https://img.shields.io/badge/React-333333?logo=react&logoColor=58c4dc" alt="React.js">
+    </a>
+    <a href="https://github.com/xandemon/developer-icons/releases" target="_blank">
+      <img src="https://img.shields.io/npm/v/developer-icons?logo=github&logoColor=fff&label=Release&labelColor=333&color=148ACF&style=flat" alt="Developer-Icons NPM Package Version">
+    </a>
+    <a href="https://github.com/xandemon/developer-icons/blob/main/LICENSE" target="_blank">
+      <img src="https://img.shields.io/github/license/xandemon/developer-icons?logo=github&logoColor=fff&label=License&labelColor=333&color=666666&style=flat" alt="Developer-Icons License">
+    </a>
+  </div>
+  <div>
+    <a href="https://www.npmjs.com/package/developer-icons" target="_blank">
+      <img src="https://img.shields.io/npm/dy/developer-icons?logo=npm&logoColor=CB3837&label=Downloads&labelColor=333&color=148ACF&style=flat" alt="Developer-Icons NPM Package Downloads" style="height:24px">
+    </a>
+    <a href="https://github.com/xandemon/developer-icons/stargazers" target="_blank">
+      <img src="https://img.shields.io/github/stars/xandemon/developer-icons?logo=github&logoColor=fff&label=Stars&labelColor=333&color=FFD700&style=flat" alt="Developer-Icons GitHub Stars" style="height:24px">
+    </a>
+    <a href="https://github.com/xandemon/developer-icons/stargazers" target="_blank">
+      <img src="https://img.shields.io/github/forks/xandemon/developer-icons?logo=github&logoColor=fff&label=Forks&labelColor=333&color=148ACF&style=flat" alt="Developer-Icons GitHub Forks" style="height:24px">
+    </a>
+  </div>
+ 
 </div>
 
 <p align="center">
@@ -49,7 +60,7 @@
 </p>
 
 <p align="center">
-  <img src="public/cover-image.png" alt="Developer Icons" />
+  <img src="public/cover-image-light.png" alt="Developer Icons" />
 </p>
 
 Welcome to **`developer-icons`**—a curated set of high-quality, customizable tech icons built for developers and designers. Fully compatible with TypeScript, ideal for React and Next.js, or downloadable from our [official website](https://xandemon.github.io/developer-icons/icons/All "Developer Icons Website") for design projects.
@@ -68,12 +79,12 @@ Welcome to **`developer-icons`**—a curated set of high-quality, customizable t
 
 ## 🌟 Features
 
-- ⚡**Highly optimized:** Icons are optimized for performance and size. They are designed to be as small as possible while maintaining the quality.
-- 🎨**Customizable:** Cusomizations are available for all icons. You can change the size, color, stroke width, and much more.
-- 🔍**Perfectly scalable:** Icons are designed to be properly scaled to any size without compromising the quality.
-- 🔄**Consistent icons:** No more dealing with inconsistent styles and designs. All icons are designed with a pre-defined set of rules.
-- 🌗**Various variants:** Icons come with their own set of families such as light and dark mode, wordmark, and other variants.
-- ⭐**Free & open-source:** Completely free and open-source with license. No need to worry about privately hidden malicious code and be a contributor yourself.
+- ⚡ **Highly optimized:** Icons are optimized for performance and size. They are designed to be as small as possible while maintaining the quality.
+- 🎨 **Customizable:** Cusomizations are available for all icons. You can change the size, color, stroke width, and much more.
+- 🔍 **Perfectly scalable:** Icons are designed to be properly scaled to any size without compromising the quality.
+- 🔄 **Consistent icons:** No more dealing with inconsistent styles and designs. All icons are designed with a pre-defined set of rules.
+- 🌗 **Various variants:** Icons come with their own set of families such as light and dark mode, wordmark, and other variants.
+- ⭐ **Free & open-source:** Completely free and open-source with license. No need to worry about privately hidden malicious code and be a contributor yourself.
 
 Explore more and start using `developer-icons` today to enhance your projects with stunning, customizable icons!
 
