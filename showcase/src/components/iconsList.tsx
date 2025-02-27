@@ -4,7 +4,7 @@ import type { IconDataType } from "../../../lib/iconsData";
 import { IconCard } from "./ui/iconCard";
 import { useDebounce } from "@/lib/hooks";
 import { TooltipProvider } from "./ui/tooltip";
-import NoIconsFound from "./NoIconsFound";
+import NoIconsFound from "./noIconsFound";
 
 export const IconsList = ({ iconsData }: { iconsData: IconDataType[] }) => {
   const [searchQuery, setSearchQuery] = useState("");
