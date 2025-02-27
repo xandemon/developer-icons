@@ -4,6 +4,7 @@ import type { IconDataType } from "../../../lib/iconsData";
 import { IconCard } from "./ui/iconCard";
 import { useDebounce } from "@/lib/hooks";
 import { TooltipProvider } from "./ui/tooltip";
+import NoIconsFound from "./NoIconsFound";
 
 export const IconsList = ({ iconsData }: { iconsData: IconDataType[] }) => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -45,11 +46,15 @@ export const IconsList = ({ iconsData }: { iconsData: IconDataType[] }) => {
         </div>
       </div>
       <TooltipProvider>
-        <div className="grid grid-cols-1 min-[400px]:grid-cols-2 sm:grid-cols-3 md:grid-cols-auto-fit auto-rows-min gap-4 pr-1 h-[calc(100vh-130px)]">
-          {filteredIcons.map((icon, index) => (
-            <IconCard key={index} icon={icon} />
-          ))}
-        </div>
+        {filteredIcons.length === 0 ? (
+          <NoIconsFound />
+        ) : (
+          <div className="grid grid-cols-1 min-[400px]:grid-cols-2 sm:grid-cols-3 md:grid-cols-auto-fit auto-rows-min gap-4 pr-1 h-[calc(100vh-130px)]">
+            {filteredIcons.map((icon, index) => (
+              <IconCard key={index} icon={icon} />
+            ))}
+          </div>
+        )}
       </TooltipProvider>
     </section>
   );
