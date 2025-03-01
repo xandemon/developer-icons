@@ -1,13 +1,17 @@
+import { publicBaseUrl } from "@/config";
+
 const NoIconsFound = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-full text-center">
+    <div className="flex flex-col items-center justify-center h-full text-center pb-12">
       <img
-        src="/assets/no-icons-found.png"
+        src={`${publicBaseUrl}/no-icons-found.png`}
         alt="No Icons Found"
-        className="max-w-48"
+        className="max-w-48 dark:brightness-75"
       />
-      <h2 className="text-2xl font-bold mb-2">No Icons Found</h2>
-      <p className="text-lg">
+      <h2 className="text-2xl font-bold mb-2 text-sky-400 dark:text-sky-600">
+        No Icons Found
+      </h2>
+      <p className="text-lg opacity-75 max-w-[85vw] md:max-w-[600px]">
         Looks like we don't have the icons you're looking for. You can create an{" "}
         <a
           href="https://github.com/xandemon/developer-icons/issues"
