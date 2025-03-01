@@ -1,10 +1,10 @@
-import { useMemo, useState } from "react";
-import { SearchIcon, X } from "lucide-react";
-import type { IconDataType } from "../../../lib/iconsData";
-import { IconCard } from "./ui/iconCard";
 import { useDebounce } from "@/lib/hooks";
-import { TooltipProvider } from "./ui/tooltip";
+import { SearchIcon, X } from "lucide-react";
+import { useMemo, useState } from "react";
+import type { IconDataType } from "../../../lib/iconsData";
 import NoIconsFound from "./noIconsFound";
+import { IconCard } from "./ui/iconCard";
+import { TooltipProvider } from "./ui/tooltip";
 
 export const IconsList = ({ iconsData }: { iconsData: IconDataType[] }) => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -15,14 +15,14 @@ export const IconsList = ({ iconsData }: { iconsData: IconDataType[] }) => {
       iconsData.filter(
         (icon) =>
           icon.keywords.some((key) =>
-            key.toLowerCase().includes(debouncedSearch)
-          ) || icon.name.toLowerCase().includes(debouncedSearch)
+            key.toLowerCase().includes(debouncedSearch),
+          ) || icon.name.toLowerCase().includes(debouncedSearch),
       ),
-    [iconsData, debouncedSearch]
+    [iconsData, debouncedSearch],
   );
 
   return (
-    <section className="relative w-full flex flex-col h-full max-h-full overflow-scroll">
+    <section className="relative w-full flex flex-col h-full max-h-full overflow-auto">
       <div className="sticky top-0 bg-zinc-100 dark:bg-zinc-900 pb-3 pr-1">
         <div className="relative top-0 w-full">
           <SearchIcon
