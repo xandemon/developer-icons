@@ -18,7 +18,7 @@ export const IconCard = ({ icon }: { icon: IconDataType }) => {
   const [showCopied, setShowCopied] = useState(false);
   const [activeTooltip, setActiveTooltip] = useState<ActiveTooltipType>();
 
-  const DynamicIcon = DI[generateIconCompName(icon.name)];
+  const DynamicIcon = DI[generateIconCompName(icon.name)] as React.ElementType;
 
   const copyComponent = (iconName: string) => {
     const compName = generateIconCompName(iconName);
@@ -55,10 +55,14 @@ export const IconCard = ({ icon }: { icon: IconDataType }) => {
 
   return (
     <div className="w-full max-w-[300px] h-44 border border-zinc-200 dark:border-zinc-800 rounded-xl flex flex-col items-center justify-center gap-2 from-zinc-200/50 dark:from-zinc-950/25 to-zinc-200/75 dark:to-zinc-950/50 hover:bg-gradient-to-br group p-1.5 ">
-      <DynamicIcon
-        size={50}
-        className="group-hover:drop-shadow-[0_4px_4px_rgba(0,0,0,0.1)] dark:group-hover:drop-shadow-[0_4px_4px_rgba(256,256,256,0.1)]"
-      />
+      {DynamicIcon ? (
+        <DynamicIcon
+          size={50}
+          className="group-hover:drop-shadow-[0_4px_4px_rgba(0,0,0,0.1)] dark:group-hover:drop-shadow-[0_4px_4px_rgba(256,256,256,0.1)]"
+        />
+      ) : (
+        <div className="text-red-500">Icon not found</div>
+      )}
       <p className="w-full font-semibold text-center truncate">{icon.name}</p>
       <div className="flex items-center justify-center gap-1 flex-wrap ">
         {icon.categories.map((category, index) => (

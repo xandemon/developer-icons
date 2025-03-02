@@ -1,8 +1,9 @@
-import { useMemo, useState } from "react";
-import { SearchIcon, X } from "lucide-react";
-import type { IconDataType } from "../../../lib/iconsData";
-import { IconCard } from "./ui/iconCard";
 import { useDebounce } from "@/lib/hooks";
+import { SearchIcon, X } from "lucide-react";
+import { useMemo, useState } from "react";
+import type { IconDataType } from "../../../lib/iconsData";
+import NoIconsFound from "./noIconsFound";
+import { IconCard } from "./ui/iconCard";
 import { TooltipProvider } from "./ui/tooltip";
 
 export const IconsList = ({ iconsData }: { iconsData: IconDataType[] }) => {
@@ -14,14 +15,14 @@ export const IconsList = ({ iconsData }: { iconsData: IconDataType[] }) => {
       iconsData.filter(
         (icon) =>
           icon.keywords.some((key) =>
-            key.toLowerCase().includes(debouncedSearch)
-          ) || icon.name.toLowerCase().includes(debouncedSearch)
+            key.toLowerCase().includes(debouncedSearch),
+          ) || icon.name.toLowerCase().includes(debouncedSearch),
       ),
-    [iconsData, debouncedSearch]
+    [iconsData, debouncedSearch],
   );
 
   return (
-    <section className="relative w-full flex flex-col h-full max-h-full overflow-scroll">
+    <section className="relative w-full flex flex-col h-full max-h-full overflow-auto">
       <div className="sticky top-0 bg-zinc-100 dark:bg-zinc-900 pb-3 pr-1">
         <div className="relative top-0 w-full">
           <SearchIcon
@@ -45,11 +46,15 @@ export const IconsList = ({ iconsData }: { iconsData: IconDataType[] }) => {
         </div>
       </div>
       <TooltipProvider>
-        <div className="grid grid-cols-1 min-[400px]:grid-cols-2 sm:grid-cols-3 md:grid-cols-auto-fit auto-rows-min gap-4 pr-1 h-[calc(100vh-130px)]">
-          {filteredIcons.map((icon, index) => (
-            <IconCard key={index} icon={icon} />
-          ))}
-        </div>
+        {filteredIcons.length === 0 ? (
+          <NoIconsFound />
+        ) : (
+          <div className="grid grid-cols-1 min-[400px]:grid-cols-2 sm:grid-cols-3 md:grid-cols-auto-fit auto-rows-min gap-4 pr-1 h-[calc(100vh-130px)]">
+            {filteredIcons.map((icon, index) => (
+              <IconCard key={index} icon={icon} />
+            ))}
+          </div>
+        )}
       </TooltipProvider>
     </section>
   );
