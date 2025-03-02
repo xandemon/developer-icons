@@ -74,7 +74,7 @@ export const IconCard = ({ icon }: { icon: IconDataType }) => {
           >
             <Badge
               variant={"secondary"}
-              className="font-normal text-xs group-hover:bg-zinc-300"
+              className="font-normal text-xs group-hover:bg-zinc-300 dark:group-hover:bg-zinc-700"
             >
               {category}
             </Badge>
