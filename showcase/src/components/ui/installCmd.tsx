@@ -1,70 +1,66 @@
-import { Copy, Terminal } from "lucide-react";
+import { Check, Copy, Terminal, X } from "lucide-react";
 import { useEffect, useState } from "react";
-import { Popover, PopoverContent, PopoverTrigger } from "./popover";
 
 const INSTALL_COMMAND = "npm i developer-icons";
 
 const InstallCmd = () => {
-  const [showPopover, setShowPopover] = useState<boolean>(false);
+  const [isCopied, setIsCopied] = useState<boolean>(false);
   const [isError, setIsError] = useState<boolean>(false);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
 
   useEffect(() => {
-    let popoverTimeout: NodeJS.Timeout | undefined;
-    if (showPopover) {
-      popoverTimeout = setTimeout(() => setShowPopover(false), 2000);
+    let timeout: NodeJS.Timeout | undefined;
+    if (isCopied || isError) {
+      setIsLoading(true);
+      timeout = setTimeout(() => {
+        setIsCopied(false);
+        setIsError(false);
+        setIsLoading(false);
+      }, 2000);
     }
     return () => {
-      if (popoverTimeout) {
-        clearTimeout(popoverTimeout);
+      if (timeout) {
+        clearTimeout(timeout);
       }
     };
-  }, [showPopover]);
+  }, [isCopied, isError]);
 
   const copyInstallCmd = async () => {
+    setIsLoading(true);
     try {
       await navigator.clipboard.writeText(INSTALL_COMMAND);
       setIsError(false);
+      setIsCopied(true);
     } catch (error) {
       console.error("Failed to copy text: ", error);
       setIsError(true);
+      setIsCopied(false);
     } finally {
-      setShowPopover(true);
+      setIsLoading(false);
     }
   };
+
+  let icon;
+  if (isCopied) {
+    icon = <Check size={18} className="text-green-500" />;
+  } else if (isError) {
+    icon = <X size={18} className="text-red-500" />;
+  } else {
+    icon = <Copy size={18} className="cursor-pointer hover:opacity-80" />;
+  }
 
   return (
     <span className="flex items-center gap-3 border border-zinc-600 dark:border-zinc-500 rounded-lg px-4 py-2 text-zinc-600 dark:text-zinc-400">
       <Terminal size={18} />
       <pre>{INSTALL_COMMAND}</pre>
-      <Popover
-        open={showPopover}
-        onOpenChange={(value: boolean) => setShowPopover(value)}
+
+      <button
+        onClick={copyInstallCmd}
+        disabled={isLoading}
+        className="transition-opacity duration-200"
       >
-        <PopoverTrigger asChild>
-          <Copy
-            size={18}
-            className="cursor-pointer hover:opacity-80"
-            onClick={copyInstallCmd}
-          />
-        </PopoverTrigger>
-        <PopoverContent
-          className={`max-w-fit rounded-full py-2 text-sm opacity-70 ${isError ? "bg-red-100 text-red-900 dark:bg-red-900 dark:text-red-100" : ""}`}
-        >
-          {isError ? (
-            <span className="flex items-center gap-1 w-full">
-              Failed to copy. Please copy manually.
-            </span>
-          ) : (
-            <span className="flex items-center gap-1 w-full">
-              Copied{" "}
-              <strong className="text-sky-500 dark:text-sky-300">
-                {INSTALL_COMMAND}
-              </strong>{" "}
-              🎉
-            </span>
-          )}
-        </PopoverContent>
-      </Popover>
+        {icon}
+      </button>
     </span>
   );
 };
