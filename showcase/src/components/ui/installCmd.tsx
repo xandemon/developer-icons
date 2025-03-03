@@ -1,4 +1,4 @@
-import { Check, Copy, Terminal, X } from "lucide-react";
+import { Copy, CopyCheck, CopyX, Terminal } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const INSTALL_COMMAND = "npm i developer-icons";
@@ -42,9 +42,9 @@ const InstallCmd = () => {
 
   let icon;
   if (isCopied) {
-    icon = <Check size={18} className="text-green-500" />;
+    icon = <CopyCheck size={18} className="text-green-500" />;
   } else if (isError) {
-    icon = <X size={18} className="text-red-500" />;
+    icon = <CopyX size={18} className="text-red-500" />;
   } else {
     icon = <Copy size={18} className="cursor-pointer hover:opacity-80" />;
   }
