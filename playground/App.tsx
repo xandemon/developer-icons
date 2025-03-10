@@ -1,11 +1,12 @@
-import "./App.css";
 import {
-  Instagram,
   DeveloperIcons,
   GitHubDark,
-  Zen,
+  Instagram,
   NextJsWordmark,
+  WebRTC,
+  Zen,
 } from "../dist/main";
+import "./App.css";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <DeveloperIcons size={150} />
         <Zen size={150} />
         <GitHubDark size={150} />
+        <WebRTC size={150} />
       </div>
       <h1>Developer-Icons Playground</h1>
       <div className="card">
