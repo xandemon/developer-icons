@@ -2184,6 +2184,14 @@ export const iconsData: IconDataType[] = [
     url: "https://webpack.js.org",
   },
   {
+    id: "webrtc",
+    name: "WebRTC",
+    path: "icons/webrtc.svg",
+    categories: ["Others"],
+    keywords: ["webrtc", "real-time", "communication"],
+    url: "https://webrtc.org",
+  },
+  {
     id: "whatsapp",
     name: "WhatsApp",
     path: "icons/whatsapp.svg",
