@@ -503,6 +503,14 @@ export const iconsData: IconDataType[] = [
     url: "https://www.deepseek.com",
   },
   {
+    id: "deno-fresh",
+    name: "Deno Fresh",
+    path: "icons/deno-fresh.svg",
+    categories: ["Frontend"],
+    keywords: ["deno", "fresh", "frontend", "ssr"],
+    url: "https://fresh.deno.dev",
+  },
+  {
     id: "deno",
     name: "Deno",
     path: "icons/deno.svg",
@@ -669,6 +677,14 @@ export const iconsData: IconDataType[] = [
     categories: ["Media"],
     keywords: ["facebook", "social", "network", "meta"],
     url: "https://facebook.com",
+  },
+  {
+    id: "fast-api",
+    name: "FastAPI",
+    path: "icons/fast-api.svg",
+    categories: ["Backend"],
+    keywords: ["fastapi", "python", "framework", "backend"],
+    url: "https://fastapi.tiangolo.com",
   },
   {
     id: "faunadb",
@@ -957,6 +973,14 @@ export const iconsData: IconDataType[] = [
     categories: ["Frontend", "Design"],
     keywords: ["html5", "markup", "web"],
     url: "https://html.spec.whatwg.org/",
+  },
+  {
+    id: "hugging-face",
+    name: "Hugging Face",
+    path: "icons/hugging-face.svg",
+    categories: ["DevOps & AI/ML"],
+    keywords: ["hugging-face", "ai", "machine learning"],
+    url: "https://huggingface.co/",
   },
   {
     id: "hyper2",
