@@ -3,6 +3,7 @@ import { ArrowUpRight, BookOpenText, Github } from "lucide-react";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 import { publicBaseUrl } from "@/config";
+import React from "react";
 ---
 
 <div
@@ -51,7 +52,7 @@ import { publicBaseUrl } from "@/config";
     </div>
   </div>
 
-  <>
+  <React.Fragment>
     <img
       src={`${publicBaseUrl}/hero-image-light.png`}
       class="dark:hidden rounded-lg w-full h-[350px] lg:max-w-[45%] object-cover shadow-lg shadow-zinc-300 dark:shadow-zinc-950"
@@ -62,5 +63,5 @@ import { publicBaseUrl } from "@/config";
       class="hidden dark:block rounded-lg w-full h-[350px] lg:max-w-[45%] object-cover shadow-lg shadow-zinc-300 dark:shadow-zinc-950"
       alt="Developer Icons Hero Image"
     />
-  </>
+  </React.Fragment>
 </div>
