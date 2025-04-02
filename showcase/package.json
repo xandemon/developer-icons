@@ -23,7 +23,7 @@
     "@radix-ui/react-tooltip": "^1.1.4",
     "@types/react": "^18.3.2",
     "@types/react-dom": "^18.3.0",
-    "astro": "^4.8.2",
+    "astro": "^5.5.6",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "developer-icons": "^5.3.2",
