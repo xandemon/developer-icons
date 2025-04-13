@@ -1,4 +1,4 @@
-import { DenoFresh, FastAPI, HuggingFace, WebRTC } from "../dist/main";
+import { DenoFresh, FastAPI, HuggingFace, WebRTC, Clerk, Convex } from "../dist/main";
 import "./App.css";
 
 function App() {
@@ -9,6 +9,8 @@ function App() {
         <FastAPI size={150} />
         <HuggingFace size={150} />
         <WebRTC size={150} />
+        <Clerk size={150} />
+        <Convex size={150} />
       </div>
       <h1>Developer-Icons Playground</h1>
       <div className="card">
