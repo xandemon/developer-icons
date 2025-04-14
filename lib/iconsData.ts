@@ -391,6 +391,14 @@ export const iconsData: IconDataType[] = [
     url: "https://clojure.org",
   },
   {
+    id: "clerk",
+    name: "Clerk",
+    path: "icons/clerk.svg",
+    categories: ["Backend"],
+    keywords: ["clerk", "auth", "user management"],
+    url: "https://clerk.com/",
+  },
+  {
     id: "cloudflare",
     name: "Cloudflare",
     path: "icons/cloudflare.svg",
@@ -429,6 +437,14 @@ export const iconsData: IconDataType[] = [
     categories: ["DevOps & AI/ML"],
     keywords: ["copilot", "ai", "coding"],
     url: "https://github.com/features/copilot",
+  },
+  {
+    id: "convex",
+    name: "Convex",
+    path: "icons/convex.svg",
+    categories: ["Backend", "Database"],
+    keywords: ["convex", "auth"],
+    url: "https://www.convex.dev/",
   },
   {
     id: "crystal",
@@ -2294,7 +2310,7 @@ export const iconsData: IconDataType[] = [
     categories: ["DevOps & AI/ML"],
     keywords: ["zod", "validation", "typescript"],
     url: "https://github.com/colinhacks/zod",
-  },
+  }
 ];
 
 export type Category = (typeof categoriesData)[number];
