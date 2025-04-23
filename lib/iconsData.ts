@@ -79,14 +79,6 @@ export const iconsData: IconDataType[] = [
     url: "https://apple.com",
   },
   {
-    id: "claude-ai",
-    name: "Claude AI",
-    path: "icons/claude-ai.svg",
-    categories: ["DevOps & AI/ML"],
-    keywords: ["claude", "ai", "chatbot"],
-    url: "https://anthropic.com/claude",
-  },
-  {
     id: "apache",
     name: "Apache",
     path: "icons/apache.svg",
@@ -247,6 +239,14 @@ export const iconsData: IconDataType[] = [
     url: "https://blueprintjs.com",
   },
   {
+    id: "bluesky",
+    name: "Bluesky",
+    path: "icons/bluesky.svg",
+    categories: ["Media"],
+    keywords: ["blue", "blueskys", "social"],
+    url: "https://bsky.app/"
+  },
+  {
     id: "bootstrap4",
     name: "Bootstrap 4",
     path: "icons/bootstrap4.svg",
@@ -373,6 +373,14 @@ export const iconsData: IconDataType[] = [
     categories: ["DevOps & AI/ML"],
     keywords: ["circleci", "ci", "cd"],
     url: "https://circleci.com",
+  },
+  {
+    id: "claude-ai",
+    name: "Claude AI",
+    path: "icons/claude-ai.svg",
+    categories: ["DevOps & AI/ML"],
+    keywords: ["claude", "ai", "chatbot"],
+    url: "https://anthropic.com/claude",
   },
   {
     id: "clickhouse",
@@ -1550,6 +1558,38 @@ export const iconsData: IconDataType[] = [
     categories: ["DevOps & AI/ML"],
     keywords: ["playwright", "testing", "browser"],
     url: "https://playwright.dev",
+  },
+  {
+    id: 'pnpm-dark-wordmark',
+    name: "Pnpm Dark Wordmark",
+    path: "icons/pnpm-dark-wordmark.svg",
+    categories: ["DevOps & AI/ML"],
+    keywords: ["pnpm", "package manager", "nodejs"],
+    url: "https://pnpm.io/"
+  },
+  {
+    id: 'pnpm-dark',
+    name: "Pnpm Dark",
+    path: "icons/pnpm-dark.svg",
+    categories: ["DevOps & AI/ML"],
+    keywords: ["pnpm", "package manager", "nodejs"],
+    url: "https://pnpm.io/"
+  },
+  {
+    id: 'pnpm-light-wordmark',
+    name: "Pnpm Light Wordmark",
+    path: "icons/pnpm-light-wordmark.svg",
+    categories: ["DevOps & AI/ML"],
+    keywords: ["pnpm", "package manager", "nodejs"],
+    url: "https://pnpm.io/"
+  },
+  {
+    id: 'pnpm-light',
+    name: "Pnpm Light",
+    path: "icons/pnpm-light.svg",
+    categories: ["DevOps & AI/ML"],
+    keywords: ["pnpm", "package manager", "nodejs"],
+    url: "https://pnpm.io/"
   },
   {
     id: "postgresql",
