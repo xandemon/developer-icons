@@ -2313,7 +2313,7 @@ export const iconsData: IconDataType[] = [
   },
   {
     id: "remix-dark",
-    name: "Remix Letter Light",
+    name: "Remix Dark",
     path: "icons/remix-dark.svg",
     categories: ["Frontend"],
     keywords: ["remix", "react", "framework"],
@@ -2321,56 +2321,24 @@ export const iconsData: IconDataType[] = [
   },
   {
     id: "remix-light",
-    name: "Remix Letter Dark",
+    name: "Remix Light",
     path: "icons/remix-light.svg",
     categories: ["Frontend"],
     keywords: ["remix", "react", "framework"],
     url: "https://remix.run",
   },
   {
-    id: "remix-basic-light",
-    name: "Remix Letter Dark Outline",
-    path: "icons/remix-basic-light.svg",
-    categories: ["Frontend"],
-    keywords: ["remix", "react", "framework"],
-    url: "https://remix.run",
-  },
-  {
-    id: "remix-basic-dark",
-    name: "Remix Letter Light Outline",
-    path: "icons/remix-basic-dark.svg",
-    categories: ["Frontend"],
-    keywords: ["remix", "react", "framework"],
-    url: "https://remix.run",
-  },
-  {
-    id: "remix-light-wordmark",
-    name: "Remix Dark",
-    path: "icons/remix-light-wordmark.svg",
-    categories: ["Frontend"],
-    keywords: ["remix", "react", "framework"],
-    url: "https://remix.run",
-  },
-  {
     id: "remix-dark-wordmark",
-    name: "Remix Light",
+    name: "Remix Dark Wordmark",
     path: "icons/remix-dark-wordmark.svg",
     categories: ["Frontend"],
     keywords: ["remix", "react", "framework"],
     url: "https://remix.run",
   },
   {
-    id: "remix-outline-light-wordmark",
-    name: "Remix Dark Outline",
-    path: "icons/remix-outline-light-wordmark.svg",
-    categories: ["Frontend"],
-    keywords: ["remix", "react", "framework"],
-    url: "https://remix.run",
-  },
-  {
-    id: "remix-outline-dark-wordmark",
-    name: "Remix Light Outline",
-    path: "icons/remix-outline-dark-wordmark.svg",
+    id: "remix-light-wordmark",
+    name: "Remix Light Wordmark",
+    path: "icons/remix-light-wordmark.svg",
     categories: ["Frontend"],
     keywords: ["remix", "react", "framework"],
     url: "https://remix.run",
@@ -2401,7 +2369,7 @@ export const iconsData: IconDataType[] = [
   },
   {
     id: "ansible-wordmark",
-    name: "Ansible Name",
+    name: "Ansible Wordmark",
     path: "icons/ansible-wordmark.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["ansible", "automation", "devops"],
@@ -2413,15 +2381,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/pulumi.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["pulumi", "automation", "devops"],
-    url: "https://www.pulumi.com/"
-  },
-  {
-    id: "pulumi",
-    name: "Pulumi",
-    path: "icons/pulumi.svg",
-    categories: ["DevOps & AI/ML"],
-    keywords: ["pulumi", "automation", "devops"],
-    url: "https://www.pulumi.com/"
+    url: "https://www.pulumi.com/",
   },
   {
     id: "pulumi-dark-wordmark",
@@ -2429,15 +2389,15 @@ export const iconsData: IconDataType[] = [
     path: "icons/pulumi-dark-wordmark.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["pulumi", "automation", "devops"],
-    url: "https://www.pulumi.com/"
+    url: "https://www.pulumi.com/",
   },
   {
-    id: "pulumi-dark-wordmark",
+    id: "pulumi-light-wordmark",
     name: "Pulumi Light",
-    path: "icons/pulumi-dark-wordmark.svg",
+    path: "icons/pulumi-light-wordmark.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["pulumi", "automation", "devops"],
-    url: "https://www.pulumi.com/"
+    url: "https://www.pulumi.com/",
   },
   {
     id: "vagrant",
@@ -2445,8 +2405,8 @@ export const iconsData: IconDataType[] = [
     path: "icons/vagrant.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["vagrant", "automation", "devops"],
-    url: "https://www.vagrantup.com/"
-  }
+    url: "https://www.vagrantup.com/",
+  },
 ];
 
 export type Category = (typeof categoriesData)[number];
