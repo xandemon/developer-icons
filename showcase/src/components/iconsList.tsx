@@ -15,15 +15,15 @@ export const IconsList = ({ iconsData }: { iconsData: IconDataType[] }) => {
       iconsData.filter(
         (icon) =>
           icon.keywords.some((key) =>
-            key.toLowerCase().includes(debouncedSearch),
-          ) || icon.name.toLowerCase().includes(debouncedSearch),
+            key.toLowerCase().includes(debouncedSearch)
+          ) || icon.name.toLowerCase().includes(debouncedSearch)
       ),
-    [iconsData, debouncedSearch],
+    [iconsData, debouncedSearch]
   );
 
   return (
     <section className="relative w-full flex flex-col h-full max-h-full overflow-auto">
-      <div className="sticky top-0 bg-zinc-100 dark:bg-zinc-900 pb-3 pr-1">
+      <div className="sticky top-0 bg-zinc-100 dark:bg-zinc-900 pb-3 pr-1 z-10">
         <div className="relative top-0 w-full">
           <SearchIcon
             className="absolute top-1/2 left-3 -translate-y-1/2"
