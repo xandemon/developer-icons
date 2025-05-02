@@ -35,6 +35,7 @@ export const IconsList = ({ iconsData }: { iconsData: IconDataType[] }) => {
             className="w-full p-2 px-5 pl-10 rounded-xl bg-transparent border border-zinc-200 dark:border-zinc-800 placeholder:text-zinc-500 focus:outline-none focus:border-zinc-400 dark:focus:border-zinc-600"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.currentTarget.value)}
+            autoFocus
           />
           {!!searchQuery && (
             <X
