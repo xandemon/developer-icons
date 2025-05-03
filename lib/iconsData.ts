@@ -95,6 +95,14 @@ export const iconsData: IconDataType[] = [
     url: "https://apple.com",
   },
   {
+    id: "apple-light",
+    name: "Apple Light",
+    path: "icons/apple-light.svg",
+    categories: ["Companies", "Native App"],
+    keywords: ["apple", "ios", "light"],
+    url: "https://apple.com",
+  },
+  {
     id: "apache",
     name: "Apache",
     path: "icons/apache.svg",
@@ -397,6 +405,14 @@ export const iconsData: IconDataType[] = [
     categories: ["DevOps & AI/ML"],
     keywords: ["claude", "ai", "chatbot"],
     url: "https://anthropic.com/claude",
+  },
+  {
+    id: "clerk",
+    name: "Clerk",
+    path: "icons/clerk.svg",
+    categories: ["Backend"],
+    keywords: ["clerk", "auth", "user management"],
+    url: "https://clerk.com/",
   },
   {
     id: "clickhouse",
