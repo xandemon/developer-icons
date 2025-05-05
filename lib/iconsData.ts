@@ -103,6 +103,14 @@ export const iconsData: IconDataType[] = [
     url: "https://apple.com",
   },
   {
+    id: "apache",
+    name: "Apache",
+    path: "icons/apache.svg",
+    categories: ["Backend"],
+    keywords: ["apache", "server", "web"],
+    url: "https://apache.org",
+  },
+  {
     id: "appwrite",
     name: "Appwrite",
     path: "icons/appwrite.svg",
@@ -253,6 +261,14 @@ export const iconsData: IconDataType[] = [
     categories: ["Frontend"],
     keywords: ["blueprintjs", "ui", "react"],
     url: "https://blueprintjs.com",
+  },
+  {
+    id: "bluesky",
+    name: "Bluesky",
+    path: "icons/bluesky.svg",
+    categories: ["Media"],
+    keywords: ["blue", "blueskys", "social"],
+    url: "https://bsky.app/"
   },
   {
     id: "bootstrap4",
@@ -1573,6 +1589,38 @@ export const iconsData: IconDataType[] = [
     categories: ["DevOps & AI/ML"],
     keywords: ["playwright", "testing", "browser"],
     url: "https://playwright.dev",
+  },
+  {
+    id: 'pnpm-dark-wordmark',
+    name: "Pnpm Dark Wordmark",
+    path: "icons/pnpm-dark-wordmark.svg",
+    categories: ["DevOps & AI/ML"],
+    keywords: ["pnpm", "package manager", "nodejs"],
+    url: "https://pnpm.io/"
+  },
+  {
+    id: 'pnpm-dark',
+    name: "Pnpm Dark",
+    path: "icons/pnpm-dark.svg",
+    categories: ["DevOps & AI/ML"],
+    keywords: ["pnpm", "package manager", "nodejs"],
+    url: "https://pnpm.io/"
+  },
+  {
+    id: 'pnpm-light-wordmark',
+    name: "Pnpm Light Wordmark",
+    path: "icons/pnpm-light-wordmark.svg",
+    categories: ["DevOps & AI/ML"],
+    keywords: ["pnpm", "package manager", "nodejs"],
+    url: "https://pnpm.io/"
+  },
+  {
+    id: 'pnpm-light',
+    name: "Pnpm Light",
+    path: "icons/pnpm-light.svg",
+    categories: ["DevOps & AI/ML"],
+    keywords: ["pnpm", "package manager", "nodejs"],
+    url: "https://pnpm.io/"
   },
   {
     id: "postgresql",

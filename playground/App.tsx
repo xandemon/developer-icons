@@ -1,16 +1,17 @@
-import { DenoFresh, FastAPI, HuggingFace, WebRTC, Clerk, Convex } from "../dist/main";
+import { Bluesky, PnpmLight, PnpmDark, PnpmDarkWordmark, PnpmLightWordmark } from "../dist/main";
 import "./App.css";
 
 function App() {
   return (
     <>
-      <div style={{ display: "flex", alignItems: "center", gap: 30 }}>
-        <DenoFresh size={150} />
-        <FastAPI size={150} />
-        <HuggingFace size={150} />
-        <WebRTC size={150} />
-        <Clerk size={150} />
-        <Convex size={150} />
+      <div style={{ display: "flex", alignItems: "center", gap: 30, backgroundColor: '#FFFFFF', padding: '10px' }}>
+        <PnpmDark size={150} />
+        <PnpmDarkWordmark size={150} />
+        <Bluesky size={150} />
+      </div>
+      <div style={{ display: "flex", alignItems: "center", gap: 30, backgroundColor: '#0A0A0A', padding: '10px' }}>
+        <PnpmLight size={150} />
+        <PnpmLightWordmark size={150} />
       </div>
       <h1>Developer-Icons Playground</h1>
       <div className="card">
