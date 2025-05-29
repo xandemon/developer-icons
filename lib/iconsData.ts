@@ -1471,6 +1471,14 @@ export const iconsData: IconDataType[] = [
     url: "https://npmjs.com",
   },
   {
+    id: "numpy",
+    name: "NumPy",
+    path: "icons/numpy.svg",
+    categories: ["DevOps & AI/ML"],
+    keywords: ["numpy"],
+    url: "https://numpy.org/",
+  },
+  {
     id: "nuxtjs",
     name: "Nuxt.js",
     path: "icons/nuxtjs.svg",
