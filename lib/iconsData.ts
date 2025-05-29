@@ -1159,6 +1159,14 @@ export const iconsData: IconDataType[] = [
     url: "https://json.org",
   },
   {
+    id: "kafka",
+    name: "Kafka",
+    path: "icons/kafka.svg",
+    categories: ["Backend"],
+    keywords: ["kafka", "apache"],
+    url: "https://kafka.apache.org/",
+  },
+  {
     id: "kibana",
     name: "Kibana",
     path: "icons/kibana.svg",
