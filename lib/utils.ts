@@ -1,4 +1,4 @@
-import DI from "./main";
+import * as DI from "./main";
 
 export const capitalizeFirstletter = (str: string, invert?: boolean) =>
   invert
