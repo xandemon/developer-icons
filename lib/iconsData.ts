@@ -1167,6 +1167,14 @@ export const iconsData: IconDataType[] = [
     url: "https://kafka.apache.org/",
   },
   {
+    id: "k6",
+    name: "K6",
+    path: "icons/k6.svg",
+    categories: ["DevOps & AI/ML"],
+    keywords: ["testing"],
+    url: "https://k6.io/",
+  },
+  {
     id: "kibana",
     name: "Kibana",
     path: "icons/kibana.svg",
@@ -1197,6 +1205,22 @@ export const iconsData: IconDataType[] = [
     categories: ["Backend"],
     keywords: ["laravel", "php", "web"],
     url: "https://laravel.com",
+  },
+  {
+    id: "lerna-dark",
+    name: "Lerna Dark",
+    path: "icons/lerna-dark.svg",
+    categories: ["DevOps & AI/ML"],
+    keywords: ["lerna", "package manager", "nodejs"],
+    url: "https://nx.dev/brands#lerna",
+  },
+  {
+    id: "lerna-light",
+    name: "Lerna Light",
+    path: "icons/lerna-light.svg",
+    categories: ["DevOps & AI/ML"],
+    keywords: ["lerna", "package manager", "nodejs"],
+    url: "https://nx.dev/brands#lerna",
   },
   {
     id: "less",
@@ -1350,6 +1374,14 @@ export const iconsData: IconDataType[] = [
     keywords: ["microsoft-sql-server", "database", "sql", "microsoft"],
     url: "https://www.microsoft.com/en-us/sql-server",
   },
+    {
+    id: "microsoft-sql-server-2022",
+    name: "Microsoft SQL Server 2022",
+    path: "icons/microsoft-sql-server-2022.svg",
+    categories: ["Database", "Backend"],
+    keywords: ["microsoft-sql-server", "database", "sql", "microsoft"],
+    url: "https://www.microsoft.com/en-us/sql-server",
+  },
   {
     id: "miro",
     name: "Miro",
@@ -1493,6 +1525,14 @@ export const iconsData: IconDataType[] = [
     categories: ["Frontend"],
     keywords: ["nuxtjs", "vue", "ssr"],
     url: "https://nuxtjs.org",
+  },
+  {
+    id: "nx",
+    name: "Nx",
+    path: "icons/nx.svg",
+    categories: ["DevOps & AI/ML"],
+    keywords: ["nx", "monorepo"],
+    url: "https://nx.dev/brands#nx",
   },
   {
     id: "ocaml",
