@@ -30,6 +30,9 @@
     <a href="https://github.com/xandemon/developer-icons/stargazers" target="_blank">
       <img src="https://img.shields.io/github/stars/xandemon/developer-icons?logo=github&logoColor=fff&label=Stars&labelColor=333&color=FFD700&style=flat" alt="Developer-Icons GitHub Stars" style="height:24px">
     </a>
+    <a href="https://dependents.info/xandemon/developer-icons" target="_blank">
+      <img src="https://dependents.info/xandemon/developer-icons/badge" alt="Developer-Icons GitHub Network Dependents" style="height:24px" />
+    </a>
     <a href="https://github.com/xandemon/developer-icons/stargazers" target="_blank">
       <img src="https://img.shields.io/github/forks/xandemon/developer-icons?logo=github&logoColor=fff&label=Forks&labelColor=333&color=148ACF&style=flat" alt="Developer-Icons GitHub Forks" style="height:24px">
     </a>
@@ -64,6 +67,12 @@
 </p>
 
 Welcome to **`developer-icons`**—a curated set of high-quality, customizable tech icons built for developers and designers. Fully compatible with TypeScript, ideal for React and Next.js, or downloadable from our [official website](https://xandemon.github.io/developer-icons/icons/All "Developer Icons Website") for design projects.
+
+## 🧑‍💻 Used by
+
+<a href="https://dependents.info/xandemon/developer-icons" target="_blank">
+  <img src="https://dependents.info/xandemon/developer-icons/image" alt="Developer-Icons GitHub Users" />
+</a>
 
 ## 🚀 Tech Stack
 
