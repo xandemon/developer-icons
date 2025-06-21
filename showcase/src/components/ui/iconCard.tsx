@@ -1,4 +1,4 @@
-// import DI from "../../../../dist/main";
+// import * as DI from "../../../../dist/main";
 import * as DI from "developer-icons";
 import React, { useEffect, useState, type ReactNode } from "react";
 import { Copy, Copyright, Download } from "lucide-react";

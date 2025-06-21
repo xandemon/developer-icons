@@ -1226,7 +1226,7 @@ export const iconsData: IconDataType[] = [
     id: "linux",
     name: "Linux",
     path: "icons/linux.svg",
-    categories: ["Native App"],
+    categories: ["DevOps & AI/ML", "Native App"],
     keywords: ["linux", "os", "open source"],
     url: "https://kernel.org",
   },
