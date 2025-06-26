@@ -1171,7 +1171,7 @@ export const iconsData: IconDataType[] = [
     name: "K6",
     path: "icons/k6.svg",
     categories: ["DevOps & AI/ML"],
-    keywords: ["testing"],
+    keywords: ["k6", "testing", "load testing", "open source", "grafana"],
     url: "https://k6.io/",
   },
   {
@@ -1211,16 +1211,16 @@ export const iconsData: IconDataType[] = [
     name: "Lerna Dark",
     path: "icons/lerna-dark.svg",
     categories: ["DevOps & AI/ML"],
-    keywords: ["lerna", "package manager", "nodejs"],
-    url: "https://nx.dev/brands#lerna",
+    keywords: ["lerna", "package manager", "nodejs", "monorepo", "javascript"],
+    url: "https://lerna.js.org",
   },
   {
     id: "lerna-light",
     name: "Lerna Light",
     path: "icons/lerna-light.svg",
     categories: ["DevOps & AI/ML"],
-    keywords: ["lerna", "package manager", "nodejs"],
-    url: "https://nx.dev/brands#lerna",
+    keywords: ["lerna", "package manager", "nodejs", "monorepo", "javascript"],
+    url: "https://lerna.js.org",
   },
   {
     id: "less",
@@ -1374,12 +1374,18 @@ export const iconsData: IconDataType[] = [
     keywords: ["microsoft-sql-server", "database", "sql", "microsoft"],
     url: "https://www.microsoft.com/en-us/sql-server",
   },
-    {
-    id: "microsoft-sql-server-2022",
-    name: "Microsoft SQL Server 2022",
-    path: "icons/microsoft-sql-server-2022.svg",
+  {
+    id: "microsoft-sql-server-2",
+    name: "Microsoft SQL Server 2",
+    path: "icons/microsoft-sql-server-2.svg",
     categories: ["Database", "Backend"],
-    keywords: ["microsoft-sql-server", "database", "sql", "microsoft"],
+    keywords: [
+      "microsoft-sql-server",
+      "database",
+      "sql",
+      "microsoft",
+      "enterprise",
+    ],
     url: "https://www.microsoft.com/en-us/sql-server",
   },
   {
@@ -1532,7 +1538,7 @@ export const iconsData: IconDataType[] = [
     path: "icons/nx.svg",
     categories: ["DevOps & AI/ML"],
     keywords: ["nx", "monorepo"],
-    url: "https://nx.dev/brands#nx",
+    url: "https://nx.dev",
   },
   {
     id: "ocaml",
