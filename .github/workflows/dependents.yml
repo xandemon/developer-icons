@@ -13,4 +13,4 @@ jobs:
     permissions:
       id-token: write
     steps:
-      - uses: gouravkhunger/dependents.info@main
+      - uses: gouravkhunger/dependents.info@0.1.3
