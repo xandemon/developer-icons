@@ -138,11 +138,6 @@ export const YourReactComponent = () => {
 In this example, we import `HtmlIcon` and `JavascriptIcon` from the `developer-icons` package and use them within a React component. You can customize the icons by adjusting their `size`, `color`, `style`, and other properties.
 
 ## 🤝 Contributors
-<style>
-  #contributor a img {
-    border-radius: 100%
-  }
-</style>
 
 <div id="contributor">
 <!--CONTRIBUTORS-->
