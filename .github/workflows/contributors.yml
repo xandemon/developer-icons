@@ -1,0 +1,44 @@
+name: Update Contributors in README
+
+on:
+  # Run on push to main (or your default branch)
+  # You can also add `workflow_dispatch` to trigger it manually
+  push:
+    branches:
+      - main # Change to your default branch (e.g., master)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  id-token: write
+
+jobs:
+  update-contributors:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Needed to commit changes to README.md
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate Contributors List
+        uses: jaywcjlove/github-action-contributors@main
+        id: contributors_list
+        with:
+          # Optional: filter out bots
+          filter-author: (renovate\[bot\]|renovate-bot|dependabot\[bot\])
+          # Output as HTML list
+          output: "htmlList"
+          # Adjust avatar size (default is 24)
+          avatarSize: 48
+          # Set the delimiter for where to inject the list in your README
+          openDelimiter: "<!--CONTRIBUTORS-->"
+          closeDelimiter: "<!--CONTRIBUTORS-END-->"
+          # Hide names, only show avatars
+          hideName: true
+
+      - name: Update README.md
+        uses: jaywcjlove/github-action-modify-file-content@main
+        with:
+          path: README.md
+          body: "${{ steps.contributors_list.outputs.htmlList }}"
