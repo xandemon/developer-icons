@@ -14,7 +14,7 @@
   <div>
     <a href="https://www.npmjs.com/package/developer-icons" target="_blank"><img src="https://img.shields.io/npm/dy/developer-icons?logo=npm&logoColor=CB3837&label=Downloads&labelColor=333&color=148ACF&style=flat" alt="Developer-Icons NPM Package Downloads" style="height:24px"></a>
     <a href="https://github.com/xandemon/developer-icons/stargazers" target="_blank"><img src="https://img.shields.io/github/stars/xandemon/developer-icons?logo=github&logoColor=fff&label=Stars&labelColor=333&color=FFD700&style=flat" alt="Developer-Icons GitHub Stars" style="height:24px"></a>
-    <a href="https://dependents.info/xandemon/developer-icons" target="_blank"><img src="https://dependents.info/xandemon/developer-icons/badge" alt="Developer-Icons GitHub Network Dependents" style="height:24px" /></a>
+    <a href="https://dependents.info/xandemon/developer-icons" target="_blank"><img src="https://dependents.info/xandemon/developer-icons/badge?logo=github&logoColor=fff&label=Users&labelColor=333" alt="Developer-Icons GitHub Network Dependents" style="height:24px" /></a>
     <a href="https://github.com/xandemon/developer-icons/stargazers" target="_blank"><img src="https://img.shields.io/github/forks/xandemon/developer-icons?logo=github&logoColor=fff&label=Forks&labelColor=333&color=148ACF&style=flat" alt="Developer-Icons GitHub Forks" style="height:24px"></a>
   </div>
  
