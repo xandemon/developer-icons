@@ -1,65 +1,35 @@
 <div align="center">
-  <a href="https://xandemon.github.io/developer-icons" target="_blank">
-    <img src="public/logo.png" alt="Developer Icons by xandemon" height="120" />
-  </a>
+  <a href="https://xandemon.github.io/developer-icons" target="_blank"><img src="public/logo.png" alt="Developer Icons by xandemon" height="120" /></a>
   <h1>Developer Icons</h1>
 </div>
 
 <div align="center">
   <div>
-    <a href="https://astro.build/" target="_blank">
-      <img src="https://img.shields.io/badge/Astro-333333?logo=astro&logoColor=BC52EE" alt="Astro">
-    </a>
-    <a href="https://tailwindcss.com/" target="_blank">
-      <img src="https://img.shields.io/badge/Tailwind_CSS-333?logo=tailwindcss&logoColor=06B6D4&style=flat" alt="Tailwind CSS">
-    </a>
-    <a href="https://react.dev/" target="_blank">
-      <img src="https://img.shields.io/badge/React-333333?logo=react&logoColor=58c4dc" alt="React.js">
-    </a>
-    <a href="https://github.com/xandemon/developer-icons/releases" target="_blank">
-      <img src="https://img.shields.io/npm/v/developer-icons?logo=github&logoColor=fff&label=Release&labelColor=333&color=148ACF&style=flat" alt="Developer-Icons NPM Package Version">
-    </a>
-    <a href="https://github.com/xandemon/developer-icons/blob/main/LICENSE" target="_blank">
-      <img src="https://img.shields.io/github/license/xandemon/developer-icons?logo=github&logoColor=fff&label=License&labelColor=333&color=666666&style=flat" alt="Developer-Icons License">
-    </a>
+    <a href="https://astro.build/" target="_blank"><img src="https://img.shields.io/badge/Astro-333333?logo=astro&logoColor=BC52EE" alt="Astro"></a>
+    <a href="https://tailwindcss.com/" target="_blank"><img src="https://img.shields.io/badge/Tailwind_CSS-333?logo=tailwindcss&logoColor=06B6D4&style=flat" alt="Tailwind CSS"></a>
+    <a href="https://react.dev/" target="_blank"><img src="https://img.shields.io/badge/React-333333?logo=react&logoColor=58c4dc" alt="React.js"></a>
+    <a href="https://github.com/xandemon/developer-icons/releases" target="_blank"><img src="https://img.shields.io/npm/v/developer-icons?logo=github&logoColor=fff&label=Release&labelColor=333&color=148ACF&style=flat" alt="Developer-Icons NPM Package Version"></a>
+    <a href="https://github.com/xandemon/developer-icons/blob/main/LICENSE" target="_blank"><img src="https://img.shields.io/github/license/xandemon/developer-icons?logo=github&logoColor=fff&label=License&labelColor=333&color=666666&style=flat" alt="Developer-Icons License"></a>
   </div>
   <div>
-    <a href="https://www.npmjs.com/package/developer-icons" target="_blank">
-      <img src="https://img.shields.io/npm/dy/developer-icons?logo=npm&logoColor=CB3837&label=Downloads&labelColor=333&color=148ACF&style=flat" alt="Developer-Icons NPM Package Downloads" style="height:24px">
-    </a>
-    <a href="https://github.com/xandemon/developer-icons/stargazers" target="_blank">
-      <img src="https://img.shields.io/github/stars/xandemon/developer-icons?logo=github&logoColor=fff&label=Stars&labelColor=333&color=FFD700&style=flat" alt="Developer-Icons GitHub Stars" style="height:24px">
-    </a>
-    <a href="https://dependents.info/xandemon/developer-icons" target="_blank">
-      <img src="https://dependents.info/xandemon/developer-icons/badge" alt="Developer-Icons GitHub Network Dependents" style="height:24px" />
-    </a>
-    <a href="https://github.com/xandemon/developer-icons/stargazers" target="_blank">
-      <img src="https://img.shields.io/github/forks/xandemon/developer-icons?logo=github&logoColor=fff&label=Forks&labelColor=333&color=148ACF&style=flat" alt="Developer-Icons GitHub Forks" style="height:24px">
-    </a>
+    <a href="https://www.npmjs.com/package/developer-icons" target="_blank"><img src="https://img.shields.io/npm/dy/developer-icons?logo=npm&logoColor=CB3837&label=Downloads&labelColor=333&color=148ACF&style=flat" alt="Developer-Icons NPM Package Downloads" style="height:24px"></a>
+    <a href="https://github.com/xandemon/developer-icons/stargazers" target="_blank"><img src="https://img.shields.io/github/stars/xandemon/developer-icons?logo=github&logoColor=fff&label=Stars&labelColor=333&color=FFD700&style=flat" alt="Developer-Icons GitHub Stars" style="height:24px"></a>
+    <a href="https://dependents.info/xandemon/developer-icons" target="_blank"><img src="https://dependents.info/xandemon/developer-icons/badge?logo=github&logoColor=fff&label=Users&labelColor=333" alt="Developer-Icons GitHub Network Dependents" style="height:24px" /></a>
+    <a href="https://github.com/xandemon/developer-icons/stargazers" target="_blank"><img src="https://img.shields.io/github/forks/xandemon/developer-icons?logo=github&logoColor=fff&label=Forks&labelColor=333&color=148ACF&style=flat" alt="Developer-Icons GitHub Forks" style="height:24px"></a>
   </div>
  
 </div>
 
 <p align="center">
-  <a href="https://xandemon.github.io/developer-icons/">
-    Homepage
-  </a>
+  <a href="https://xandemon.github.io/developer-icons/">Homepage</a>
   <span>&nbsp;⬥&nbsp;</span>
-  <a href="https://xandemon.github.io/developer-icons/icons/All">
-    Browse Icons
-  </a>
+  <a href="https://xandemon.github.io/developer-icons/icons/All">Browse Icons</a>
   <span>&nbsp;⬥&nbsp;</span>
-  <a href="https://www.npmjs.com/package/developer-icons">
-    NPM Package
-  </a>
+  <a href="https://www.npmjs.com/package/developer-icons">NPM Package</a>
   <span>&nbsp;⬥&nbsp;</span>
-  <a href="https://xandemon.github.io/developer-icons/docs/usageGuide/">
-    Usage
-  </a>
+  <a href="https://xandemon.github.io/developer-icons/docs/usageGuide/">Usage</a>
   <span>&nbsp;⬥&nbsp;</span>
-  <a href="https://xandemon.github.io/developer-icons/docs/contributing/">
-    Contributing
-  </a>
+  <a href="https://xandemon.github.io/developer-icons/docs/contributing/">Contributing</a>
 </p>
 
 <p align="center">
