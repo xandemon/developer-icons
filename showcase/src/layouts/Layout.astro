@@ -8,10 +8,16 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 
 interface Props {
   title: string;
+  description?: string;
 }
 
-const { title } = Astro.props;
+const {
+  title,
+  description = "An open-source collection of optimized and customizable SVG icons for popular technologies, frameworks, and tools used by developers. Free, scalable, and easy to use.",
+} = Astro.props;
 const measurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID;
+const currentUrl = new URL(Astro.url);
+const fullUrl = `${currentUrl.origin}${currentUrl.pathname}`;
 ---
 
 <!doctype html>
@@ -19,18 +25,60 @@ const measurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID;
   <head>
     <meta charset="UTF-8" />
     <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
-      name="description"
-      content="Ready-to-use beautiful tech stack icon components for developers"
+      name="keywords"
+      content="developer icons, tech stack icons, SVG icons, programming icons, technology icons, framework icons, developer tools, open source, React icons, JavaScript icons, TypeScript icons, web development, frontend development, backend development, programming languages, databases, cloud services, design tools, development tools, webdev resources, free icon library, high quality icons"
+      ,
     />
-    <meta name="viewport" content="width=device-width" />
+    <link rel="canonical" href={fullUrl} />
+    <meta name="author" content="Sandesh Katwal (xandemon)" />
     <link
       rel="icon"
       type="image/svg+xml"
       href={`${publicBaseUrl}/favicon.svg`}
     />
     <link rel="sitemap" href={`${publicBaseUrl}/sitemap-index.xml`} />
-    <meta name="generator" content={Astro.generator} />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={fullUrl} />
+    <meta property="og:title" content={`${title} | Created by xandemon`} />
+    <meta property="og:description" content={description} />
+    <meta
+      property="og:site_name"
+      content="Developer Icons | Created by xandemon"
+    />
+    <meta property="og:image" content={`${publicBaseUrl}/preview.png`} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Developer Icons—Beautiful tech stack icon library for developers"
+    />
+    <meta property="og:locale" content="en_US" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={fullUrl} />
+    <meta name="twitter:title" content={`${title} | Created by xandemon`} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={`${publicBaseUrl}/preview.png`} />
+    <meta
+      name="twitter:image:alt"
+      content="Developer Icons—Beautiful tech stack icon library for developers"
+    />
+    <meta name="twitter:site" content="@xandemon" />
+    <meta name="twitter:creator" content="@xandemon" />
+
+    <meta name="robots" content="index, follow" />
+    <!-- <meta name="theme-color" content="#3b82f6" />
+    <meta name="msapplication-TileColor" content="#3b82f6" /> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="dns-prefetch" href="//www.googletagmanager.com" />
+    <link rel="dns-prefetch" href="//www.google-analytics.com" />
 
     <script is:inline>
       const theme = (() => {
