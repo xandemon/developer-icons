@@ -1,7 +1,7 @@
 {
   "name": "developer-icons",
   "description": "A collection of well-optimized SVG tech logos for developers and designers—customizable, scalable, and free.",
-  "version": "6.0.2",
+  "version": "6.0.3",
   "type": "module",
   "homepage": "https://xandemon.github.io/developer-icons",
   "repository": {
@@ -22,7 +22,7 @@
     "programming language icons",
     "icons",
     "vector icons",
-    "svg",
+    "svg icons",
     "react icons"
   ],
   "main": "dist/main.js",
