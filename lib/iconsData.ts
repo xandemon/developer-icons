@@ -599,6 +599,14 @@ export const iconsData: IconDataType[] = [
     url: "https://docker.com",
   },
   {
+    id: "doctrine",
+    name: "Doctrine",
+    path: "icons/doctrine.svg",
+    categories: ["Others"],
+    keywords: ["php",],
+    url: "https://doctrine-project.org",
+  },
+  {
     id: "docusaurus",
     name: "Docusaurus",
     path: "icons/docusaurus.svg",
@@ -2036,6 +2044,14 @@ export const iconsData: IconDataType[] = [
     keywords: ["shadcnui"],
     url: "https://ui.shadcn.com/",
   },
+   {
+    id: "shopware",
+    name: "Shopware",
+    path: "icons/shopware.svg",
+    categories: ["Others"],
+    keywords: ["shopware", "ecommerce", "platform"],
+    url: "https://shopware.com/",
+  },
   {
     id: "sketch",
     name: "Sketch",
@@ -2163,6 +2179,22 @@ export const iconsData: IconDataType[] = [
     categories: ["Languages"],
     keywords: ["swift", "programming", "apple"],
     url: "https://swift.org",
+  },
+  {
+    id: "symfony-dark",
+    name: "Symfony Dark",
+    path: "icons/symfony-dark.svg",
+    categories: ["Backend"],
+    keywords: ["symfony", "php", "framework"],
+    url: "https://symfony.com",
+  },
+  {
+    id: "symfony-light",
+    name: "Symfony Light",
+    path: "icons/symfony-light.svg",
+    categories: ["Backend"],
+    keywords: ["symfony", "php", "framework"],
+    url: "https://symfony.com",
   },
   {
     id: "tailwindcss",
