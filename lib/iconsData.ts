@@ -602,8 +602,8 @@ export const iconsData: IconDataType[] = [
     id: "doctrine",
     name: "Doctrine",
     path: "icons/doctrine.svg",
-    categories: ["Others"],
-    keywords: ["php",],
+    categories: ["Backend", "Database"],
+    keywords: ["php", "library", "open source"],
     url: "https://doctrine-project.org",
   },
   {
@@ -798,7 +798,7 @@ export const iconsData: IconDataType[] = [
     keywords: ["flyio", "hosting", "cloud"],
     url: "https://fly.io",
   },
-    {
+  {
     id: "framer-dark",
     name: "Framer-Dark",
     path: "icons/framer-dark.svg",
@@ -2044,13 +2044,13 @@ export const iconsData: IconDataType[] = [
     keywords: ["shadcnui"],
     url: "https://ui.shadcn.com/",
   },
-   {
+  {
     id: "shopware",
     name: "Shopware",
     path: "icons/shopware.svg",
     categories: ["Others"],
-    keywords: ["shopware", "ecommerce", "platform"],
-    url: "https://shopware.com/",
+    keywords: ["shopware", "ecommerce", "platform", "headless", "open source"],
+    url: "https://github.com/shopware/shopware",
   },
   {
     id: "sketch",
