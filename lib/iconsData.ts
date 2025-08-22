@@ -1395,13 +1395,7 @@ export const iconsData: IconDataType[] = [
     name: "Microsoft SQL Server 2",
     path: "icons/microsoft-sql-server-2.svg",
     categories: ["Database", "Backend"],
-    keywords: [
-      "microsoft-sql-server",
-      "database",
-      "sql",
-      "microsoft",
-      "enterprise",
-    ],
+    keywords: ["microsoft-sql-server", "database", "sql", "microsoft", "enterprise"],
     url: "https://www.microsoft.com/en-us/sql-server",
   },
   {
@@ -1819,6 +1813,14 @@ export const iconsData: IconDataType[] = [
     categories: ["Frontend"],
     keywords: ["qwik", "frontend", "performance"],
     url: "https://qwik.builder.io",
+  },
+  {
+    id: "r",
+    name: "R",
+    path: "icons/r.svg",
+    categories: ["Languages"],
+    keywords: ["r", "programming", "dynamic", "data science"],
+    url: "https://www.r-project.org/",
   },
   {
     id: "radixui",
