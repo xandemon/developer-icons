@@ -4,6 +4,7 @@ on:
   push:
     tags:
       - "v*.*.*"
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -12,7 +13,7 @@ permissions:
 
 jobs:
   release:
-    name: Create Release and Publish NPM
+    name: Publish and Release
     runs-on: ubuntu-latest
 
     steps:
@@ -28,20 +29,18 @@ jobs:
         uses: actions/setup-node@v4
         with:
           registry-url: "https://registry.npmjs.org/"
-          node-version: "20"
+          node-version: "24"
         #   cache: pnpm
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
         # run: pnpm install --frozen-lockfile
 
       - name: Build the package
-        run: npm run build
+        run: npm run build --if-present
 
       - name: Publish to NPM
         run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
