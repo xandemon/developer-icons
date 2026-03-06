@@ -27,8 +27,8 @@ const filteredIconsData =
         icon.categories.includes(
           category
             .replace("DevOps", "DevOps & AI/ML")
-            .replaceAll("-", " ") as CategoryType
-        )
+            .replaceAll("-", " ") as CategoryType,
+        ),
       );
 ---
 
@@ -46,13 +46,14 @@ const filteredIconsData =
           >
             <Button
               className={cn(
-                `w-full rounded-lg px-4 py-2 cursor-pointer justify-start`,
+                `w-full rounded-lg px-4 py-2 cursor-pointer justify-start border`,
+                `border-zinc-200 dark:border-zinc-800 text-sky-500 dark:text-sky-500 from-zinc-200/50 dark:from-zinc-950/25 to-zinc-200 dark:to-zinc-950/75 bg-gradient-to-br !bg-transparent`,
                 {
-                  "bg-transparent dark:bg-transparent text-zinc-600 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-700":
+                  "bg-transparent dark:bg-transparent text-zinc-600 dark:text-zinc-400 bg-none dark:bg-none hover:bg-gradient-to-br  dark:hover:bg-gradient-to-br !border-transparent":
                     item
                       .replace("DevOps & AI/ML", "DevOps")
                       .replaceAll(" ", "-") !== category,
-                }
+                },
               )}
             >
               {item}
