@@ -6,7 +6,13 @@ import NoIconsFound from "./noIconsFound";
 import { IconCard } from "./ui/iconCard";
 import { TooltipProvider } from "./ui/tooltip";
 
-export const IconsList = ({ iconsData }: { iconsData: IconDataType[] }) => {
+export const IconsList = ({
+  category,
+  iconsData,
+}: {
+  category: string;
+  iconsData: IconDataType[];
+}) => {
   const [searchQuery, setSearchQuery] = useState("");
   const debouncedSearch = useDebounce(searchQuery.toLowerCase(), 300);
 
@@ -15,10 +21,10 @@ export const IconsList = ({ iconsData }: { iconsData: IconDataType[] }) => {
       iconsData.filter(
         (icon) =>
           icon.keywords.some((key) =>
-            key.toLowerCase().includes(debouncedSearch)
-          ) || icon.name.toLowerCase().includes(debouncedSearch)
+            key.toLowerCase().includes(debouncedSearch),
+          ) || icon.name.toLowerCase().includes(debouncedSearch),
       ),
-    [iconsData, debouncedSearch]
+    [iconsData, debouncedSearch],
   );
 
   return (
@@ -31,7 +37,9 @@ export const IconsList = ({ iconsData }: { iconsData: IconDataType[] }) => {
           />
           <input
             type="text"
-            placeholder="Search developer icons"
+            placeholder={`Search across ${iconsData.length} ${
+              category === "All" ? "developer" : `${category}`
+            } icons`}
             className="w-full p-2 px-5 pl-10 rounded-xl bg-transparent border border-zinc-200 dark:border-zinc-800 placeholder:text-zinc-500 focus:outline-none focus:border-zinc-400 dark:focus:border-zinc-600"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.currentTarget.value)}
