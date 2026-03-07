@@ -19,6 +19,16 @@ export function getStaticPaths() {
 
 const { category } = Astro.params;
 
+const categoryCountMap = iconsData.reduce(
+  (acc, icon) => {
+    icon.categories.forEach((cat) => {
+      acc[cat] = (acc[cat] ?? 0) + 1;
+    });
+    return acc;
+  },
+  {} as Record<CategoryType, number>,
+);
+
 // Filter iconsData based on the selected category
 const filteredIconsData =
   !category || category === "All"
@@ -27,8 +37,8 @@ const filteredIconsData =
         icon.categories.includes(
           category
             .replace("DevOps", "DevOps & AI/ML")
-            .replaceAll("-", " ") as CategoryType
-        )
+            .replaceAll("-", " ") as CategoryType,
+        ),
       );
 ---
 
@@ -46,16 +56,31 @@ const filteredIconsData =
           >
             <Button
               className={cn(
-                `w-full rounded-lg px-4 py-2 cursor-pointer justify-start`,
+                `w-full rounded-lg px-4 py-2 cursor-pointer justify-between border`,
+                `border-zinc-200 dark:border-zinc-800 text-sky-500 dark:text-sky-500 from-zinc-200/50 dark:from-zinc-950/25 to-zinc-200 dark:to-zinc-950/75 bg-gradient-to-br !bg-transparent`,
                 {
-                  "bg-transparent dark:bg-transparent text-zinc-600 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-700":
+                  "text-zinc-600 dark:text-zinc-400 bg-none dark:bg-none hover:bg-gradient-to-br dark:hover:bg-gradient-to-br !border-transparent":
                     item
                       .replace("DevOps & AI/ML", "DevOps")
                       .replaceAll(" ", "-") !== category,
-                }
+                },
               )}
             >
               {item}
+              <span
+                class={cn(
+                  "text-xs font-medium px-2 py-0.5 rounded-full",
+                  item
+                    .replace("DevOps & AI/ML", "DevOps")
+                    .replaceAll(" ", "-") === category
+                    ? "bg-sky-500/15 text-sky-600 dark:text-sky-400"
+                    : "bg-zinc-200 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400",
+                )}
+              >
+                {item === "All"
+                  ? iconsData.length
+                  : (categoryCountMap[item as CategoryType] ?? 0)}
+              </span>
             </Button>
           </a>
         ))
