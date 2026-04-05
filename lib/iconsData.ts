@@ -2022,6 +2022,16 @@ export const iconsData: IconDataType[] = [
     keywords: ["scala", "jvm", "functional"],
     url: "https://scala-lang.org",
   },
+
+  {id:"selenium",
+    name:"Selenium",
+    path: "icons/selenium-cropped.svg",
+    categories:["Browser","Others"],
+    keywords:["testing","automation", "web scraping"],
+    url:"https://www.selenium.dev/"
+  },
+
+
   {
     id: "semanticui",
     name: "Semantic UI",
