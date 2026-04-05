@@ -1,4 +1,5 @@
-import { Bluesky, PnpmLight, PnpmDark, PnpmDarkWordmark, PnpmLightWordmark } from "../dist/main";
+import { Icon } from "../dist/icon";
+import { Bluesky, PnpmLight, PnpmDark, PnpmDarkWordmark, PnpmLightWordmark, Selenium } from "../dist/main";
 import "./App.css";
 
 function App() {
@@ -26,6 +27,9 @@ function App() {
         Test around with <i>developer-icons</i> components here while developing
         them
       </p>
+
+
+
     </>
   );
 }

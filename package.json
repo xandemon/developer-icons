@@ -68,5 +68,8 @@
     "vite": "^6.2.0",
     "vite-plugin-dts": "^4.3.0",
     "vite-plugin-lib-inject-css": "^2.0.1"
+  },
+  "dependencies": {
+    "i": "^0.3.7"
   }
 }
