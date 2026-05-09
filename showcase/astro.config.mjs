@@ -8,7 +8,7 @@ import rootPkg from '../package.json'
 // https://astro.build/config
 export default defineConfig({
   site: "https://xandemon.github.io",
-  base: "/developer-icons/showcase",
+  base: "/developer-icons",
   vite:{
     define:{
       '__LIB_VERSION__': JSON.stringify(rootPkg.version)

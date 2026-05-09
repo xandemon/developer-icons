@@ -18,6 +18,41 @@ const {
 const measurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID;
 const currentUrl = new URL(Astro.url);
 const fullUrl = `${currentUrl.origin}${currentUrl.pathname}`;
+const baseUrl = "https://xandemon.github.io/developer-icons";
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Developer Icons",
+    "url": baseUrl,
+    "description": description,
+    "author": {
+      "@type": "Person",
+      "name": "Sandesh Katwal",
+      "alternateName": "xandemon",
+      "url": "https://xandemon.github.io/",
+      "sameAs": ["https://github.com/xandemon", "https://www.npmjs.com/~xandemon"],
+    },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Developer Icons",
+    "url": baseUrl,
+    "description": description,
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "Web",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "license": "https://github.com/xandemon/developer-icons/blob/main/LICENSE",
+    "codeRepository": "https://github.com/xandemon/developer-icons",
+    "author": {
+      "@type": "Person",
+      "name": "Sandesh Katwal",
+      "alternateName": "xandemon",
+    },
+  },
+];
 ---
 
 <!doctype html>
@@ -71,8 +106,9 @@ const fullUrl = `${currentUrl.origin}${currentUrl.pathname}`;
     <meta name="twitter:creator" content="@xandemon" />
 
     <meta name="robots" content="index, follow" />
-    <!-- <meta name="theme-color" content="#3b82f6" />
-    <meta name="msapplication-TileColor" content="#3b82f6" /> -->
+    <meta name="theme-color" content="#18181b" />
+
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
