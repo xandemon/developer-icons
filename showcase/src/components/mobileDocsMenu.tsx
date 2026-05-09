@@ -6,11 +6,12 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Menu } from "lucide-react";
 
-export const MobileDocsMenu = ({
-  menuList,
-}: {
-  menuList: Array<Record<string, any>>;
-}) => {
+export type DocsMenuEntry = {
+  url: string;
+  frontmatter: { title: string };
+};
+
+export const MobileDocsMenu = ({ menuList }: { menuList: DocsMenuEntry[] }) => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger>

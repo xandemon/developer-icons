@@ -2,7 +2,10 @@
 import Container from "@/components/Container.astro";
 import Navbar from "@/components/Navbar.astro";
 import { Button } from "@/components/ui/button";
-import { MobileDocsMenu } from "@/components/mobileDocsMenu";
+import {
+  MobileDocsMenu,
+  type DocsMenuEntry,
+} from "@/components/mobileDocsMenu";
 import { cn } from "@/lib/utils";
 import { publicBaseUrl } from "@/config";
 import "@fontsource-variable/noto-sans";
@@ -39,6 +42,11 @@ const flattenedDocs = docs.map((doc) => {
       };
 });
 flattenedDocs.sort((a, b) => a.frontmatter.order - b.frontmatter.order);
+
+const docsMenuList: DocsMenuEntry[] = flattenedDocs.map((doc) => ({
+  url: doc.url,
+  frontmatter: { title: doc.frontmatter.title },
+}));
 ---
 
 <!doctype html>
@@ -143,7 +151,7 @@ flattenedDocs.sort((a, b) => a.frontmatter.order - b.frontmatter.order);
                   {
                     "bg-transparent dark:bg-transparent text-zinc-600 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-700":
                       props.frontmatter.title !== doc.frontmatter.title,
-                  }
+                  },
                 )}
               >
                 {doc.frontmatter.title}
@@ -162,7 +170,7 @@ flattenedDocs.sort((a, b) => a.frontmatter.order - b.frontmatter.order);
                 .title
             }
           </h1>
-          <MobileDocsMenu menuList={flattenedDocs} client:load />
+          <MobileDocsMenu menuList={docsMenuList} client:load />
         </div>
         <div
           class={`flex flex-col gap-4 h-full w-full max-lg:[&_h1:first-child]:hidden ${props.class || ""}`}

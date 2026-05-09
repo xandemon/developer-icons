@@ -28,7 +28,7 @@ export const IconCard = ({ icon }: { icon: IconDataType }) => {
   const downloadIcon = async (iconPath: string) => {
     setDownloadLoading(true);
     const response = await fetch(
-      `https://raw.githubusercontent.com/xandemon/developer-icons/main/${iconPath}`
+      `https://raw.githubusercontent.com/xandemon/developer-icons/main/${iconPath}`,
     );
     const data = await response.text();
     const blob = new Blob([data], {
@@ -106,7 +106,7 @@ export const IconCard = ({ icon }: { icon: IconDataType }) => {
             <span className="flex items-center gap-1 w-full">
               Copied{" "}
               <strong className="text-sky-500 dark:text-sky-300">{`<${generateIconCompName(
-                icon.name
+                icon.name,
               )} />`}</strong>
               🎉
             </span>
@@ -136,7 +136,7 @@ export const IconCard = ({ icon }: { icon: IconDataType }) => {
               rel="noreferrer"
               className={cn(
                 "p-1 flex flex-center cursor-pointer hover:text-rose-500 dark:hover:text-rose-300",
-                { "pointer-events-none": showCopied }
+                { "pointer-events-none": showCopied },
               )}
             >
               <Copyright size={18} />

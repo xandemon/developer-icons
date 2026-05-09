@@ -20,11 +20,11 @@ iconsData.forEach((icon) => {
   const component = createDeveloperIcon(
     iconName,
     iconContent,
-    path.join(svgDir, icon.path)
+    path.join(svgDir, icon.path),
   );
   fs.writeFileSync(
     path.join(__dirname, "../icons", `${iconName}.tsx`),
-    component
+    component,
   );
 
   exportStatement += `export * from './${iconName}.tsx';`;

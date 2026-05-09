@@ -1395,7 +1395,13 @@ export const iconsData: IconDataType[] = [
     name: "Microsoft SQL Server 2",
     path: "icons/microsoft-sql-server-2.svg",
     categories: ["Database", "Backend"],
-    keywords: ["microsoft-sql-server", "database", "sql", "microsoft", "enterprise"],
+    keywords: [
+      "microsoft-sql-server",
+      "database",
+      "sql",
+      "microsoft",
+      "enterprise",
+    ],
     url: "https://www.microsoft.com/en-us/sql-server",
   },
   {

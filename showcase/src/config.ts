@@ -1,5 +1,3 @@
-const publicBaseUrl = import.meta.env.PROD
-  ? "/developer-icons"
-  : "/developer-icons/showcase";
+const publicBaseUrl = "/developer-icons";
 
 export { publicBaseUrl };

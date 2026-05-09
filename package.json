@@ -37,12 +37,26 @@
     "clean": "rimraf --glob dist && rimraf --glob lib/icons/*.tsx",
     "build": "npm run clean && tsx ./lib/scripts/build.ts && tsc --p ./tsconfig-build.json && vite build",
     "build:showcase": "cd showcase && npm run build",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "npm run lint -- --fix",
+    "typecheck": "tsc --noEmit -p tsconfig-build.json && tsc --noEmit -p tsconfig.json",
+    "verify:root": "npm run format:check && npm run lint && npm run typecheck",
+    "verify": "npm run verify:root && npm ci --prefix showcase && npm run build --prefix showcase",
     "preview": "vite preview",
     "preview:showcase": "cd showcase && npm run preview",
     "prePublishOnly": "npm run build",
+    "prepare": "husky",
     "sort:data": "tsx ./lib/scripts/sortData.ts",
     "optimize-svgs": "svgo -f ./icons/raw -o ./icons && rimraf --glob icons/raw/*"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "prettier --write",
+      "eslint --fix --max-warnings 0"
+    ],
+    "*.{mjs,cjs,astro,css,md}": "prettier --write"
   },
   "peerDependencies": {
     "react": "^18.2.0 || ^19.0.0",
@@ -56,8 +70,13 @@
     "@typescript-eslint/parser": "^7.2.0",
     "@vitejs/plugin-react": "^4.2.1",
     "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.3",
+    "prettier": "^3.5.3",
+    "prettier-plugin-astro": "^0.14.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rimraf": "^5.0.5",

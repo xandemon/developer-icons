@@ -6,7 +6,7 @@ import svgoConfig from "../svgo.config.mjs";
 export const createDeveloperIcon = (
   iconName: string,
   iconContent: string,
-  path: string
+  path: string,
 ) => {
   const optimizedSvg = optimize(iconContent, {
     path,
@@ -32,11 +32,11 @@ export const createDeveloperIcon = (
           return `${key}=${JSON.stringify(value)}`;
         }
       },
-    })
+    }),
   );
 
   return `import { createElement } from 'react';\nimport {Icon, DeveloperIconProps} from '../icon';\nexport const ${iconName} = (props: DeveloperIconProps) => createElement(Icon, {...${JSON.stringify(
-    sanitizedSvgObject.attributes
+    sanitizedSvgObject.attributes,
   )}, ...props, children: [${children}]
   })`;
 };
@@ -49,15 +49,20 @@ const sanitizeStyles = (svgObject: INode) => {
       .trim();
 
     if (styleString) {
-      const styleObject = styleString.split(";").reduce((acc, style) => {
-        const [key, value] = style.split(":").map((s) => s.trim());
-        if (key && value) {
-          // Convert kebab-case to camelCase
-          const camelKey = key.replace(/-([a-z])/g, (g) => g[1].toUpperCase());
-          acc[camelKey] = value;
-        }
-        return acc;
-      }, {} as Record<string, string>);
+      const styleObject = styleString.split(";").reduce(
+        (acc, style) => {
+          const [key, value] = style.split(":").map((s) => s.trim());
+          if (key && value) {
+            // Convert kebab-case to camelCase
+            const camelKey = key.replace(/-([a-z])/g, (g) =>
+              g[1].toUpperCase(),
+            );
+            acc[camelKey] = value;
+          }
+          return acc;
+        },
+        {} as Record<string, string>,
+      );
 
       //@ts-expect-error string style is converted into object style
       modifiedSvgObject.attributes.style = styleObject;

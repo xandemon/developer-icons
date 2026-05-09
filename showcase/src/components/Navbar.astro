@@ -51,7 +51,7 @@ const matchSamePage = (href: string) => {
           href={publicBaseUrl + link.href}
           class={cn(
             "hidden lg:inline-block hover:text-sky-800 dark:hover:text-sky-200",
-            matchSamePage(link.href) && "text-sky-500"
+            matchSamePage(link.href) && "text-sky-500",
           )}
         >
           {link.title}
