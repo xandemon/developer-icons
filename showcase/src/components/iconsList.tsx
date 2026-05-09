@@ -15,10 +15,10 @@ export const IconsList = ({ iconsData }: { iconsData: IconDataType[] }) => {
       iconsData.filter(
         (icon) =>
           icon.keywords.some((key) =>
-            key.toLowerCase().includes(debouncedSearch)
-          ) || icon.name.toLowerCase().includes(debouncedSearch)
+            key.toLowerCase().includes(debouncedSearch),
+          ) || icon.name.toLowerCase().includes(debouncedSearch),
       ),
-    [iconsData, debouncedSearch]
+    [iconsData, debouncedSearch],
   );
 
   return (

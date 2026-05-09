@@ -27,8 +27,8 @@ const filteredIconsData =
         icon.categories.includes(
           category
             .replace("DevOps", "DevOps & AI/ML")
-            .replaceAll("-", " ") as CategoryType
-        )
+            .replaceAll("-", " ") as CategoryType,
+        ),
       );
 ---
 
@@ -52,7 +52,7 @@ const filteredIconsData =
                     item
                       .replace("DevOps & AI/ML", "DevOps")
                       .replaceAll(" ", "-") !== category,
-                }
+                },
               )}
             >
               {item}
