@@ -1,0 +1,9 @@
+dist
+dist-ssr
+node_modules
+showcase/dist
+showcase/.astro
+lib/icons
+*.min.js
+package-lock.json
+showcase/package-lock.json
