@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  verify:
+    name: Code checks and build verification
+    runs-on: ubuntu-latest
+    env:
+      HUSKY: "0"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: package-lock.json
+
+      - name: Install root dependencies
+        run: npm ci
+
+      - name: Verify root package
+        run: npm run verify:root
+
+      - name: Install showcase dependencies
+        run: npm ci
+        working-directory: showcase
+
+      - name: Build showcase
+        run: npm run build
+        working-directory: showcase
