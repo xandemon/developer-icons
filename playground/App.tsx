@@ -4,7 +4,7 @@ import {
   PnpmDark,
   PnpmDarkWordmark,
   PnpmLightWordmark,
-} from "../dist/main";
+} from "../lib/main";
 import "./App.css";
 
 function App() {
