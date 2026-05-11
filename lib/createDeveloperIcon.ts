@@ -8,14 +8,27 @@ export const createDeveloperIcon = (
   iconContent: string,
   path: string,
 ) => {
+  const idPrefix = capitalizeFirstletter(iconName, true);
+  let keySeq = 0;
+
   const optimizedSvg = optimize(iconContent, {
     path,
     plugins: [
       ...svgoConfig.plugins,
       {
+        name: "addKeyAttr",
+        fn: () => ({
+          element: {
+            enter: (node) => {
+              node.attributes.key = `${idPrefix}__${keySeq++}`;
+            },
+          },
+        }),
+      },
+      {
         name: "prefixIds",
         params: {
-          prefix: capitalizeFirstletter(iconName, true),
+          prefix: idPrefix,
         },
       },
     ] as PluginConfig[],

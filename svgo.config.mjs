@@ -24,18 +24,5 @@ export default {
         };
       },
     },
-    {
-      name: "addKeyAttr",
-      description: "Add key attribute",
-      fn: () => {
-        return {
-          element: {
-            enter: (node) => {
-              node.attributes.key = Math.random().toString(36).substring(2, 9);
-            },
-          },
-        };
-      },
-    },
   ],
 };
