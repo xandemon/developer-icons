@@ -2,8 +2,6 @@ name: CI
 
 on:
   pull_request:
-  push:
-    branches: [main]
 
 jobs:
   verify:
@@ -25,8 +23,8 @@ jobs:
       - name: Install root dependencies
         run: npm ci
 
-      - name: Verify root package
-        run: npm run verify:root
+      - name: Verify icons library package
+        run: npm run generate:icons && npm run verify:root
 
       - name: Install showcase dependencies
         run: npm ci
