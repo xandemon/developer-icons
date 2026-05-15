@@ -33,16 +33,37 @@
 </p>
 
 <p align="center">
-  <img src="public/cover-image-light.png" alt="Developer Icons" />
+  <img src="public/cover-image-dark.png" alt="Developer Icons by xandemon" />
 </p>
 
 Welcome to **`developer-icons`**—a curated set of high-quality, customizable tech icons built for developers and designers. Fully compatible with TypeScript, ideal for React and Next.js, or downloadable from our [official website](https://xandemon.github.io/developer-icons/icons/All "Developer Icons Website") for design projects.
+
+## ✨ Star History
+
+<a href="https://github.com/xandemon/developer-icons/stargazers">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=xandemon/developer-icons&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=xandemon/developer-icons&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=xandemon/developer-icons&type=date&legend=top-left" />
+ </picture>
+</a>
 
 ## 🧑‍💻 Used by
 
 <a href="https://github.com/xandemon/developer-icons/network/dependents" target="_blank">
   <img src="https://dependents.info/xandemon/developer-icons/image" alt="Developer-Icons GitHub Users" />
 </a>
+
+## 🎖️ Features
+
+- ⚡ **Highly optimized:** Icons are optimized for performance and size. They are designed to be as small as possible while maintaining the quality.
+- 🎨 **Customizable:** Cusomizations are available for all icons. You can change the size, color, stroke width, and much more.
+- 🔍 **Perfectly scalable:** Icons are designed to be properly scaled to any size without compromising the quality.
+- 🔄 **Consistent icons:** No more dealing with inconsistent styles and designs. All icons are designed with a pre-defined set of rules.
+- 🌗 **Various variants:** Icons come with their own set of families such as light and dark mode, wordmark, and other variants.
+- 🫂 **Free & open-source:** Completely free and open-source with license. No need to worry about privately hidden malicious code and be a contributor yourself.
+
+Explore more and start using `developer-icons` today to enhance your projects with stunning, customizable icons!
 
 ## 🚀 Tech Stack
 
@@ -55,17 +76,6 @@ Welcome to **`developer-icons`**—a curated set of high-quality, customizable t
 - [Lucide Icons](https://lucide.dev/) - A modern, customizable, open-source icon library.
 - [SVGO](https://github.com/svg/svgo) - A powerful tool for compressing and optimizing SVG files.
 - [SVGSON](https://github.com/svgson/svgson) - A tool to seamlessly convert SVGs to JSON format and back.
-
-## 🌟 Features
-
-- ⚡ **Highly optimized:** Icons are optimized for performance and size. They are designed to be as small as possible while maintaining the quality.
-- 🎨 **Customizable:** Cusomizations are available for all icons. You can change the size, color, stroke width, and much more.
-- 🔍 **Perfectly scalable:** Icons are designed to be properly scaled to any size without compromising the quality.
-- 🔄 **Consistent icons:** No more dealing with inconsistent styles and designs. All icons are designed with a pre-defined set of rules.
-- 🌗 **Various variants:** Icons come with their own set of families such as light and dark mode, wordmark, and other variants.
-- ⭐ **Free & open-source:** Completely free and open-source with license. No need to worry about privately hidden malicious code and be a contributor yourself.
-
-Explore more and start using `developer-icons` today to enhance your projects with stunning, customizable icons!
 
 ## 📦 Installation
 
@@ -110,6 +120,12 @@ In this example, we import `HtmlIcon` and `JavascriptIcon` from the `developer-i
 ## 🤝 Contributing
 
 We welcome contributions of all kinds, whether you're looking to add new icons, improve existing ones, or enhance the overall project. To get started, refer to our [Contributing Guidelines](https://xandemon.github.io/developer-icons/docs/contributing).
+
+<a href="https://github.com/xandemon/developer-icons/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=xandemon/developer-icons&columns=9" alt="Developer Icons contributors image by contrib.rocks" />
+</a>
+
+And many many thanks to those who participated in this little project :)
 
 ## 📜 License
 
