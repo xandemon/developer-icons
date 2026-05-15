@@ -33,7 +33,7 @@
 </p>
 
 <p align="center">
-  <img src="public/cover-image-light.png" alt="Developer Icons" />
+  <img src="public/cover-image-dark.png" alt="Developer Icons by xandemon" />
 </p>
 
 Welcome to **`developer-icons`**—a curated set of high-quality, customizable tech icons built for developers and designers. Fully compatible with TypeScript, ideal for React and Next.js, or downloadable from our [official website](https://xandemon.github.io/developer-icons/icons/All "Developer Icons Website") for design projects.
