@@ -399,22 +399,6 @@ export const iconsData: IconDataType[] = [
     url: "https://anthropic.com/claude",
   },
   {
-    id: "claude-color",
-    name: "Claude Color",
-    path: "icons/claude-color.svg",
-    categories: ["DevOps & AI/ML"],
-    keywords: ["claude", "ai", "color"],
-    url: "https://anthropic.com/claude",
-  },
-  {
-    id: "claude-black",
-    name: "Claude Black",
-    path: "icons/claude-black.svg",
-    categories: ["DevOps & AI/ML"],
-    keywords: ["claude", "ai", "black"],
-    url: "https://anthropic.com/claude",
-  },
-  {
     id: "clerk",
     name: "Clerk",
     path: "icons/clerk.svg",
