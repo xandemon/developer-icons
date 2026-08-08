@@ -1,18 +1,18 @@
 export const categoriesData = [
-  "Languages",
-  "Frontend",
+  "AI",
   "Backend",
+  "Browser",
+  "Build Tools",
+  "Companies",
   "Database",
   "Design",
-  "Native App",
   "DevOps",
-  "AI",
-  "Build Tools",
+  "Frontend",
+  "Languages",
+  "Native App",
+  "Others",
   "Productivity",
   "Social",
-  "Companies",
-  "Browser",
-  "Others",
 ] as const;
 
 export const iconsData: IconDataType[] = [
