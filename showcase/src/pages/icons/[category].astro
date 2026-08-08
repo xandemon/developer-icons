@@ -10,9 +10,7 @@ import { Button } from "@/components/ui/button";
 export function getStaticPaths() {
   return ["All", ...categoriesData].map((category) => ({
     params: {
-      category: category
-        .replace("DevOps & AI/ML", "DevOps")
-        .replaceAll(" ", "-"),
+      category: category.replaceAll(" ", "-"),
     },
   }));
 }
@@ -34,11 +32,7 @@ const filteredIconsData =
   !category || category === "All"
     ? iconsData
     : iconsData.filter((icon) =>
-        icon.categories.includes(
-          category
-            .replace("DevOps", "DevOps & AI/ML")
-            .replaceAll("-", " ") as CategoryType,
-        ),
+        icon.categories.includes(category.replaceAll("-", " ") as CategoryType),
       );
 ---
 
